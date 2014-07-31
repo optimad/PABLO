@@ -646,7 +646,7 @@ template&lt;class Impl &gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Index of current octant </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of face/edge/node passed through for neighbours finding </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">codim</td><td>Codimension of the iface-th entity 0=face, 1=edge, 2=node </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codim</td><td>Codimension of the iface-th entity 0=face (only 3D), 1=edge, 2=node </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">neighbours</td><td>Vector of neighbours indices in octants/ghosts structure </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isghost</td><td>Vector with boolean flag; true if the respective octant in neighbours is a ghost octant </td></tr>
   </table>
@@ -710,7 +710,7 @@ template&lt;class Impl &gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to current octant </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of face/edge/node passed through for neighbours finding </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">codim</td><td>Codimension of the iface-th entity 0=face, 1=edge, 2=node </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codim</td><td>Codimension of the iface-th entity 0=face (only 3D), 1=edge, 2=node </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">neighbours</td><td>Vector of neighbours indices in octants/ghosts structure </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isghost</td><td>Vector with boolean flag; true if the respective octant in neighbours is a ghost octant </td></tr>
   </table>
@@ -2497,7 +2497,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 31 2014 12:41:36 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 31 2014 19:01:44 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
