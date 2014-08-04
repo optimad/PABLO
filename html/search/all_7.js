@@ -10,5 +10,7 @@ var searchData=
   ['mapx',['mapX',['../class_class___map.html#a081b78346a00044607bf516791bae2b1',1,'Class_Map::mapX(uint32_t const &amp;X)'],['../class_class___map.html#a42b5389cc7a789067e1b58fcb947b7e9',1,'Class_Map::mapX(double const &amp;X)']]],
   ['mapy',['mapY',['../class_class___map.html#af92e58bf8032f60d448e77fd7129874e',1,'Class_Map::mapY(uint32_t const &amp;Y)'],['../class_class___map.html#a042f3a46a681844fa42fcf4a8e56a862',1,'Class_Map::mapY(double const &amp;Y)']]],
   ['mapz',['mapZ',['../class_class___map.html#a22fd90895dc978b037e44499e1adc698',1,'Class_Map::mapZ(uint32_t const &amp;Z)'],['../class_class___map.html#a56a90359eb2bd49b9cea510d651e5882',1,'Class_Map::mapZ(double const &amp;Z)']]],
-  ['max_5fdepth',['max_depth',['../class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4',1,'Class_Para_Tree&lt; 2 &gt;']]]
+  ['markerbytes',['markerBytes',['../class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19',1,'Class_Global&lt; 2 &gt;']]],
+  ['max_5fdepth',['max_depth',['../class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4',1,'Class_Para_Tree&lt; 2 &gt;']]],
+  ['max_5flength',['max_length',['../class_class___global_3_012_01_4.html#ae9473c8a69ad8a9ad94d5dd6ec8e86d2',1,'Class_Global&lt; 2 &gt;']]]
 ];

@@ -90,60 +90,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Class_Global_2D.tpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Class_Global_2D.tpp</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 18/apr/2014</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Marco Cisternino</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CLASS_GLOBAL_2D_TPP</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define CLASS_GLOBAL_2D_TPP</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// =================================================================================== //</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// CLASS SPECIALIZATION                                                                //</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// =================================================================================== //</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_class___global.html">Class_Global</a>&lt;2&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_class___global.html">Class_Global</a>() : max_length (uint32_t(pow(2.0,MAX_LEVEL_2D))),</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    nchildren(4),</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    nfaces(4),</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    nnodes(4),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    nnodesperface(2),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    octantBytes(uint8_t(<span class="keyword">sizeof</span>(uint32_t)*2 + <span class="keyword">sizeof</span>(uint8_t) + <span class="keyword">sizeof</span>(int8_t) + (12)*<span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>))),</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    globalIndexBytes(uint8_t(<span class="keyword">sizeof</span>(uint64_t))),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    markerBytes(<span class="keyword">sizeof</span>(int8_t)),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    levelBytes(<span class="keyword">sizeof</span>(uint8_t)),</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    boolBytes(<span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>)),</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    oppface{1,0,3,2},</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    nodeface{{0,2},{1,2},{0,3},{1,3}},</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    facenode{{0,2},{1,3},{0,1},{2,3}},</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    normals{{-1,0,0},{1,0,0},{0,-1,0},{0,1,0}}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    uint8_t puppa()<span class="keyword"> const </span>{<span class="keywordflow">return</span> nfaces;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> uint32_t max_length;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> uint8_t  nchildren;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> uint8_t  nfaces;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> uint8_t  nnodes;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> uint8_t  nnodesperface;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> uint8_t  octantBytes;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> uint8_t  globalIndexBytes;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> uint8_t  markerBytes;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> uint8_t  levelBytes;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> uint8_t  boolBytes;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> uint8_t  oppface[4];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> uint8_t  nodeface[4][2];</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> uint8_t  facenode[4][2];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> int8_t   normals[4][3];</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CLASS_GLOBAL_2D_TPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CLASS_GLOBAL_2D_TPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// =================================================================================== //</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// CLASS SPECIALIZATION                                                                //</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// =================================================================================== //</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_class___global.html">Class_Global</a>&lt;2&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_class___global.html">Class_Global</a>() :</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    max_length (uint32_t(pow(2.0,MAX_LEVEL_2D))),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    nchildren(4),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    nfaces(4),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    nnodes(4),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    nnodesperface(2),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    octantBytes(uint8_t(<span class="keyword">sizeof</span>(uint32_t)*2 + <span class="keyword">sizeof</span>(uint8_t) + <span class="keyword">sizeof</span>(int8_t) + (12)*<span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>))),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    globalIndexBytes(uint8_t(<span class="keyword">sizeof</span>(uint64_t))),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    markerBytes(<span class="keyword">sizeof</span>(int8_t)),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    levelBytes(<span class="keyword">sizeof</span>(uint8_t)),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    boolBytes(<span class="keyword">sizeof</span>(<span class="keywordtype">bool</span>)),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    oppface{1,0,3,2},</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#ae9473c8a69ad8a9ad94d5dd6ec8e86d2">   37</a></span>&#160;    nodeface{{0,2},{1,2},{0,3},{1,3}},</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    facenode{{0,2},{1,3},{0,1},{2,3}},</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    normals{{-1,0,0},{1,0,0},{0,-1,0},{0,1,0}}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> uint32_t max_length;          </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">   43</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">nchildren</a>;           </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">   44</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>;              </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf">   45</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf">nnodes</a>;              </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a5f846782517e19d3575f9de4becbbb3f">   46</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a5f846782517e19d3575f9de4becbbb3f">nnodesperface</a>;       </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#ad09be2f6b701b9158894b580e9437e9b">   47</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#ad09be2f6b701b9158894b580e9437e9b">octantBytes</a>;         </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#acbeb97e800453b4ad4dec49de642f8c3">   48</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#acbeb97e800453b4ad4dec49de642f8c3">globalIndexBytes</a>;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19">   49</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19">markerBytes</a>;         </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a74d741e034b3faa8a6dbcf4024775736">   50</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a74d741e034b3faa8a6dbcf4024775736">levelBytes</a>;          </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a56cd6ccdd37fe6850b655a8536e387db">   51</a></span>&#160;    <span class="keyword">const</span> uint8_t  <a class="code" href="class_class___global_3_012_01_4.html#a56cd6ccdd37fe6850b655a8536e387db">boolBytes</a>;           </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c">   52</a></span>&#160;    <span class="keyword">const</span> uint8_t  oppface[4];          </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b">   53</a></span>&#160;    <span class="keyword">const</span> uint8_t  nodeface[4][2];      </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a2c09af6053b17451b649d16387843089">   54</a></span>&#160;    <span class="keyword">const</span> uint8_t  facenode[4][2];      </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_class___global_3_012_01_4.html#a1e651afcb67eab12b92d504a0baca30c">   55</a></span>&#160;    <span class="keyword">const</span> int8_t   normals[4][3];       </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_class___global_html"><div class="ttname"><a href="class_class___global.html">Class_Global</a></div><div class="ttdef"><b>Definition:</b> <a href="_class___global_8hpp_source.html#l00016">Class_Global.hpp:16</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_ad09be2f6b701b9158894b580e9437e9b"><div class="ttname"><a href="class_class___global_3_012_01_4.html#ad09be2f6b701b9158894b580e9437e9b">Class_Global&lt; 2 &gt;::octantBytes</a></div><div class="ttdeci">const uint8_t octantBytes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00047">Class_Global_2D.tpp:47</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a1703ce1a89f727dd0bb73fe265c29dcf"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf">Class_Global&lt; 2 &gt;::nnodes</a></div><div class="ttdeci">const uint8_t nnodes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00045">Class_Global_2D.tpp:45</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_ae266f238ed41ac82cfcf5b4f6367cfce"><div class="ttname"><a href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">Class_Global&lt; 2 &gt;::nfaces</a></div><div class="ttdeci">const uint8_t nfaces</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00044">Class_Global_2D.tpp:44</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a56cd6ccdd37fe6850b655a8536e387db"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a56cd6ccdd37fe6850b655a8536e387db">Class_Global&lt; 2 &gt;::boolBytes</a></div><div class="ttdeci">const uint8_t boolBytes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00051">Class_Global_2D.tpp:51</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a74d741e034b3faa8a6dbcf4024775736"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a74d741e034b3faa8a6dbcf4024775736">Class_Global&lt; 2 &gt;::levelBytes</a></div><div class="ttdeci">const uint8_t levelBytes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00050">Class_Global_2D.tpp:50</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a557eff67ed635fd2f91d133158880d19"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19">Class_Global&lt; 2 &gt;::markerBytes</a></div><div class="ttdeci">const uint8_t markerBytes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00049">Class_Global_2D.tpp:49</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a1dda2d8c20a6869c5c3134c006050b17"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">Class_Global&lt; 2 &gt;::nchildren</a></div><div class="ttdeci">const uint8_t nchildren</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00043">Class_Global_2D.tpp:43</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_acbeb97e800453b4ad4dec49de642f8c3"><div class="ttname"><a href="class_class___global_3_012_01_4.html#acbeb97e800453b4ad4dec49de642f8c3">Class_Global&lt; 2 &gt;::globalIndexBytes</a></div><div class="ttdeci">const uint8_t globalIndexBytes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00048">Class_Global_2D.tpp:48</a></div></div>
+<div class="ttc" id="class_class___global_3_012_01_4_html_a5f846782517e19d3575f9de4becbbb3f"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a5f846782517e19d3575f9de4becbbb3f">Class_Global&lt; 2 &gt;::nnodesperface</a></div><div class="ttdeci">const uint8_t nnodesperface</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00046">Class_Global_2D.tpp:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 31 2014 19:20:06 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 4 2014 18:01:04 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

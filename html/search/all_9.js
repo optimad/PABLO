@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['octree',['octree',['../class_class___para___tree_3_012_01_4.html#a666c1c75b9c0990ef8de9f0d9f13601d',1,'Class_Para_Tree&lt; 2 &gt;']]]
+  ['octantbytes',['octantBytes',['../class_class___global_3_012_01_4.html#ad09be2f6b701b9158894b580e9437e9b',1,'Class_Global&lt; 2 &gt;']]],
+  ['octree',['octree',['../class_class___para___tree_3_012_01_4.html#a666c1c75b9c0990ef8de9f0d9f13601d',1,'Class_Para_Tree&lt; 2 &gt;']]],
+  ['oppface',['oppface',['../class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c',1,'Class_Global&lt; 2 &gt;']]]
 ];

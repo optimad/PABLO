@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nodes',['nodes',['../class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['nproc',['nproc',['../class_class___para___tree_3_012_01_4.html#a464c8fcae5efcf5d8129539fea84404f',1,'Class_Para_Tree&lt; 2 &gt;']]]
+  ['markerbytes',['markerBytes',['../class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19',1,'Class_Global&lt; 2 &gt;']]],
+  ['max_5fdepth',['max_depth',['../class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4',1,'Class_Para_Tree&lt; 2 &gt;']]],
+  ['max_5flength',['max_length',['../class_class___global_3_012_01_4.html#ae9473c8a69ad8a9ad94d5dd6ec8e86d2',1,'Class_Global&lt; 2 &gt;']]]
 ];

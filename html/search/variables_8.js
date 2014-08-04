@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['partition_5ffirst_5fdesc',['partition_first_desc',['../class_class___para___tree_3_012_01_4.html#aa3ecf9226ab79f27868b2d6934a2a329',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['partition_5flast_5fdesc',['partition_last_desc',['../class_class___para___tree_3_012_01_4.html#a4e99920516f57c21ad3a076091a69401',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['partition_5frange_5fglobalidx',['partition_range_globalidx',['../class_class___para___tree_3_012_01_4.html#a47edbdefaca1262e5fcd82902ba4a708',1,'Class_Para_Tree&lt; 2 &gt;']]]
+  ['octantbytes',['octantBytes',['../class_class___global_3_012_01_4.html#ad09be2f6b701b9158894b580e9437e9b',1,'Class_Global&lt; 2 &gt;']]],
+  ['octree',['octree',['../class_class___para___tree_3_012_01_4.html#a666c1c75b9c0990ef8de9f0d9f13601d',1,'Class_Para_Tree&lt; 2 &gt;']]],
+  ['oppface',['oppface',['../class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c',1,'Class_Global&lt; 2 &gt;']]]
 ];
