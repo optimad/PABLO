@@ -113,10 +113,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// MEMBERS ----------------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uint32_t  x, y;             </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint8_t   level;            </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    int8_t    marker;           </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span>      info[12];         </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">   52</a></span>&#160;    uint32_t  x, <a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>;             </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">   53</a></span>&#160;    uint8_t   <a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>;            </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">   54</a></span>&#160;    int8_t    <a class="code" href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">marker</a>;           </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">   55</a></span>&#160;    <span class="keywordtype">bool</span>      info[12];         </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// ------------------------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// CONSTRUCTORS AND OPERATORS----------------------------------------------------- //</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -147,16 +147,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_class___octant.html">Class_Octant</a>(<span class="keyword">const</span> <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> &amp;octant){</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        x = octant.x;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        y = octant.y;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        level = octant.level;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        marker = octant.marker;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        memcpy(info,octant.info,12);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        y = octant.<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        level = octant.<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        marker = octant.<a class="code" href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">marker</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        memcpy(info,octant.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>,12);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    };</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> operator ==(<span class="keyword">const</span> <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> &amp; oct2){ <span class="comment">// Check if two octants are equal (no check on info)</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> check = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        check = check &amp;&amp; (x == oct2.x);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        check = check &amp;&amp; (y == oct2.y);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        check = check &amp;&amp; (level == oct2.level);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        check = check &amp;&amp; (y == oct2.<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        check = check &amp;&amp; (level == oct2.<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> check;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
@@ -681,15 +681,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_class___para___tree_html"><div class="ttname"><a href="class_class___para___tree.html">Class_Para_Tree</a></div><div class="ttdoc">Parallel Octree Manager Class. </div><div class="ttdef"><b>Definition:</b> <a href="_class___para___tree_8hpp_source.html#l00053">Class_Para_Tree.hpp:53</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a1e651afcb67eab12b92d504a0baca30c"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1e651afcb67eab12b92d504a0baca30c">Class_Global&lt; 2 &gt;::normals</a></div><div class="ttdeci">const int8_t normals[4][3]</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00058">Class_Global_2D.tpp:58</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html"><div class="ttname"><a href="class_class___octant_3_012_01_4.html">Class_Octant&lt; 2 &gt;</a></div><div class="ttdoc">Octant class definition - 2D specialization. </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00034">Class_Octant_2D.tpp:34</a></div></div>
+<div class="ttc" id="class_class___octant_3_012_01_4_html_a71f1d92be8c4f458e73f9e7234566c02"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">Class_Octant&lt; 2 &gt;::marker</a></div><div class="ttdeci">int8_t marker</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00054">Class_Octant_2D.tpp:54</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a1703ce1a89f727dd0bb73fe265c29dcf"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf">Class_Global&lt; 2 &gt;::nnodes</a></div><div class="ttdeci">const uint8_t nnodes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00048">Class_Global_2D.tpp:48</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_ae266f238ed41ac82cfcf5b4f6367cfce"><div class="ttname"><a href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">Class_Global&lt; 2 &gt;::nfaces</a></div><div class="ttdeci">const uint8_t nfaces</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00047">Class_Global_2D.tpp:47</a></div></div>
+<div class="ttc" id="class_class___octant_3_012_01_4_html_a17d99d5918d8e3cf55f44c7406ce3c6d"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">Class_Octant&lt; 2 &gt;::level</a></div><div class="ttdeci">uint8_t level</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00053">Class_Octant_2D.tpp:53</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a1dda2d8c20a6869c5c3134c006050b17"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">Class_Global&lt; 2 &gt;::nchildren</a></div><div class="ttdeci">const uint8_t nchildren</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00046">Class_Global_2D.tpp:46</a></div></div>
 <div class="ttc" id="class_class___local___tree_html"><div class="ttname"><a href="class_class___local___tree.html">Class_Local_Tree</a></div><div class="ttdoc">Local octree portion for each process. </div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree_8hpp_source.html#l00055">Class_Local_Tree.hpp:55</a></div></div>
+<div class="ttc" id="class_class___octant_3_012_01_4_html_a81734c93ce3f63cdc08ee3da64096bee"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">Class_Octant&lt; 2 &gt;::y</a></div><div class="ttdeci">uint32_t y</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00052">Class_Octant_2D.tpp:52</a></div></div>
 <div class="ttc" id="class_class___octant_html"><div class="ttname"><a href="class_class___octant.html">Class_Octant</a></div><div class="ttdoc">Octant class definition. </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant_8hpp_source.html#l00050">Class_Octant.hpp:50</a></div></div>
+<div class="ttc" id="class_class___octant_3_012_01_4_html_aa6c157a02cf2c77753bc96d0583b48f9"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">Class_Octant&lt; 2 &gt;::info</a></div><div class="ttdeci">bool info[12]</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00055">Class_Octant_2D.tpp:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 13:35:08 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 5 2014 16:03:35 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

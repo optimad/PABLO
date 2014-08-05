@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_class___para___tree_3_012_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Class_Para_Tree&lt; 2 &gt; Class Template Reference</div>  </div>
@@ -102,7 +103,7 @@ Collaboration diagram for Class_Para_Tree&lt; 2 &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_class___para___tree_3_012_01_4__coll__graph.png" border="0" usemap="#_class___para___tree_3_012_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_class___para___tree_3_012_01_4_coll__map" id="_class___para___tree_3_012_01_4_coll__map">
-<area shape="rect" id="node2" href="class_class___local___tree_3_012_01_4.html" title="Local octree portion for each process &#45; 2D specialization. " alt="" coords="5,5,165,32"/><area shape="rect" id="node3" href="class_class___map.html" title="Class_Map\&lt; 2 \&gt;" alt="" coords="190,5,308,32"/></map>
+<area shape="rect" id="node2" href="class_class___local___tree_3_012_01_4.html" title="Local octree portion for each process &#45; 2D specialization. " alt="" coords="5,109,165,136"/><area shape="rect" id="node3" href="class_class___octant_3_012_01_4.html" title="Octant class definition &#45; 2D specialization. " alt="" coords="19,5,151,32"/><area shape="rect" id="node4" href="class_class___map.html" title="Class_Map\&lt; 2 \&gt;" alt="" coords="190,109,308,136"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -284,6 +285,154 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab295cc02bf068467227198e43ff2f330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7dd92c384774fd4399af39ef505361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___map.html">Class_Map</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a9e7dd92c384774fd4399af39ef505361">trans</a></td></tr>
 <tr class="separator:a9e7dd92c384774fd4399af39ef505361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aef1537235bcf7263f073774603ac6bbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef1537235bcf7263f073774603ac6bbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>balance21</b> (bool const first)</td></tr>
+<tr class="separator:aef1537235bcf7263f073774603ac6bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99750091c2b53b37f7f3c8c1f3c096f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99750091c2b53b37f7f3c8c1f3c096f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>commMarker</b> ()</td></tr>
+<tr class="separator:a99750091c2b53b37f7f3c8c1f3c096f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796ebc72dfbdf9efd11e389934f238c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a796ebc72dfbdf9efd11e389934f238c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>computePartition</b> (uint32_t *partition)</td></tr>
+<tr class="separator:a796ebc72dfbdf9efd11e389934f238c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d796375b2e74d151bad9b7bd15e8a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1d796375b2e74d151bad9b7bd15e8a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>computePartition</b> (uint32_t *partition, uint8_t &amp;level_)</td></tr>
+<tr class="separator:ad1d796375b2e74d151bad9b7bd15e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ad5c7ddc8522e291e137780ed940a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96ad5c7ddc8522e291e137780ed940a1"></a>
+<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>extractOctant</b> (uint32_t idx)</td></tr>
+<tr class="separator:a96ad5c7ddc8522e291e137780ed940a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f66ef95c1e5d6b907f5417d1881376e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a7f66ef95c1e5d6b907f5417d1881376e">findNeighbours</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, uint8_t iface, uint8_t codim, u32vector &amp;neighbours, vector&lt; bool &gt; &amp;isghost)</td></tr>
+<tr class="separator:a7f66ef95c1e5d6b907f5417d1881376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c9b4329d98a17c65855efb773b01fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37c9b4329d98a17c65855efb773b01fe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>findOwner</b> (const uint64_t &amp;morton)</td></tr>
+<tr class="separator:a37c9b4329d98a17c65855efb773b01fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad358e8a551f3556a0d9c2cac65b1dc13"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad358e8a551f3556a0d9c2cac65b1dc13">getArea</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:ad358e8a551f3556a0d9c2cac65b1dc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e5f7168c5b9ddbb93355aaaa2c66e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a74e5f7168c5b9ddbb93355aaaa2c66e1">getArea</a> (uint32_t idx)</td></tr>
+<tr class="separator:a74e5f7168c5b9ddbb93355aaaa2c66e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43241f96abf7f84d627ce43955f2324a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43241f96abf7f84d627ce43955f2324a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getArea</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter)</td></tr>
+<tr class="separator:a43241f96abf7f84d627ce43955f2324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707dbc4ff141af034b0d512d7744a856"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a707dbc4ff141af034b0d512d7744a856">getBalance</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a707dbc4ff141af034b0d512d7744a856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78bd3d181387ed5192cfd5959ee5b47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#af78bd3d181387ed5192cfd5959ee5b47">getBalance</a> (uint32_t idx)</td></tr>
+<tr class="separator:af78bd3d181387ed5192cfd5959ee5b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a8ffb4ab6bcc4a002395b35689f5db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a66a8ffb4ab6bcc4a002395b35689f5db">getCenter</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, vector&lt; double &gt; &amp;center)</td></tr>
+<tr class="separator:a66a8ffb4ab6bcc4a002395b35689f5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0d60b6f56647dd0b833104f037bf27"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0e0d60b6f56647dd0b833104f037bf27">getCenter</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a0e0d60b6f56647dd0b833104f037bf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2a80b04d74e2a9994a043f308361b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a1b2a80b04d74e2a9994a043f308361b3">getCenter</a> (uint32_t idx, vector&lt; double &gt; &amp;center)</td></tr>
+<tr class="separator:a1b2a80b04d74e2a9994a043f308361b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947e3a3bcfe0da1afd98e2eac55cd33e"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a947e3a3bcfe0da1afd98e2eac55cd33e">getCenter</a> (uint32_t idx)</td></tr>
+<tr class="separator:a947e3a3bcfe0da1afd98e2eac55cd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13686506c49dec7a2b176a9223e76896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13686506c49dec7a2b176a9223e76896"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getCenter</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, vector&lt; double &gt; &amp;center)</td></tr>
+<tr class="separator:a13686506c49dec7a2b176a9223e76896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4c6d3f3fdcb2ac67f8a4d8a484d612"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e4c6d3f3fdcb2ac67f8a4d8a484d612"></a>
+const <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstDesc</b> () const </td></tr>
+<tr class="separator:a1e4c6d3f3fdcb2ac67f8a4d8a484d612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8220ef4719a88a9b37c34fde1379263"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ab8220ef4719a88a9b37c34fde1379263">getGhostGlobalIdx</a> (uint32_t idx)</td></tr>
+<tr class="separator:ab8220ef4719a88a9b37c34fde1379263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201c89901faf956eb3ab2ee30abf949b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a201c89901faf956eb3ab2ee30abf949b">getGlobalIdx</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a201c89901faf956eb3ab2ee30abf949b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382343b18f1a7c79ebc701588a490bb5"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a382343b18f1a7c79ebc701588a490bb5">getGlobalIdx</a> (uint32_t idx)</td></tr>
+<tr class="separator:a382343b18f1a7c79ebc701588a490bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eef4c1571ba75e73da83d0e57a1ca27"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a1eef4c1571ba75e73da83d0e57a1ca27">getIdx</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a1eef4c1571ba75e73da83d0e57a1ca27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7299111493f6b42440e6416ad78357eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a7299111493f6b42440e6416ad78357eb">getIsGhost</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a7299111493f6b42440e6416ad78357eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4426bfa61adf9b055bfc81d9afafd2f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4426bfa61adf9b055bfc81d9afafd2f7">getIsGhost</a> (uint32_t idx)</td></tr>
+<tr class="separator:a4426bfa61adf9b055bfc81d9afafd2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18164140e401fc2d2d01860c18a854a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab18164140e401fc2d2d01860c18a854a"></a>
+const <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLastDesc</b> () const </td></tr>
+<tr class="separator:ab18164140e401fc2d2d01860c18a854a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a66ed51322871cb45ced4f25afb8d6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a33a66ed51322871cb45ced4f25afb8d6">getLevel</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a33a66ed51322871cb45ced4f25afb8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33b5b3a4ab80fdc2a328953b06001c9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa33b5b3a4ab80fdc2a328953b06001c9">getLevel</a> (uint32_t idx)</td></tr>
+<tr class="separator:aa33b5b3a4ab80fdc2a328953b06001c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ff8d4d98eb1e4366ddbc134f700fb1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a71ff8d4d98eb1e4366ddbc134f700fb1">getMarker</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a71ff8d4d98eb1e4366ddbc134f700fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989c6d5f30de6097982a883c623c201c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a989c6d5f30de6097982a883c623c201c">getMarker</a> (uint32_t idx)</td></tr>
+<tr class="separator:a989c6d5f30de6097982a883c623c201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad405da85f8745c6313301c194352b57f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad405da85f8745c6313301c194352b57f">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="separator:ad405da85f8745c6313301c194352b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69f8dd8bae49e40e1b1a967afd0c0c1"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa69f8dd8bae49e40e1b1a967afd0c0c1">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:aa69f8dd8bae49e40e1b1a967afd0c0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5e2c3ee2ea3fe3b002a0421251ce6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aee5e2c3ee2ea3fe3b002a0421251ce6b">getNodes</a> (uint32_t idx, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="separator:aee5e2c3ee2ea3fe3b002a0421251ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4151f08343a84c4932b1f3ef979ab8d8"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4151f08343a84c4932b1f3ef979ab8d8">getNodes</a> (uint32_t idx)</td></tr>
+<tr class="separator:a4151f08343a84c4932b1f3ef979ab8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779ba3ae4bf0b1d865618a6ba1702d77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a779ba3ae4bf0b1d865618a6ba1702d77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getNodes</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="separator:a779ba3ae4bf0b1d865618a6ba1702d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac710d198f4492f97f533c5845244bec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ac710d198f4492f97f533c5845244bec5">getNormal</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, uint8_t &amp;iface, dvector &amp;normal)</td></tr>
+<tr class="separator:ac710d198f4492f97f533c5845244bec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1698c8a6b946fc1c17b82cc5b56a3648"><td class="memItemLeft" align="right" valign="top">dvector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a1698c8a6b946fc1c17b82cc5b56a3648">getNormal</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, uint8_t &amp;iface)</td></tr>
+<tr class="separator:a1698c8a6b946fc1c17b82cc5b56a3648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9d4f45e0291ebc1961ac6f86e7509b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#afa9d4f45e0291ebc1961ac6f86e7509b">getNormal</a> (uint32_t idx, uint8_t &amp;iface, dvector &amp;normal)</td></tr>
+<tr class="separator:afa9d4f45e0291ebc1961ac6f86e7509b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37e650439d16a3999e9fe9061c19a18"><td class="memItemLeft" align="right" valign="top">dvector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ae37e650439d16a3999e9fe9061c19a18">getNormal</a> (uint32_t idx, uint8_t &amp;iface)</td></tr>
+<tr class="separator:ae37e650439d16a3999e9fe9061c19a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eeb524b241e4b850b763420da9f0ba1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eeb524b241e4b850b763420da9f0ba1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getNormal</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, dvector &amp;normal)</td></tr>
+<tr class="separator:a3eeb524b241e4b850b763420da9f0ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91550610b6d5e0c3a5dd601cd08f726"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad91550610b6d5e0c3a5dd601cd08f726"></a>
+<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getPointOwner2</b> (dvector &amp;point)</td></tr>
+<tr class="separator:ad91550610b6d5e0c3a5dd601cd08f726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cd08fd3659505b09b4b1e4191e39b7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a15cd08fd3659505b09b4b1e4191e39b7">getSize</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a15cd08fd3659505b09b4b1e4191e39b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ce0463c56925509eac9d617724686e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a31ce0463c56925509eac9d617724686e">getSize</a> (uint32_t idx)</td></tr>
+<tr class="separator:a31ce0463c56925509eac9d617724686e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3109403573c14753863dde6eb057d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd3109403573c14753863dde6eb057d8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter)</td></tr>
+<tr class="separator:afd3109403573c14753863dde6eb057d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ead2b45fc9958906dd2771dfef968bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a3ead2b45fc9958906dd2771dfef968bd">getVolume</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a3ead2b45fc9958906dd2771dfef968bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f5d1489826e61f46d64838bef0b1e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a92f5d1489826e61f46d64838bef0b1e1">getVolume</a> (uint32_t idx)</td></tr>
+<tr class="separator:a92f5d1489826e61f46d64838bef0b1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0053ce89d0007148e629cbc8d5949722"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0053ce89d0007148e629cbc8d5949722">getX</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a0053ce89d0007148e629cbc8d5949722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e5885df23326adcfa4a3d0e4bd356f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa7e5885df23326adcfa4a3d0e4bd356f">getX</a> (uint32_t idx)</td></tr>
+<tr class="separator:aa7e5885df23326adcfa4a3d0e4bd356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46cee0fde82a69f842bcfcc586d5d8ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a46cee0fde82a69f842bcfcc586d5d8ea">getY</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:a46cee0fde82a69f842bcfcc586d5d8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc69507958102aa3f2c91cdfb032475"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8fc69507958102aa3f2c91cdfb032475">getY</a> (uint32_t idx)</td></tr>
+<tr class="separator:a8fc69507958102aa3f2c91cdfb032475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffe5a95d0197dc14d38c9ddbcdfb3bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aaffe5a95d0197dc14d38c9ddbcdfb3bc">getZ</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
+<tr class="separator:aaffe5a95d0197dc14d38c9ddbcdfb3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6e2b50503b3833ff22e6a43e548b50"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a3f6e2b50503b3833ff22e6a43e548b50">getZ</a> (uint32_t idx)</td></tr>
+<tr class="separator:a3f6e2b50503b3833ff22e6a43e548b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec0e8e5b6985721255731605d5df286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4ec0e8e5b6985721255731605d5df286">setBalance</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, bool balance)</td></tr>
+<tr class="separator:a4ec0e8e5b6985721255731605d5df286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba96e305ccec72f0fb5702174032e3f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aba96e305ccec72f0fb5702174032e3f0">setBalance</a> (uint32_t idx, bool balance)</td></tr>
+<tr class="separator:aba96e305ccec72f0fb5702174032e3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f56d5d9c535a554525eac0b92a43a3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f56d5d9c535a554525eac0b92a43a3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFirstDesc</b> ()</td></tr>
+<tr class="separator:a4f56d5d9c535a554525eac0b92a43a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb9598134ba91603a26c8c0d638a471"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cb9598134ba91603a26c8c0d638a471"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastDesc</b> ()</td></tr>
+<tr class="separator:a0cb9598134ba91603a26c8c0d638a471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af423f7784ee59bf77fae96faa27124fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#af423f7784ee59bf77fae96faa27124fb">setMarker</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, int8_t marker)</td></tr>
+<tr class="separator:af423f7784ee59bf77fae96faa27124fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c8c630503860a7f60fa786037648d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a09c8c630503860a7f60fa786037648d2">setMarker</a> (uint32_t idx, int8_t marker)</td></tr>
+<tr class="separator:a09c8c630503860a7f60fa786037648d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf28e50668dbeda73eb960508d51d2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabf28e50668dbeda73eb960508d51d2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPboundGhosts</b> ()</td></tr>
+<tr class="separator:aabf28e50668dbeda73eb960508d51d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f88ca08a650bdbc4b8a4f1da77f454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4f88ca08a650bdbc4b8a4f1da77f454"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAdapt</b> ()</td></tr>
+<tr class="separator:aa4f88ca08a650bdbc4b8a4f1da77f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8581d1c55ae1c5896db3399ad110e813"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8581d1c55ae1c5896db3399ad110e813"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAfterCoarse</b> ()</td></tr>
+<tr class="separator:a8581d1c55ae1c5896db3399ad110e813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e81bce507d7d77be71b6b8be041bd5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e81bce507d7d77be71b6b8be041bd5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAfterCoarse</b> (u32vector &amp;mapidx)</td></tr>
+<tr class="separator:a2e81bce507d7d77be71b6b8be041bd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c20527f2dc024c9d1be539e245db3b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c20527f2dc024c9d1be539e245db3b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateLoadBalance</b> ()</td></tr>
+<tr class="separator:a4c20527f2dc024c9d1be539e245db3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;&gt;<br />
@@ -731,6 +880,70 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a7f66ef95c1e5d6b907f5417d1881376e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::findNeighbours </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>iface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>codim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32vector &amp;&#160;</td>
+          <td class="paramname"><em>neighbours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>isghost</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Finds neighbours of octant through iface in vector octants. Returns a vector (empty if iface is a bound face) with the index of neighbours in their structure (octants or ghosts) and sets isghost[i] = true if the i-th neighbour is ghost in the local tree. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Current octant </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of face/edge/node passed through for neighbours finding </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">codim</td><td>Codimension of the iface-th entity 1=edge, 2=node </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbours</td><td>Vector of neighbours indices in octants/ghosts structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isghost</td><td>Vector with boolean flag; true if the respective octant in neighbours is a ghost octant </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00934">934</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afa2b6882abc084fe584667c2cce3ad48"></a>
 <div class="memitem">
 <div class="memproto">
@@ -761,6 +974,72 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Size of octant. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00209">209</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad358e8a551f3556a0d9c2cac65b1dc13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the area of an octant (for 2D case the same value of getSize). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00422">422</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74e5f7168c5b9ddbb93355aaaa2c66e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getArea </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the area of an octant (for 2D case the same value of getSize). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00633">633</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -827,6 +1106,72 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00318">318</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a707dbc4ff141af034b0d512d7744a856"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getBalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the balancing condition of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00531">531</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af78bd3d181387ed5192cfd5959ee5b47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getBalance </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the balancing condition of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00742">742</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -906,6 +1251,158 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a66a8ffb4ab6bcc4a002395b35689f5db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getCenter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the center of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">center</td><td>Coordinates of the center of octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00438">438</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e0d60b6f56647dd0b833104f037bf27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getCenter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the center of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>center Coordinates of the center of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00450">450</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b2a80b04d74e2a9994a043f308361b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the center of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">center</td><td>Coordinates of the center of octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00649">649</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a947e3a3bcfe0da1afd98e2eac55cd33e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the center of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>center Coordinates of the center of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00661">661</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8c6d4bbae59d99d7f9c119d2f3d5c6ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -969,6 +1466,39 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Face index of the first octant owner of intersection (owners[0]). </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01023">1023</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8220ef4719a88a9b37c34fde1379263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostGlobalIdx </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the global index of a ghost octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target ghost octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Global index of ghost octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00772">772</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1038,6 +1568,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a201c89901faf956eb3ab2ee30abf949b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGlobalIdx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the global index of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Global index of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00547">547</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a382343b18f1a7c79ebc701588a490bb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGlobalIdx </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the global index of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Global index of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00758">758</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a109814e0ecaf0f29be208c9e741ad828"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1068,6 +1664,39 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Local index of octant. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00355">355</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1eef4c1571ba75e73da83d0e57a1ca27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIdx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the local index of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Local index of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00568">568</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1203,6 +1832,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a7299111493f6b42440e6416ad78357eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIsGhost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the nature of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Is octant ghost? </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00539">539</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4426bfa61adf9b055bfc81d9afafd2f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIsGhost </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the nature of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Is octant ghost? </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00750">750</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a07c70e5c092d28ac6edb13b05aa3c09f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1233,6 +1928,72 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00310">310</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33a66ed51322871cb45ced4f25afb8d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the level of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00523">523</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa33b5b3a4ab80fdc2a328953b06001c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getLevel </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the level of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00734">734</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1328,6 +2089,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a71ff8d4d98eb1e4366ddbc134f700fb1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getMarker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the refinement marker of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Marker of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00515">515</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a989c6d5f30de6097982a883c623c201c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getMarker </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the refinement marker of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Marker of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00726">726</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a26566054ddfa5c431dc5277ca30a5f6f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1401,6 +2228,158 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00262">262</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad405da85f8745c6313301c194352b57f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dvector2D &amp;&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the nodes of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nodes</td><td>Coordinates of the nodes of octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00463">463</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa69f8dd8bae49e40e1b1a967afd0c0c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the nodes of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00475">475</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee5e2c3ee2ea3fe3b002a0421251ce6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodes </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dvector2D &amp;&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the nodes of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nodes</td><td>Coordinates of the nodes of octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00674">674</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4151f08343a84c4932b1f3ef979ab8d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodes </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of the nodes of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00686">686</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1528,6 +2507,194 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00289">289</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac710d198f4492f97f533c5845244bec5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>iface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dvector &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the normal of a face of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of the face for normal computing. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">normal</td><td>Coordinates of the normal of face. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00489">489</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1698c8a6b946fc1c17b82cc5b56a3648"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>iface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the normal of a face of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of the face for normal computing. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00502">502</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa9d4f45e0291ebc1961ac6f86e7509b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNormal </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>iface</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dvector &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the normal of a face of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Local</td><td>index of target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of the face for normal computing. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">normal</td><td>Coordinates of the normal of face. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00700">700</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae37e650439d16a3999e9fe9061c19a18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNormal </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>iface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the normal of a face of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>Index of the face for normal computing. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00713">713</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1826,6 +2993,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a15cd08fd3659505b09b4b1e4191e39b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the size of an octant, i.e. the side length. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Size of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00414">414</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a31ce0463c56925509eac9d617724686e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getSize </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the size of an octant, i.e. the side length. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00625">625</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a65f81da308d2104822950464bec0e4d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1892,6 +3125,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3ead2b45fc9958906dd2771dfef968bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the volume of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Volume of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00430">430</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92f5d1489826e61f46d64838bef0b1e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getVolume </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the volume of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Volume of octant. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00641">641</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad7e116aa2c78a3579cee185912d26e31"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1922,6 +3221,72 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00177">177</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0053ce89d0007148e629cbc8d5949722"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00390">390</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7e5885df23326adcfa4a3d0e4bd356f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getX </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00601">601</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1958,6 +3323,72 @@ template&lt;class Impl &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a46cee0fde82a69f842bcfcc586d5d8ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate Y of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00398">398</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fc69507958102aa3f2c91cdfb032475"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getY </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate Y of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00609">609</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8b2603b3d9e73b833e913c8adcfd621d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1988,6 +3419,72 @@ template&lt;class Impl &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00193">193</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaffe5a95d0197dc14d38c9ddbcdfb3bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getZ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00406">406</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f6e2b50503b3833ff22e6a43e548b50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getZ </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the coordinates of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00617">617</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2165,6 +3662,92 @@ template&lt;class UserDataComm &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4ec0e8e5b6985721255731605d5df286"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::setBalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>balance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the balancing condition of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">balance</td><td>Has octant to be 2:1 balanced in adapting procedure? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00590">590</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba96e305ccec72f0fb5702174032e3f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::setBalance </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>balance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the balancing condition of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">balance</td><td>Has octant to be 2:1 balanced in adapting procedure? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00791">791</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af396fb0405ccf2b5c0b12daced248a04"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2205,6 +3788,92 @@ template&lt;class UserDataComm &gt; </div>
 </dl>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00369">369</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af423f7784ee59bf77fae96faa27124fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::setMarker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>marker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the refinement marker of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">marker</td><td>Refinement marker of octant (n=n refinement in adapt, -n=n coarsening in adapt, default=0). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00582">582</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09c8c630503860a7f60fa786037648d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::setMarker </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>marker</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the refinement marker of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">marker</td><td>Refinement marker of octant (n=n refinement in adapt, -n=n coarsening in adapt, default=0). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00783">783</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2507,7 +4176,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 13:35:08 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 5 2014 16:03:36 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
