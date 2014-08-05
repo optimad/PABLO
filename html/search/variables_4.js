@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['ghostsconnectivity',['ghostsconnectivity',['../class_class___para___tree_3_012_01_4.html#a8d9de727b44ea951e65b63d58d88bc68',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['ghostsnodes',['ghostsnodes',['../class_class___para___tree_3_012_01_4.html#ae6b84246f122af5e90c23f26f1e8f45a',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['global_5fnum_5foctants',['global_num_octants',['../class_class___para___tree_3_012_01_4.html#a4dc1d05c35798b27880754f77ce12b69',1,'Class_Para_Tree&lt; 2 &gt;']]],
-  ['globalindexbytes',['globalIndexBytes',['../class_class___global_3_012_01_4.html#acbeb97e800453b4ad4dec49de642f8c3',1,'Class_Global&lt; 2 &gt;']]],
-  ['globals',['globals',['../class_class___map.html#a66ec926b0a8c123ead01095290c9dd7e',1,'Class_Map']]]
+  ['facenode',['facenode',['../class_class___global_3_012_01_4.html#a2c09af6053b17451b649d16387843089',1,'Class_Global&lt; 2 &gt;']]],
+  ['finer',['finer',['../class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73',1,'Class_Intersection&lt; 2 &gt;']]],
+  ['first_5fdesc',['first_desc',['../class_class___local___tree_3_012_01_4.html#a70f9a662a7694cc5ec540ebfe569c7d5',1,'Class_Local_Tree&lt; 2 &gt;']]]
 ];

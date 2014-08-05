@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['l',['L',['../class_class___map.html#a2f9ddf1eeb158ea792db182d99bba6e4',1,'Class_Map']]],
-  ['levelbytes',['levelBytes',['../class_class___global_3_012_01_4.html#a74d741e034b3faa8a6dbcf4024775736',1,'Class_Global&lt; 2 &gt;']]],
-  ['loadbalance',['loadBalance',['../class_class___para___tree_3_012_01_4.html#a97658b781abdbe155d3cc20d7ee3c550',1,'Class_Para_Tree&lt; 2 &gt;::loadBalance()'],['../class_class___para___tree_3_012_01_4.html#af623aeb8aa36dded7ebdb1b9cdc9320c',1,'Class_Para_Tree&lt; 2 &gt;::loadBalance(uint8_t &amp;level)'],['../class_class___para___tree_3_012_01_4.html#a7796e7533f850bd1c429d065839174a2',1,'Class_Para_Tree&lt; 2 &gt;::loadBalance(Class_Data_LB_Interface&lt; Impl &gt; &amp;userData)'],['../class_class___para___tree_3_012_01_4.html#a355d41c964513ba35360927fbb8c0912',1,'Class_Para_Tree&lt; 2 &gt;::loadBalance(UserDataComm &amp;userData, uint8_t &amp;level)']]]
+  ['iface',['iface',['../class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c',1,'Class_Intersection&lt; 2 &gt;']]],
+  ['info',['info',['../class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9',1,'Class_Octant&lt; 2 &gt;']]],
+  ['intersections_5fbord',['intersections_bord',['../class_class___local___tree_3_012_01_4.html#a35989755556f113f4725f346a68ed72a',1,'Class_Local_Tree&lt; 2 &gt;']]],
+  ['intersections_5fghost',['intersections_ghost',['../class_class___local___tree_3_012_01_4.html#abb6e0e9c217f45b987bb54d42b96e1db',1,'Class_Local_Tree&lt; 2 &gt;']]],
+  ['intersections_5fint',['intersections_int',['../class_class___local___tree_3_012_01_4.html#a688f5a7fe09ba6ac0221db8d552e72c5',1,'Class_Local_Tree&lt; 2 &gt;']]],
+  ['isghost',['isghost',['../class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551',1,'Class_Intersection&lt; 2 &gt;']]],
+  ['isnew',['isnew',['../class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1',1,'Class_Intersection&lt; 2 &gt;']]]
 ];
