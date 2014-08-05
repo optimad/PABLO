@@ -250,6 +250,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2110d368319d3a252dd2dffc2e2f50a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf5d21f7960a000d0b9722a1a274125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0bf5d21f7960a000d0b9722a1a274125">updateghostsConnectivity</a> ()</td></tr>
 <tr class="separator:a0bf5d21f7960a000d0b9722a1a274125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a1c8a29c2dc87faf7b94fb4f775db3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a32a1c8a29c2dc87faf7b94fb4f775db3">write</a> (string filename)</td></tr>
+<tr class="separator:a32a1c8a29c2dc87faf7b94fb4f775db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a1f19df7d151162c5bf7e1d43e06d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa1a1f19df7d151162c5bf7e1d43e06d3">writeLogical</a> (string filename)</td></tr>
+<tr class="separator:aa1a1f19df7d151162c5bf7e1d43e06d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -694,7 +698,7 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the connectivity of octants. </p>
+<p>Compute the connectivity of octants and store the coordinates of nodes. </p>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03905">3905</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
@@ -720,7 +724,7 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the connectivity of ghost octants. </p>
+<p>Compute the connectivity of ghost octants and store the coordinates of nodes. </p>
 
 <p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03984">3984</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
@@ -3929,6 +3933,70 @@ template&lt;class UserDataComm &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a32a1c8a29c2dc87faf7b94fb4f775db3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::write </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write the physical octree mesh in .vtu format in a user-defined file. If the connectivity is not stored, the method temporary computes it. If the connectivity of ghost octants is already computed, the method writes the ghosts on file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Seriously?.... </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04230">4230</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1a1f19df7d151162c5bf7e1d43e06d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::writeLogical </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write the logical octree mesh in .vtu format in a user-defined file. If the connectivity is not stored, the method temporary computes it. If the connectivity of ghost octants is already computed, the method writes the ghosts on file. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Seriously?.... </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04071">4071</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ab3a5c1861a86b3f8809c6399ca2f2e90"></a>
 <div class="memitem">
@@ -4176,7 +4244,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:14:12 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 5 2014 17:15:43 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
