@@ -114,6 +114,12 @@ typedef vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a3952cdb1f3dc8f0d70951adc8781b6cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3952cdb1f3dc8f0d70951adc8781b6cd"></a>
 typedef vector&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dvector2D</b></td></tr>
 <tr class="separator:a3952cdb1f3dc8f0d70951adc8781b6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b93cae0bfab5c0ffe5ea3a5e501ae4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b93cae0bfab5c0ffe5ea3a5e501ae4b"></a>
+typedef vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ivector</b></td></tr>
+<tr class="separator:a9b93cae0bfab5c0ffe5ea3a5e501ae4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0359764d2f95024d931e9d883f123e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0359764d2f95024d931e9d883f123e76"></a>
+typedef vector&lt; vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ivector2D</b></td></tr>
+<tr class="separator:a0359764d2f95024d931e9d883f123e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161ead26c7c22e8dfb3364f205ded046"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a161ead26c7c22e8dfb3364f205ded046"></a>
 typedef vector&lt; <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OctantsType</b></td></tr>
 <tr class="separator:a161ead26c7c22e8dfb3364f205ded046"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a241f35b51648c09d9915ca967fde21bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde02a1e5fe864b5b33311e19e360523"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#afde02a1e5fe864b5b33311e19e360523">Class_Para_Tree</a> (double &amp;X, double &amp;Y, double &amp;Z, double &amp;L)</td></tr>
 <tr class="separator:afde02a1e5fe864b5b33311e19e360523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc38022c5a3abbaf6eb5f511bf28423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#adcc38022c5a3abbaf6eb5f511bf28423">Class_Para_Tree</a> (double &amp;X, double &amp;Y, double &amp;Z, double &amp;L, ivector2D &amp;XY, ivector &amp;levels)</td></tr>
+<tr class="separator:adcc38022c5a3abbaf6eb5f511bf28423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a9eff252b18b10e9e04840ee00cb0e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a7a9eff252b18b10e9e04840ee00cb0e5">adapt</a> ()</td></tr>
 <tr class="separator:a7a9eff252b18b10e9e04840ee00cb0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17cca560eebff844c9ef1f108e157d81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a17cca560eebff844c9ef1f108e157d81">adapt</a> (u32vector &amp;mapidx)</td></tr>
@@ -162,28 +170,48 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9078109ef92a1b77094afcfa6cddb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa4fee320cd2e0b1e4b5139a79398e3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aaa4fee320cd2e0b1e4b5139a79398e3c">getBalance</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:aaa4fee320cd2e0b1e4b5139a79398e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd0b1f31676e9413c6869f8d466f441"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aedd0b1f31676e9413c6869f8d466f441">getBound</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, uint8_t iface)</td></tr>
+<tr class="separator:aedd0b1f31676e9413c6869f8d466f441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1f7f3126289fd1148e14d808a18123"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aac1f7f3126289fd1148e14d808a18123">getBound</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
+<tr class="separator:aac1f7f3126289fd1148e14d808a18123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb35f1c697fa85981db7c5456857263a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#afb35f1c697fa85981db7c5456857263a">getBound</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
+<tr class="separator:afb35f1c697fa85981db7c5456857263a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc6fd5b38c36e5e2e6b060ce8fc0129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8cc6fd5b38c36e5e2e6b060ce8fc0129">getCenter</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, vector&lt; double &gt; &amp;center)</td></tr>
 <tr class="separator:a8cc6fd5b38c36e5e2e6b060ce8fc0129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a337a18b5fa89a93c217094495bc68"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ab9a337a18b5fa89a93c217094495bc68">getCenter</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:ab9a337a18b5fa89a93c217094495bc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6d4bbae59d99d7f9c119d2f3d5c6ce"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8c6d4bbae59d99d7f9c119d2f3d5c6ce">getCenter</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
 <tr class="separator:a8c6d4bbae59d99d7f9c119d2f3d5c6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed182767bdb112e14722ecf4011d400"><td class="memItemLeft" align="right" valign="top">const u32vector2D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aaed182767bdb112e14722ecf4011d400">getConnectivity</a> ()</td></tr>
+<tr class="separator:aaed182767bdb112e14722ecf4011d400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60f16c9bb9f350dd1a75cc6dac5731a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad60f16c9bb9f350dd1a75cc6dac5731a">getFace</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
 <tr class="separator:ad60f16c9bb9f350dd1a75cc6dac5731a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1550c52475000211407d31df71b57d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a1550c52475000211407d31df71b57d91">getFiner</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
+<tr class="separator:a1550c52475000211407d31df71b57d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705edd7aba1fae0c3e4ecda74bd8c12c"><td class="memItemLeft" align="right" valign="top">const u32vector2D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a705edd7aba1fae0c3e4ecda74bd8c12c">getGhostConnectivity</a> ()</td></tr>
+<tr class="separator:a705edd7aba1fae0c3e4ecda74bd8c12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e29e828a48595a57f634f903a171f0"><td class="memItemLeft" align="right" valign="top">dvector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa8e29e828a48595a57f634f903a171f0">getGhostNodeCoordinates</a> (uint32_t inode)</td></tr>
+<tr class="separator:aa8e29e828a48595a57f634f903a171f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62ce0278b826a31e0b461a508d7b491"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ac62ce0278b826a31e0b461a508d7b491">getGhostNodeLogicalCoordinates</a> (uint32_t inode)</td></tr>
+<tr class="separator:ac62ce0278b826a31e0b461a508d7b491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e95c339d317ce54367699ecaaaafd5c"><td class="memItemLeft" align="right" valign="top">const u32vector2D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4e95c339d317ce54367699ecaaaafd5c">getGhostNodes</a> ()</td></tr>
+<tr class="separator:a4e95c339d317ce54367699ecaaaafd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad084c3ec5b464fd444491f90ad0d0a85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad084c3ec5b464fd444491f90ad0d0a85">getGhostOctant</a> (uint32_t idx)</td></tr>
 <tr class="separator:ad084c3ec5b464fd444491f90ad0d0a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17eea7d8022890d4d0d92e0e740ef8f3"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a17eea7d8022890d4d0d92e0e740ef8f3">getGhostOctantConnectivity</a> (uint32_t idx)</td></tr>
+<tr class="separator:a17eea7d8022890d4d0d92e0e740ef8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511a86aa3d589a5e68cc3d024a0cfc36"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a511a86aa3d589a5e68cc3d024a0cfc36">getGhostOctantConnectivity</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
+<tr class="separator:a511a86aa3d589a5e68cc3d024a0cfc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab3dcc667143a506e3854af353c85d4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aeab3dcc667143a506e3854af353c85d4">getGlobalIdx</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:aeab3dcc667143a506e3854af353c85d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109814e0ecaf0f29be208c9e741ad828"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a109814e0ecaf0f29be208c9e741ad828">getIdx</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:a109814e0ecaf0f29be208c9e741ad828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a167a674cfb9ccf4e636735d9633271b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a167a674cfb9ccf4e636735d9633271b8">getIntersectionBord</a> (uint32_t idx)</td></tr>
-<tr class="separator:a167a674cfb9ccf4e636735d9633271b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be99b744eab700aa6fef0962e3f6b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a6be99b744eab700aa6fef0962e3f6b4f">getIntersectionGhost</a> (uint32_t idx)</td></tr>
-<tr class="separator:a6be99b744eab700aa6fef0962e3f6b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870a7c583b41ad77dc808b45e9e51845"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a870a7c583b41ad77dc808b45e9e51845">getIntersectionInt</a> (uint32_t idx)</td></tr>
-<tr class="separator:a870a7c583b41ad77dc808b45e9e51845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa36831ddec2be37486afa104cb9ed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8aa36831ddec2be37486afa104cb9ed4">getIntersection</a> (uint32_t idx)</td></tr>
+<tr class="separator:a8aa36831ddec2be37486afa104cb9ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fec8190b896d23292a1ba9984fca0df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4fec8190b896d23292a1ba9984fca0df">getIsGhost</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:a4fec8190b896d23292a1ba9984fca0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0a671ae48397f13a808a48833058fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#adc0a671ae48397f13a808a48833058fa">getIsGhost</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
+<tr class="separator:adc0a671ae48397f13a808a48833058fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c70e5c092d28ac6edb13b05aa3c09f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a07c70e5c092d28ac6edb13b05aa3c09f">getLevel</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:a07c70e5c092d28ac6edb13b05aa3c09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b3a412266ae27ca1122fa06382b181d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0b3a412266ae27ca1122fa06382b181d">getLevel</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
@@ -192,12 +220,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58a2bced340f412143c550f1030f9811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc883c88a230f588eac7ba75fb6b4c3b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#afc883c88a230f588eac7ba75fb6b4c3b">getMarker</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:afc883c88a230f588eac7ba75fb6b4c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26566054ddfa5c431dc5277ca30a5f6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a26566054ddfa5c431dc5277ca30a5f6f">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="memitem:a240f336f6a1d0d93c0204095cbce7e45"><td class="memItemLeft" align="right" valign="top">dvector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a240f336f6a1d0d93c0204095cbce7e45">getNodeCoordinates</a> (uint32_t inode)</td></tr>
+<tr class="separator:a240f336f6a1d0d93c0204095cbce7e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586d37288c0cab95cbf98dfbc6f1535c"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a586d37288c0cab95cbf98dfbc6f1535c">getNodeLogicalCoordinates</a> (uint32_t inode)</td></tr>
+<tr class="separator:a586d37288c0cab95cbf98dfbc6f1535c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26566054ddfa5c431dc5277ca30a5f6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a26566054ddfa5c431dc5277ca30a5f6f">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, dvector2D &amp;nodes)</td></tr>
 <tr class="separator:a26566054ddfa5c431dc5277ca30a5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afee3cd0927f3a6c18284532c0f139589"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#afee3cd0927f3a6c18284532c0f139589">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
 <tr class="separator:afee3cd0927f3a6c18284532c0f139589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad96fcc781e9644a7ee10789cc9e5bf0b"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad96fcc781e9644a7ee10789cc9e5bf0b">getNodes</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
 <tr class="separator:ad96fcc781e9644a7ee10789cc9e5bf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dde110baf84469687379504b22ebfe1"><td class="memItemLeft" align="right" valign="top">const u32vector2D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0dde110baf84469687379504b22ebfe1">getNodes</a> ()</td></tr>
+<tr class="separator:a0dde110baf84469687379504b22ebfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3da94ff04398e5e6740fa09bd33b3fd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a3da94ff04398e5e6740fa09bd33b3fd1">getNormal</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, uint8_t &amp;iface, dvector &amp;normal)</td></tr>
 <tr class="separator:a3da94ff04398e5e6740fa09bd33b3fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4edb0f00d4828a8695f7e503b946faa9"><td class="memItemLeft" align="right" valign="top">dvector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4edb0f00d4828a8695f7e503b946faa9">getNormal</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, uint8_t &amp;iface)</td></tr>
@@ -206,18 +240,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a329c161ccabc417b5459b2c7da1bc236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619499038e330001a51ea2dfb6af1ef1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a619499038e330001a51ea2dfb6af1ef1">getNumGhosts</a> () const </td></tr>
 <tr class="separator:a619499038e330001a51ea2dfb6af1ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db9ae9b20ea8db17163aaf80c42876e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8db9ae9b20ea8db17163aaf80c42876e">getNumIntersectionsBord</a> ()</td></tr>
-<tr class="separator:a8db9ae9b20ea8db17163aaf80c42876e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465b5ef1f2926781e19788235529fcd5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a465b5ef1f2926781e19788235529fcd5">getNumIntersectionsGhost</a> ()</td></tr>
-<tr class="separator:a465b5ef1f2926781e19788235529fcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622ff05b6564679b11c64137a6c603eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a622ff05b6564679b11c64137a6c603eb">getNumIntersectionsInt</a> ()</td></tr>
-<tr class="separator:a622ff05b6564679b11c64137a6c603eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21154c8dfc6342fd07d32999d6e2626f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a21154c8dfc6342fd07d32999d6e2626f">getNumIntersections</a> ()</td></tr>
+<tr class="separator:a21154c8dfc6342fd07d32999d6e2626f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88664c15927b6359a2e57a72e622d866"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a88664c15927b6359a2e57a72e622d866">getNumNodes</a> ()</td></tr>
+<tr class="separator:a88664c15927b6359a2e57a72e622d866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4f427cc0c0541b4697d13228ff30393"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ac4f427cc0c0541b4697d13228ff30393">getNumOctants</a> () const </td></tr>
 <tr class="separator:ac4f427cc0c0541b4697d13228ff30393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687a2a1bebfceb0a0128f9078ae8aacf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a687a2a1bebfceb0a0128f9078ae8aacf">getOctant</a> (uint32_t idx)</td></tr>
 <tr class="separator:a687a2a1bebfceb0a0128f9078ae8aacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8f8c328220c7403c24027200bac970"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a5b8f8c328220c7403c24027200bac970">getOctantConnectivity</a> (uint32_t idx)</td></tr>
+<tr class="separator:a5b8f8c328220c7403c24027200bac970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec6eb31529d6851eeaa4f101b926cf5"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a7ec6eb31529d6851eeaa4f101b926cf5">getOctantConnectivity</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
+<tr class="separator:a7ec6eb31529d6851eeaa4f101b926cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ab8919748f5ab009bc72de0e64a9e82"><td class="memItemLeft" align="right" valign="top">u32vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4ab8919748f5ab009bc72de0e64a9e82">getOwners</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
 <tr class="separator:a4ab8919748f5ab009bc72de0e64a9e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396701f1bfcc2b91920321f6108e63a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a396701f1bfcc2b91920321f6108e63a2">getPbound</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct, uint8_t iface)</td></tr>
+<tr class="separator:a396701f1bfcc2b91920321f6108e63a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae638e7ef6afb9bface99d000f7c00c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a0ae638e7ef6afb9bface99d000f7c00c">getPbound</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
+<tr class="separator:a0ae638e7ef6afb9bface99d000f7c00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8d718246ed1d5eec1234a463014827"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#acd8d718246ed1d5eec1234a463014827">getPbound</a> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *inter)</td></tr>
+<tr class="separator:acd8d718246ed1d5eec1234a463014827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a42de42b82d5407d3e1b77afbc5ab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a15a42de42b82d5407d3e1b77afbc5ab3">getPointOwner</a> (dvector &amp;point)</td></tr>
 <tr class="separator:a15a42de42b82d5407d3e1b77afbc5ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1aa4cb2bb750a148afd469e3e82d8c9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ab1aa4cb2bb750a148afd469e3e82d8c9">getSize</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *oct)</td></tr>
@@ -259,20 +301,12 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab3a5c1861a86b3f8809c6399ca2f2e90"><td class="memItemLeft" align="right" valign="top">map&lt; int, vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ab3a5c1861a86b3f8809c6399ca2f2e90">bordersPerProc</a></td></tr>
 <tr class="separator:ab3a5c1861a86b3f8809c6399ca2f2e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88a77da05a3edd89c6a611deae0c062"><td class="memItemLeft" align="right" valign="top">u32vector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad88a77da05a3edd89c6a611deae0c062">connectivity</a></td></tr>
-<tr class="separator:ad88a77da05a3edd89c6a611deae0c062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4881351f72ca7dd7e536388bd6ad899"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#af4881351f72ca7dd7e536388bd6ad899">error_flag</a></td></tr>
 <tr class="separator:af4881351f72ca7dd7e536388bd6ad899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d9de727b44ea951e65b63d58d88bc68"><td class="memItemLeft" align="right" valign="top">u32vector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a8d9de727b44ea951e65b63d58d88bc68">ghostsconnectivity</a></td></tr>
-<tr class="separator:a8d9de727b44ea951e65b63d58d88bc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b84246f122af5e90c23f26f1e8f45a"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ae6b84246f122af5e90c23f26f1e8f45a">ghostsnodes</a></td></tr>
-<tr class="separator:ae6b84246f122af5e90c23f26f1e8f45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc1d05c35798b27880754f77ce12b69"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4dc1d05c35798b27880754f77ce12b69">global_num_octants</a></td></tr>
 <tr class="separator:a4dc1d05c35798b27880754f77ce12b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e355e4c00aefbc125bcdc8d7f623a4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4">max_depth</a></td></tr>
 <tr class="separator:a18e355e4c00aefbc125bcdc8d7f623a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6928d3601bd1fb3211ab3cc015d919"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a></td></tr>
-<tr class="separator:a4f6928d3601bd1fb3211ab3cc015d919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464c8fcae5efcf5d8129539fea84404f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a464c8fcae5efcf5d8129539fea84404f">nproc</a></td></tr>
 <tr class="separator:a464c8fcae5efcf5d8129539fea84404f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a666c1c75b9c0990ef8de9f0d9f13601d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_class___local___tree.html">Class_Local_Tree</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a666c1c75b9c0990ef8de9f0d9f13601d">octree</a></td></tr>
@@ -331,9 +365,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getArea</b> (<a cla
 <tr class="separator:a1b2a80b04d74e2a9994a043f308361b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947e3a3bcfe0da1afd98e2eac55cd33e"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a947e3a3bcfe0da1afd98e2eac55cd33e">getCenter</a> (uint32_t idx)</td></tr>
 <tr class="separator:a947e3a3bcfe0da1afd98e2eac55cd33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13686506c49dec7a2b176a9223e76896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13686506c49dec7a2b176a9223e76896"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getCenter</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, vector&lt; double &gt; &amp;center)</td></tr>
-<tr class="separator:a13686506c49dec7a2b176a9223e76896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4c6d3f3fdcb2ac67f8a4d8a484d612"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e4c6d3f3fdcb2ac67f8a4d8a484d612"></a>
 const <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstDesc</b> () const </td></tr>
 <tr class="separator:a1e4c6d3f3fdcb2ac67f8a4d8a484d612"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,16 +391,16 @@ const <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;
 <tr class="separator:a71ff8d4d98eb1e4366ddbc134f700fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989c6d5f30de6097982a883c623c201c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a989c6d5f30de6097982a883c623c201c">getMarker</a> (uint32_t idx)</td></tr>
 <tr class="separator:a989c6d5f30de6097982a883c623c201c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad405da85f8745c6313301c194352b57f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad405da85f8745c6313301c194352b57f">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="memitem:ad405da85f8745c6313301c194352b57f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ad405da85f8745c6313301c194352b57f">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, dvector2D &amp;nodes)</td></tr>
 <tr class="separator:ad405da85f8745c6313301c194352b57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69f8dd8bae49e40e1b1a967afd0c0c1"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aa69f8dd8bae49e40e1b1a967afd0c0c1">getNodes</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct)</td></tr>
 <tr class="separator:aa69f8dd8bae49e40e1b1a967afd0c0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5e2c3ee2ea3fe3b002a0421251ce6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aee5e2c3ee2ea3fe3b002a0421251ce6b">getNodes</a> (uint32_t idx, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+<tr class="memitem:aee5e2c3ee2ea3fe3b002a0421251ce6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#aee5e2c3ee2ea3fe3b002a0421251ce6b">getNodes</a> (uint32_t idx, dvector2D &amp;nodes)</td></tr>
 <tr class="separator:aee5e2c3ee2ea3fe3b002a0421251ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4151f08343a84c4932b1f3ef979ab8d8"><td class="memItemLeft" align="right" valign="top">dvector2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#a4151f08343a84c4932b1f3ef979ab8d8">getNodes</a> (uint32_t idx)</td></tr>
 <tr class="separator:a4151f08343a84c4932b1f3ef979ab8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779ba3ae4bf0b1d865618a6ba1702d77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a779ba3ae4bf0b1d865618a6ba1702d77"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getNodes</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, dvector2D &amp;<a class="el" href="class_class___para___tree_3_012_01_4.html#a4f6928d3601bd1fb3211ab3cc015d919">nodes</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getNodes</b> (<a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; inter, dvector2D &amp;nodes)</td></tr>
 <tr class="separator:a779ba3ae4bf0b1d865618a6ba1702d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac710d198f4492f97f533c5845244bec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___para___tree_3_012_01_4.html#ac710d198f4492f97f533c5845244bec5">getNormal</a> (<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; oct, uint8_t &amp;iface, dvector &amp;normal)</td></tr>
 <tr class="separator:ac710d198f4492f97f533c5845244bec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,7 +508,7 @@ Edoardo Lombardi </dd></dl>
 </div><div class="memdoc">
 <p>Default Constructor of Para_Tree. It builds one octant with node 0 in the Origin (0,0,0) and side of length 1 </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00077">77</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00080">80</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +565,78 @@ Edoardo Lombardi </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00121">121</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00124">124</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcc38022c5a3abbaf6eb5f511bf28423"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::<a class="el" href="class_class___para___tree.html">Class_Para_Tree</a> </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>L</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ivector2D &amp;&#160;</td>
+          <td class="paramname"><em>XY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ivector &amp;&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor of Para_Tree for restart a simulation with input parameters. For each process it builds a vector of octants. The input parameters are : </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">X</td><td>Physical Coordinate X of node 0, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Y</td><td>Physical Coordinate Y of node 0, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Z</td><td>Physical Coordinate Z of node 0, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">L</td><td>Physical Side length of the domain, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">XY</td><td>Coordinates of octants (node 0) in logical domain, </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">levels</td><td>Level of each octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00174">174</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -561,7 +663,7 @@ Edoardo Lombardi </dd></dl>
 </div><div class="memdoc">
 <p>Adapt the octree mesh with user setup for markers and 2:1 balancing conditions. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03503">3503</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03697">3697</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +695,7 @@ Edoardo Lombardi </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03602">3602</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03796">3796</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +721,7 @@ Edoardo Lombardi </dd></dl>
 </div><div class="memdoc">
 <p>Clear the connectivity of octants. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03966">3966</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04164">4164</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +747,7 @@ Edoardo Lombardi </dd></dl>
 </div><div class="memdoc">
 <p>Clear the connectivity of ghost octants. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04042">4042</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04241">4241</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -674,7 +776,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Communicate data provided by the user between the processes. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03819">3819</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04013">4013</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -700,7 +802,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Compute the connectivity of octants and store the coordinates of nodes. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03905">3905</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04100">4100</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +828,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Compute the connectivity of ghost octants and store the coordinates of nodes. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03984">3984</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04180">4180</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -752,7 +854,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Compute the intersection of octants (intersections of bord, of inner domain and with ghost octants). </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04060">4060</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01348">1348</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -816,7 +918,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00878">878</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01007">1007</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -880,7 +982,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00905">905</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01034">1034</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -944,7 +1046,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00934">934</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01063">1063</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1079,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00209">209</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00294">294</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1112,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00422">422</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00550">550</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1145,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00633">633</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00762">762</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1178,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Area of intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01052">1052</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01232">1232</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1211,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00318">318</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00444">444</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1244,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00531">531</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00659">659</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1277,117 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Has octant to be balanced? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00742">742</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00871">871</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedd0b1f31676e9413c6869f8d466f441"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getBound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>iface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the bound flag on an octant face. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>local index of the face. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the iface face is a boundary face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00404">404</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac1f7f3126289fd1148e14d808a18123"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getBound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the union of every bound flags on faces </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the octant has at least a boundary face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00422">422</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb35f1c697fa85981db7c5456857263a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getBound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>inter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get if an intersection is a boundary domain intersection. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inter</td><td>Pointer to target intersection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Boundary or not boundary?. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01179">1179</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1430,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00225">225</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00310">310</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1463,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>center Coordinates of the center of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00237">237</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00322">322</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1506,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00438">438</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00566">566</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1539,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>center Coordinates of the center of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00450">450</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00578">578</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1582,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00649">649</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00778">778</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1615,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>center Coordinates of the center of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00661">661</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00790">790</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1648,33 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01062">1062</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01242">1242</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaed182767bdb112e14722ecf4011d400"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u32vector2D&amp; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getConnectivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the connectivity of the octants </p><dl class="section return"><dt>Returns</dt><dd>connectivity Matrix of noctants*4 with the connectivity of each octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04268">4268</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1707,66 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Face index of the first octant owner of intersection (owners[0]). </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01023">1023</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01203">1203</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1550c52475000211407d31df71b57d91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getFiner </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>inter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the finer owner octant of an intersection. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inter</td><td>Pointer to target intersection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The finer octant of the owners of intersection (false/true = 0/1). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01171">1171</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a705edd7aba1fae0c3e4ecda74bd8c12c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u32vector2D&amp; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostConnectivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the connectivity of the ghost octants </p><dl class="section return"><dt>Returns</dt><dd>connectivity Matrix of nghostoctants*4 with the connectivity of each octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04277">4277</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1799,99 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Global index of ghost octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00772">772</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00901">901</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e29e828a48595a57f634f903a171f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostNodeCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the physical coordinates of a ghost node </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>Local index of node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Vector with the coordinates of the node. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04377">4377</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac62ce0278b826a31e0b461a508d7b491"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostNodeLogicalCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the logical coordinates of a ghost node </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>Local index of node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Vector with the coordinates of the node. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04367">4367</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e95c339d317ce54367699ecaaaafd5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u32vector2D&amp; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostNodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the logical coordinates of the ghost nodes </p><dl class="section return"><dt>Returns</dt><dd>nodes Matrix of nghostnodes*3 with the coordinates of the nodes. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04343">4343</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1535,7 +1924,73 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to target ghost octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00862">862</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00991">991</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17eea7d8022890d4d0d92e0e740ef8f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostOctantConnectivity </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the local connectivity of a ghost octant </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of ghost octant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>connectivity Connectivity of the ghost octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04305">4305</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a511a86aa3d589a5e68cc3d024a0cfc36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getGhostOctantConnectivity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the local connectivity of a ghost octant </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to a ghost octant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>connectivity Connectivity of the ghost octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04315">4315</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1568,7 +2023,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Global index of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00334">334</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00462">462</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1601,7 +2056,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Global index of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00547">547</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00675">675</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +2089,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Global index of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00758">758</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00887">887</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1667,7 +2122,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Local index of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00355">355</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00483">483</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1700,11 +2155,11 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Local index of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00568">568</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00696">696</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a167a674cfb9ccf4e636735d9633271b8"></a>
+<a class="anchor" id="a8aa36831ddec2be37486afa104cb9ed4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1712,7 +2167,7 @@ template&lt;class Impl &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt;2&gt;* <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIntersectionBord </td>
+          <td class="memname"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt;2&gt;* <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIntersection </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>idx</em></td><td>)</td>
@@ -1725,81 +2180,15 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a pointer to target intersection on domain bord. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to target intersection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection on domain bord. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00982">982</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6be99b744eab700aa6fef0962e3f6b4f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt;2&gt;* <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIntersectionGhost </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to target intersection between octant and ghost. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection between octant and ghost. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection. </dd></dl>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01004">1004</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a870a7c583b41ad77dc808b45e9e51845"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt;2&gt;* <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIntersectionInt </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a pointer to target intersection inside the local domain. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection inside the local domain. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection. </dd></dl>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00993">993</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01152">1152</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1832,7 +2221,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Is octant ghost? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00326">326</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00452">452</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +2254,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Is octant ghost? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00539">539</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00667">667</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1898,7 +2287,40 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Is octant ghost? </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00750">750</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00879">879</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc0a671ae48397f13a808a48833058fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getIsGhost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>inter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get if an intersection is an intersection between an internal and a ghost element. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inter</td><td>Pointer to target intersection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ghost or not ghost?. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01187">1187</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1931,7 +2353,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00310">310</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00395">395</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +2386,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00523">523</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00651">651</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -1997,7 +2419,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Level of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00734">734</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00863">863</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2030,7 +2452,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Level of intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01015">1015</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01163">1163</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2056,7 +2478,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Get the local depth of octree. </p><dl class="section return"><dt>Returns</dt><dd>Local depth of octree. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00816">816</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00945">945</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2089,7 +2511,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Marker of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00302">302</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00387">387</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2122,7 +2544,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Marker of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00515">515</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00643">643</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2155,7 +2577,73 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Marker of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00726">726</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00855">855</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a240f336f6a1d0d93c0204095cbce7e45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dvector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodeCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the physical coordinates of a node </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>Local index of node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Vector with the coordinates of the node. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04353">4353</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a586d37288c0cab95cbf98dfbc6f1535c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodeLogicalCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>inode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the logical coordinates of a node </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inode</td><td>Local index of node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>nodes Vector with the coordinates of the node. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04334">4334</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2198,7 +2686,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00250">250</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00335">335</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2231,7 +2719,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00262">262</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00347">347</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2274,7 +2762,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00463">463</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00591">591</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2307,7 +2795,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00475">475</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00603">603</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2350,7 +2838,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00674">674</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00803">803</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2383,7 +2871,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00686">686</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00815">815</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2416,7 +2904,33 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nodes Coordinates of the nodes of intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01076">1076</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01259">1259</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dde110baf84469687379504b22ebfe1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const u32vector2D&amp; <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the logical coordinates of the nodes </p><dl class="section return"><dt>Returns</dt><dd>nodes Matrix of nnodes*3 with the coordinates of the nodes. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04324">4324</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2466,7 +2980,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00276">276</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00361">361</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2510,7 +3024,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00289">289</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00374">374</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2560,7 +3074,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00489">489</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00617">617</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2604,7 +3118,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00502">502</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00630">630</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2654,7 +3168,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00700">700</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00829">829</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +3212,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>normal Coordinates of the normal of face. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00713">713</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00842">842</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2731,7 +3245,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01097">1097</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01280">1280</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2757,11 +3271,11 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Get the local number of ghost octants. </p><dl class="section return"><dt>Returns</dt><dd>Local number of ghost octants. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00809">809</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00938">938</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8db9ae9b20ea8db17163aaf80c42876e"></a>
+<a class="anchor" id="a21154c8dfc6342fd07d32999d6e2626f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2769,7 +3283,7 @@ template&lt;class Impl &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNumIntersectionsBord </td>
+          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNumIntersections </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2781,13 +3295,37 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the local number of intersections on the global domain bord. </p><dl class="section return"><dt>Returns</dt><dd>Local number of intersections on the global domain bord. </dd></dl>
+<p>Get the local number of intersections on the global domain bord. </p><dl class="section return"><dt>Returns</dt><dd>Local number of intersections on the global domain bord.</dd></dl>
+<p>Get the local number of intersections inside the local domain. </p><dl class="section return"><dt>Returns</dt><dd>Local number of inner intersections inside the local domain.</dd></dl>
+<p>Get the local number of intersections between local octants and ghost octants. </p><dl class="section return"><dt>Returns</dt><dd>Local number of intersections between local octants and ghost octants.</dd></dl>
+<p>Get a pointer to target intersection on domain bord. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection on domain bord. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection.</dd></dl>
+<p>Get a pointer to target intersection inside the local domain. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection inside the local domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection.</dd></dl>
+<p>Get a pointer to target intersection between octant and ghost. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of intersection between octant and ghost. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to target intersection.</dd></dl>
+<p>Get the local number of intersections. </p><dl class="section return"><dt>Returns</dt><dd>Local number of intersections. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00960">960</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01144">1144</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a465b5ef1f2926781e19788235529fcd5"></a>
+<a class="anchor" id="a88664c15927b6359a2e57a72e622d866"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -2795,7 +3333,7 @@ template&lt;class Impl &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNumIntersectionsGhost </td>
+          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNumNodes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2807,35 +3345,9 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the local number of intersections between local octants and ghost octants. </p><dl class="section return"><dt>Returns</dt><dd>Local number of intersections between local octants and ghost octants. </dd></dl>
+<p>Get the local number of nodes. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00974">974</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a622ff05b6564679b11c64137a6c603eb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getNumIntersectionsInt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the local number of intersections inside the local domain. </p><dl class="section return"><dt>Returns</dt><dd>Local number of inner intersections inside the local domain. </dd></dl>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00967">967</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04259">4259</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2861,7 +3373,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Get the local number of octants. </p><dl class="section return"><dt>Returns</dt><dd>Local number of octants. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00802">802</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00931">931</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2894,7 +3406,73 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to target octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00851">851</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00980">980</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b8f8c328220c7403c24027200bac970"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getOctantConnectivity </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the local connectivity of an octant </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idx</td><td>Local index of octant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>connectivity Connectivity of the octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04286">4286</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ec6eb31529d6851eeaa4f101b926cf5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32vector <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getOctantConnectivity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the local connectivity of an octant </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to an octant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>connectivity Connectivity of the octant (4 indices of nodes). </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04295">4295</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2927,7 +3505,117 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A couple of octants owners of intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01031">1031</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01211">1211</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a396701f1bfcc2b91920321f6108e63a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getPbound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>iface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the pbound flag on an octant face. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to target octant. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iface</td><td>local index of the face. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the iface face is a process boundary face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00413">413</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ae638e7ef6afb9bface99d000f7c00c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getPbound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>oct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the union of every pbound flags on faces </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to target octant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the octant has at least a process boundary face. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00433">433</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd8d718246ed1d5eec1234a463014827"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::getPbound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt; *&#160;</td>
+          <td class="paramname"><em>inter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get if an intersection is a boundary intersection for a process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inter</td><td>Pointer to target intersection. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Process boundary or not boundary?. </dd></dl>
+
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01196">1196</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2960,7 +3648,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to octant owner of target point. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01164">1164</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01358">1358</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -2993,7 +3681,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00201">201</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00286">286</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3026,7 +3714,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00414">414</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00542">542</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3059,7 +3747,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Area of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00625">625</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00754">754</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3092,7 +3780,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Size of intersection. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01042">1042</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01222">1222</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3117,7 +3805,7 @@ template&lt;class Impl &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the volume of an octant, i.e. the coordinates of its node 0. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the volume of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oct</td><td>Pointer to target octant. </td></tr>
   </table>
@@ -3125,7 +3813,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Volume of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00217">217</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00302">302</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3158,7 +3846,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Volume of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00430">430</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00558">558</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3191,7 +3879,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Volume of octant. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00641">641</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00770">770</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3224,7 +3912,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00177">177</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00262">262</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3257,7 +3945,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00390">390</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00518">518</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3290,7 +3978,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate X of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00601">601</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00730">730</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3323,7 +4011,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Y of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00185">185</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00270">270</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3356,7 +4044,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Y of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00398">398</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00526">526</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3389,7 +4077,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Y of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00609">609</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00738">738</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3422,7 +4110,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00193">193</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00278">278</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3455,7 +4143,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00406">406</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00534">534</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3488,7 +4176,7 @@ template&lt;class Impl &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Coordinate Z of node 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00617">617</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00746">746</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3514,7 +4202,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Distribute Load-Balancing the octants of the whole tree over the processes of the job following the Morton order. Until loadBalance is not called for the first time the mesh is serial. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01633">1633</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l01827">1827</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3546,7 +4234,7 @@ template&lt;class Impl &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l02000">2000</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l02194">2194</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3575,7 +4263,7 @@ template&lt;class Impl &gt; </div>
 </div><div class="memdoc">
 <p>Distribute Load-Balancing the octants of the whole tree and data provided by the user over the processes of the job following the Morton order. Until loadBalance is not called for the first time the mesh is serial. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l02367">2367</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l02561">2561</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3619,7 +4307,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l02825">2825</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03019">3019</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3662,7 +4350,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00377">377</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00505">505</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3705,7 +4393,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00590">590</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00719">719</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3748,7 +4436,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00791">791</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00920">920</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3791,7 +4479,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00369">369</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00497">497</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3834,7 +4522,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00582">582</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00711">711</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3877,7 +4565,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00783">783</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00912">912</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3903,7 +4591,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Update the connectivity of octants. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l03975">3975</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04172">4172</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3929,7 +4617,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Update the connectivity of ghost octants. </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04051">4051</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04251">4251</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3961,7 +4649,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04230">4230</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04551">4551</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -3993,7 +4681,7 @@ template&lt;class UserDataComm &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04071">4071</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l04392">4392</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4009,22 +4697,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Local indices of border octants per process </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00047">47</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad88a77da05a3edd89c6a611deae0c062"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32vector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::connectivity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Local vector of connectivity (node1, node2, ...) ordered with Morton-order. The nodes are stored as index of vector nodes </p>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00064">64</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00049">49</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4039,37 +4712,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>MPI error flag </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00056">56</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8d9de727b44ea951e65b63d58d88bc68"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32vector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::ghostsconnectivity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Local vector of ghosts connectivity (node1, node2, ...) ordered with Morton-order. The nodes are stored as index of vector nodes </p>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00067">67</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae6b84246f122af5e90c23f26f1e8f45a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">dvector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::ghostsnodes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Local vector of ghosts nodes (x,y,z) ordered with Morton Number </p>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00066">66</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00058">58</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4084,7 +4727,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Global number of octants in the parallel octree </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00046">46</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00048">48</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4099,22 +4742,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Global max existing level in the parallel octree </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00049">49</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4f6928d3601bd1fb3211ab3cc015d919"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">dvector2D <a class="el" href="class_class___para___tree.html">Class_Para_Tree</a>&lt; 2 &gt;::nodes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Local vector of nodes (x,y,z) ordered with Morton Number </p>
-
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00063">63</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00051">51</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4129,7 +4757,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Number of processes of the job </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00048">48</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00050">50</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4144,7 +4772,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Local tree in each processor </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00053">53</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00055">55</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4159,7 +4787,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Global array containing position of the first possible octant in each processor </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00043">43</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00045">45</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4174,7 +4802,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Global array containing position of the last possible octant in each processor </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00044">44</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00046">46</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4189,7 +4817,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Global array containing global index of the last existing octant in each processor </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00045">45</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00047">47</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4204,7 +4832,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Local rank of process </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00052">52</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00054">54</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4219,7 +4847,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>True if the octree is the same on each processor, False if the octree is distributed </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00057">57</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00059">59</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4234,7 +4862,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><div class="memdoc">
 <p>Transformation map from logical to physical domain </p>
 
-<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00060">60</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___para___tree__2_d_8tpp_source.html#l00062">62</a> of file <a class="el" href="_class___para___tree__2_d_8tpp_source.html">Class_Para_Tree_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -4244,7 +4872,7 @@ template&lt;class UserDataComm &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 1 2014 17:18:05 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 17 2014 12:45:26 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

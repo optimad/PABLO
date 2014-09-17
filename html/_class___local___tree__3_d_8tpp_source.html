@@ -268,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        octants.shrink_to_fit();</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="comment">//Update pborders (adesso inefficiente, loop di nuovo su tutti gli elementi)</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">//Si può trovare la maniera di inserirlo nel loop precedente</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">//Si pu�� trovare la maniera di inserirlo nel loop precedente</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        pborders.clear();</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        nocts = octants.size();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        pborders.reserve(<span class="keywordtype">int</span>(pow(<span class="keywordtype">double</span>(nocts),2.0/3.0)*<span class="keywordtype">double</span>(global3D.<a class="code" href="class_class___global_3_013_01_4.html#a758f0d994eb7ad5c010cce3fe762b223">nfaces</a>)));</div>
@@ -2346,7 +2346,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;                findGhostNeighbours(idx, iface2, neighbours);</div>
 <div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;                nsize = neighbours.size();</div>
 <div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; nsize; i++){</div>
-<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;                    intersection.finer = (i&lt;1);</div>
+<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;                    intersection.finer = (nsize==1);</div>
 <div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;                    intersection.owners[0]  = neighbours[i];</div>
 <div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;                    intersection.owners[1] = idx;</div>
 <div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;                    intersection.iface = global3D.<a class="code" href="class_class___global_3_013_01_4.html#a2c01b777fae9c3f16a177c578b13772b">oppface</a>[iface2];</div>
@@ -2372,7 +2372,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                        <span class="keywordflow">if</span> (isghost[i]){</div>
 <div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                            intersection.owners[0] = idx;</div>
 <div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;                            intersection.owners[1] = neighbours[i];</div>
-<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;                            intersection.finer = (i&gt;=1);</div>
+<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;                            intersection.finer = (nsize&gt;1);</div>
 <div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;                            intersection.iface = iface2;</div>
 <div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;                            intersection.isnew = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;                            intersection.isghost = <span class="keyword">true</span>;</div>
@@ -2382,7 +2382,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;                        <span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;                            intersection.owners[0] = idx;</div>
 <div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;                            intersection.owners[1] = neighbours[i];</div>
-<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;                            intersection.finer = (i&gt;=1);</div>
+<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;                            intersection.finer = (nsize&gt;1);</div>
 <div class="line"><a name="l02319"></a><span class="lineno"> 2319</span>&#160;                            intersection.iface = iface2;</div>
 <div class="line"><a name="l02320"></a><span class="lineno"> 2320</span>&#160;                            intersection.isnew = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02321"></a><span class="lineno"> 2321</span>&#160;                            intersection.isghost = <span class="keyword">false</span>;</div>
@@ -2591,7 +2591,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 1 2014 17:18:03 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 17 2014 12:45:25 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

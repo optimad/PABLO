@@ -128,18 +128,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a6d9d462ef97b95b0f43da2f39d49c30c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9d462ef97b95b0f43da2f39d49c30c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getBound</b> ()</td></tr>
+<tr class="separator:a6d9d462ef97b95b0f43da2f39d49c30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf1347a0b2e7ada62bd9ec7475434782"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf1347a0b2e7ada62bd9ec7475434782"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getIn</b> ()</td></tr>
 <tr class="separator:abf1347a0b2e7ada62bd9ec7475434782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29406d4be1146e1ddd8698a54589435"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29406d4be1146e1ddd8698a54589435"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getIsGhost</b> ()</td></tr>
+<tr class="separator:af29406d4be1146e1ddd8698a54589435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa487df58a078df7b115410d00573371f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa487df58a078df7b115410d00573371f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>getNormal</b> (int8_t normal[2])</td></tr>
 <tr class="separator:aa487df58a078df7b115410d00573371f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec1dcd2f14b5fd25d151c8c2947ae609"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec1dcd2f14b5fd25d151c8c2947ae609"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getOut</b> ()</td></tr>
 <tr class="separator:aec1dcd2f14b5fd25d151c8c2947ae609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47f5da10b60d8618d9ee6252d8ff170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae47f5da10b60d8618d9ee6252d8ff170"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getPbound</b> ()</td></tr>
+<tr class="separator:ae47f5da10b60d8618d9ee6252d8ff170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:abaf71738aa043869d436a92e7a79ff83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a></td></tr>
+<tr class="separator:abaf71738aa043869d436a92e7a79ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b5f35739aeb46a8d1879026c872f73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a></td></tr>
 <tr class="separator:ac6b5f35739aeb46a8d1879026c872f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbeb3b80905b14d9b947208fdb5ff0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a></td></tr>
@@ -150,6 +161,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2fe45ec4cebc701a431c460f11b7b9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f8c9cd02b21e967a93a516b0d125b3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a> [2]</td></tr>
 <tr class="separator:a14f8c9cd02b21e967a93a516b0d125b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a20334e26859024fa35f16ef5972df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a></td></tr>
+<tr class="separator:a94a20334e26859024fa35f16ef5972df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -184,6 +197,29 @@ Marco Cisternino </dd></dl>
 
 <p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00028">28</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="abaf71738aa043869d436a92e7a79ff83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt;::bound</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The intersection is a boundary intersection of the whole domain </p>
+
+<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00050">50</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac6b5f35739aeb46a8d1879026c872f73"></a>
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +285,7 @@ Marco Cisternino </dd></dl>
 </div><div class="memdoc">
 <p>The intersection has a member ghost </p>
 
-<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00047">47</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00048">48</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +308,7 @@ Marco Cisternino </dd></dl>
 </div><div class="memdoc">
 <p>The intersection is new after a mesh adapting? </p>
 
-<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00048">48</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00049">49</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
 
 </div>
 </div>
@@ -299,13 +335,36 @@ Marco Cisternino </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="a94a20334e26859024fa35f16ef5972df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_class___intersection.html">Class_Intersection</a>&lt; 2 &gt;::pbound</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The intersection is a boundary intersection of a process domain </p>
+
+<p>Definition at line <a class="el" href="_class___intersection__2_d_8tpp_source.html#l00051">51</a> of file <a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_class___intersection__2_d_8tpp_source.html">Class_Intersection_2D.tpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 1 2014 17:18:04 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 17 2014 12:45:25 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
