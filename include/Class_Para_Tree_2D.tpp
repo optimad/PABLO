@@ -3999,7 +3999,7 @@ public:
 			if (octree.getNumOctants() > nocts)
 				localDone = true;
 			updateAdapt();
-			setPboundGhosts();
+			//setPboundGhosts();
 			writeLog(" Number of octants after Refine	:	" + to_string(global_num_octants));
 			nocts = octree.getNumOctants();
 

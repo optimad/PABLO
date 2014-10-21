@@ -23,26 +23,52 @@ int main(int argc, char *argv[]) {
 			bool done = ptree.adapt();
 			ptree.loadBalance();
 			for (int i=0; i<ptree.getNumOctants(); i++){
-				vector<uint32_t> neigh;
-				vector<bool> isghost;
-				uint8_t codim = 1;
 				Class_Octant<2>* oct = ptree.getOctant(i);
-				cout << " rank: " << ptree.rank << " idx: " << ptree.getGlobalIdx(oct);
-				for (uint8_t iface=0; iface<4; iface++){
-//					cout << "   iface: " << int(iface);
-//						//cout << "   iface: " << int(iface) << " Bound: " << ptree.getBound(oct,iface) << " Pbound: " << ptree.getPbound(oct,iface);
-//					ptree.findNeighbours(oct, iface, codim, neigh, isghost);
+				double m = (double)rand()/RAND_MAX;
+				//ptree.setMarker(oct, m>0.5?0:1);
+				ptree.setMarker(oct, 1);
+			}
+			done = ptree.adapt();
+			ptree.loadBalance();
+
+			ptree.updateConnectivity();
+			ptree.updateghostsConnectivity();
+			ptree.write("PabloRef");
+
+			for (int i=0; i<ptree.getNumOctants(); i++){
+				Class_Octant<2>* oct = ptree.getOctant(i);
+				double m = (double)rand()/RAND_MAX;
+				//ptree.setMarker(oct, m>0.5?0:1);
+				ptree.setMarker(oct, -1);
+			}
+			done = ptree.adapt();
+			ptree.loadBalance();
+
+
+//			for (int i=0; i<ptree.getNumOctants(); i++){
+//				vector<uint32_t> neigh;
+//				vector<bool> isghost;
+//				uint8_t codim = 1;
+//				Class_Octant<2>* oct = ptree.getOctant(i);
+//				cout << " rank: " << ptree.rank << " idx: " << ptree.getGlobalIdx(oct);
+//				for (uint8_t iface=0; iface<4; iface++){
+////					cout << "   iface: " << int(iface);
+////						//cout << "   iface: " << int(iface) << " Bound: " << ptree.getBound(oct,iface) << " Pbound: " << ptree.getPbound(oct,iface);
+////					ptree.findNeighbours(oct, iface, codim, neigh, isghost);
+////					for (int j=0; j<neigh.size(); j++){
+////						cout << "   neigh_" << j << ": " << neigh[j] << " isghost: " << isghost[j];
+////					}
+//					cout << "   inode: " << int(iface);
+//					ptree.findNeighbours(oct, iface, codim+1, neigh, isghost);
 //					for (int j=0; j<neigh.size(); j++){
 //						cout << "   neigh_" << j << ": " << neigh[j] << " isghost: " << isghost[j];
 //					}
-					cout << "   inode: " << int(iface);
-					ptree.findNeighbours(oct, iface, codim+1, neigh, isghost);
-					for (int j=0; j<neigh.size(); j++){
-						cout << "   neigh_" << j << ": " << neigh[j] << " isghost: " << isghost[j];
-					}
-				}
-				cout << endl;
-			}
+//				}
+//				cout << endl;
+//			}
+			ptree.updateConnectivity();
+			ptree.updateghostsConnectivity();
+			ptree.write("PabloCoa");
 		}
 
 
