@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['marker',['marker',['../class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02',1,'Class_Octant&lt; 2 &gt;::marker()'],['../class_class___octant_3_013_01_4.html#af8ed659740dd21ebf996759f93726088',1,'Class_Octant&lt; 3 &gt;::marker()']]],
-  ['markerbytes',['markerBytes',['../class_class___global_3_012_01_4.html#a557eff67ed635fd2f91d133158880d19',1,'Class_Global&lt; 2 &gt;::markerBytes()'],['../class_class___global_3_013_01_4.html#a213c46e0e8dbc7f8cab7b7baf9e6048f',1,'Class_Global&lt; 3 &gt;::markerBytes()']]],
-  ['max_5fdepth',['max_depth',['../class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4',1,'Class_Para_Tree&lt; 2 &gt;::max_depth()'],['../class_class___para___tree_3_013_01_4.html#a2f7cfce5ba20cd9cc452ffd86965d6cc',1,'Class_Para_Tree&lt; 3 &gt;::max_depth()']]],
-  ['max_5flength',['max_length',['../class_class___global_3_012_01_4.html#ae9473c8a69ad8a9ad94d5dd6ec8e86d2',1,'Class_Global&lt; 2 &gt;::max_length()'],['../class_class___global_3_013_01_4.html#afb7736f3b7a0ec410a65609233825a73',1,'Class_Global&lt; 3 &gt;::max_length()']]]
+  ['partition_5ffirst_5fdesc',['partition_first_desc',['../class_class___para___tree_3_012_01_4.html#aa3ecf9226ab79f27868b2d6934a2a329',1,'Class_Para_Tree&lt; 2 &gt;::partition_first_desc()'],['../class_class___para___tree_3_013_01_4.html#afc86c3bffa3de0563b598c31334f417f',1,'Class_Para_Tree&lt; 3 &gt;::partition_first_desc()']]],
+  ['partition_5flast_5fdesc',['partition_last_desc',['../class_class___para___tree_3_012_01_4.html#a4e99920516f57c21ad3a076091a69401',1,'Class_Para_Tree&lt; 2 &gt;::partition_last_desc()'],['../class_class___para___tree_3_013_01_4.html#a1179c513dfe0b14e6a4c547f33d7d7cf',1,'Class_Para_Tree&lt; 3 &gt;::partition_last_desc()']]],
+  ['partition_5frange_5fglobalidx',['partition_range_globalidx',['../class_class___para___tree_3_012_01_4.html#a47edbdefaca1262e5fcd82902ba4a708',1,'Class_Para_Tree&lt; 2 &gt;::partition_range_globalidx()'],['../class_class___para___tree_3_013_01_4.html#a031be7b03481134a052b02f1a20663f4',1,'Class_Para_Tree&lt; 3 &gt;::partition_range_globalidx()']]]
 ];

@@ -95,28 +95,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Class_Array::Class_Array() {</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a> = 0;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a> = NULL;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    arraySize = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    array = NULL;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Class_Array::Class_Array(uint32_t size, <span class="keywordtype">int</span> value) {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a> = size;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a> = <span class="keyword">new</span> <span class="keywordtype">int</span> [size];</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    arraySize = size;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    array = <span class="keyword">new</span> <span class="keywordtype">int</span> [size];</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; size; ++i)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>[i] = value;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        array[i] = value;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;Class_Array::Class_Array(</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_class___array.html">Class_Array</a>&amp; other) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a> = other.<a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    arraySize = other.arraySize;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  if(array != NULL){</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//      delete [] array;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//      array = NULL;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//  }</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a> = <span class="keyword">new</span> <span class="keywordtype">int</span> [<a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>];</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>; ++i)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>[i] = other.<a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>[i];</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    array = <span class="keyword">new</span> <span class="keywordtype">int</span> [arraySize];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; arraySize; ++i)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        array[i] = other.array[i];</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Class_Array::~Class_Array() {</div>
@@ -128,23 +128,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_class___array.html">Class_Array</a>&amp; rhs) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">this</span> != &amp;rhs)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span>* new_array = <span class="keyword">new</span> <span class="keywordtype">int</span>[rhs.<a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>];</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        copy(rhs.<a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>,rhs.<a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>+rhs.<a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>,new_array);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span>* new_array = <span class="keyword">new</span> <span class="keywordtype">int</span>[rhs.arraySize];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        copy(rhs.array,rhs.array+rhs.arraySize,new_array);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">delete</span> [] <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">delete</span> [] array;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">array</a> = new_array;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a> = rhs.<a class="code" href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">arraySize</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        array = new_array;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        arraySize = rhs.arraySize;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="ttc" id="class_class___array_html"><div class="ttname"><a href="class_class___array.html">Class_Array</a></div><div class="ttdoc">Customized array definition. </div><div class="ttdef"><b>Definition:</b> <a href="_class___array_8hpp_source.html#l00035">Class_Array.hpp:35</a></div></div>
-<div class="ttc" id="class_class___array_html_aa35d89b29c3b7b2b609032f4a2cce9fb"><div class="ttname"><a href="class_class___array.html#aa35d89b29c3b7b2b609032f4a2cce9fb">Class_Array::array</a></div><div class="ttdeci">int * array</div><div class="ttdef"><b>Definition:</b> <a href="_class___array_8hpp_source.html#l00042">Class_Array.hpp:42</a></div></div>
-<div class="ttc" id="class_class___array_html_ab0facd2977c1b6ab159cf6f8f6a121f3"><div class="ttname"><a href="class_class___array.html#ab0facd2977c1b6ab159cf6f8f6a121f3">Class_Array::arraySize</a></div><div class="ttdeci">uint32_t arraySize</div><div class="ttdef"><b>Definition:</b> <a href="_class___array_8hpp_source.html#l00041">Class_Array.hpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 12:28:07 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 12:44:26 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

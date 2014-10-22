@@ -87,9 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_class___octant_3_012_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5e50b7b8f14322663f0de92c12859df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5e50b7b8f14322663f0de92c12859df"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Class_Octant</b> (uint8_t <a class="el" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, uint32_t <a class="el" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>, uint32_t <a class="el" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Class_Octant</b> (uint8_t level, uint32_t x, uint32_t y)</td></tr>
 <tr class="separator:ae5e50b7b8f14322663f0de92c12859df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b26a7ffbbee10a1497425687af8ece"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95b26a7ffbbee10a1497425687af8ece"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Class_Octant</b> (const <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &amp;octant)</td></tr>
@@ -154,77 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a526acedb415ffaf35505619eddf6b811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145a7bd63dfa60015aa7ccc2e1f0c769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a145a7bd63dfa60015aa7ccc2e1f0c769">setBalance</a> (bool balance)</td></tr>
 <tr class="separator:a145a7bd63dfa60015aa7ccc2e1f0c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea86292330c3039c5a36dd449ff5228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a9ea86292330c3039c5a36dd449ff5228">setMarker</a> (int8_t <a class="el" href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">marker</a>)</td></tr>
+<tr class="memitem:a9ea86292330c3039c5a36dd449ff5228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a9ea86292330c3039c5a36dd449ff5228">setMarker</a> (int8_t marker)</td></tr>
 <tr class="separator:a9ea86292330c3039c5a36dd449ff5228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:abd59b685102aac540f42af7227974181"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd59b685102aac540f42af7227974181"></a>
-typedef vector&lt; <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OctantsType</b></td></tr>
-<tr class="separator:abd59b685102aac540f42af7227974181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa311eede8d0e963ab20b0232213af4c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa311eede8d0e963ab20b0232213af4c1"></a>
-typedef vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>u32vector</b></td></tr>
-<tr class="separator:aa311eede8d0e963ab20b0232213af4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af374c1c6ec54f8ed1f5d7ea1f30755d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af374c1c6ec54f8ed1f5d7ea1f30755d5"></a>
-typedef vector&lt; vector<br class="typebreak" />
-&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>u32vector2D</b></td></tr>
-<tr class="separator:af374c1c6ec54f8ed1f5d7ea1f30755d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37cc7c692ebddb1d5c806c59bb7991b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37cc7c692ebddb1d5c806c59bb7991b6"></a>
-typedef vector&lt; vector<br class="typebreak" />
-&lt; uint64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>u64vector2D</b></td></tr>
-<tr class="separator:a37cc7c692ebddb1d5c806c59bb7991b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:adf58831623dde038d250b29fb84b70f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf58831623dde038d250b29fb84b70f5"></a>
-<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>buildChildren</b> ()</td></tr>
-<tr class="separator:adf58831623dde038d250b29fb84b70f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae210437df2da8d988a4519b556c0b3bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae210437df2da8d988a4519b556c0b3bc"></a>
-<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildFather</b> ()</td></tr>
-<tr class="separator:ae210437df2da8d988a4519b556c0b3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de6d9d1fe5fa6574d3b9bc13a0eac0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9de6d9d1fe5fa6574d3b9bc13a0eac0d"></a>
-<a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildLastDesc</b> ()</td></tr>
-<tr class="separator:a9de6d9d1fe5fa6574d3b9bc13a0eac0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445f309b64fc28e9f396b0c13c42ffd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a445f309b64fc28e9f396b0c13c42ffd7"></a>
-uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><b>computeHalfSizeMorton</b> (uint8_t iface, uint32_t &amp;sizehf)</td></tr>
-<tr class="separator:a445f309b64fc28e9f396b0c13c42ffd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae240706de503d2b2de233e7f0f569bc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae240706de503d2b2de233e7f0f569bc1"></a>
-uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><b>computeMinSizeMorton</b> (uint8_t iface, const uint8_t &amp;maxdepth, uint32_t &amp;sizem)</td></tr>
-<tr class="separator:ae240706de503d2b2de233e7f0f569bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d34009443c7e6d283fe309c06e3e5cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d34009443c7e6d283fe309c06e3e5cf"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>computeNodeHalfSizeMorton</b> (uint8_t inode, uint32_t &amp;sizehf)</td></tr>
-<tr class="separator:a9d34009443c7e6d283fe309c06e3e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3e0ba762f2ef89f8387433cedf42842"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3e0ba762f2ef89f8387433cedf42842"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>computeNodeMinSizeMorton</b> (uint8_t inode, const uint8_t &amp;maxdepth, uint32_t &amp;sizehf)</td></tr>
-<tr class="separator:ad3e0ba762f2ef89f8387433cedf42842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57decfbdd92b27705f5349fb43617a78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57decfbdd92b27705f5349fb43617a78"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>computeNodeVirtualMorton</b> (uint8_t inode, const uint8_t &amp;maxdepth, uint32_t &amp;sizeneigh)</td></tr>
-<tr class="separator:a57decfbdd92b27705f5349fb43617a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e5320c1e84978d048a85ece17e1470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44e5320c1e84978d048a85ece17e1470"></a>
-uint64_t *&#160;</td><td class="memItemRight" valign="bottom"><b>computeVirtualMorton</b> (uint8_t iface, const uint8_t &amp;maxdepth, uint32_t &amp;sizeneigh)</td></tr>
-<tr class="separator:a44e5320c1e84978d048a85ece17e1470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1da5c50b460182fe367b094644a5e54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1da5c50b460182fe367b094644a5e54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setBound</b> (uint8_t face)</td></tr>
-<tr class="separator:ae1da5c50b460182fe367b094644a5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba87ea1589a9fbe41307fb63a3403e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba87ea1589a9fbe41307fb63a3403e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (uint8_t <a class="el" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>)</td></tr>
-<tr class="separator:a6ba87ea1589a9fbe41307fb63a3403e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b73f5bb2e519d3d82e59908c090152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50b73f5bb2e519d3d82e59908c090152"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPbound</b> (uint8_t face, bool flag)</td></tr>
-<tr class="separator:a50b73f5bb2e519d3d82e59908c090152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa6c157a02cf2c77753bc96d0583b48f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a> [12]</td></tr>
-<tr class="separator:aa6c157a02cf2c77753bc96d0583b48f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d99d5918d8e3cf55f44c7406ce3c6d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a></td></tr>
-<tr class="separator:a17d99d5918d8e3cf55f44c7406ce3c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f1d92be8c4f458e73f9e7234566c02"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a71f1d92be8c4f458e73f9e7234566c02">marker</a></td></tr>
-<tr class="separator:a71f1d92be8c4f458e73f9e7234566c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f708393f60d127950c2df7ce47950b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a></td></tr>
-<tr class="separator:ac4f708393f60d127950c2df7ce47950b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81734c93ce3f63cdc08ee3da64096bee"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a></td></tr>
-<tr class="separator:a81734c93ce3f63cdc08ee3da64096bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -944,133 +872,13 @@ Marco Cisternino </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aa6c157a02cf2c77753bc96d0583b48f9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;::info[12]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>-Info[0..3] : true if 0..3 face is a boundary face [bound] <br />
--Info[4..7]: true if 0..3 face is a process boundary face [pbound] <br />
--Info[8/9]: true if octant is new after refinement/coarsening <br />
--Info[10] : true if balancing is not required for this octant <br />
--Info[11] : Aux (before : true if octant is a scary ghost) </p>
-
-<p>Definition at line <a class="el" href="_class___octant__2_d_8tpp_source.html#l00056">56</a> of file <a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a17d99d5918d8e3cf55f44c7406ce3c6d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;::level</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Refinement level (0=root) </p>
-
-<p>Definition at line <a class="el" href="_class___octant__2_d_8tpp_source.html#l00054">54</a> of file <a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a71f1d92be8c4f458e73f9e7234566c02"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int8_t <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;::marker</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set for Refinement(m&gt;0) or Coarsening(m&lt;0) |m|-times </p>
-
-<p>Definition at line <a class="el" href="_class___octant__2_d_8tpp_source.html#l00055">55</a> of file <a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac4f708393f60d127950c2df7ce47950b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;::x</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Coordinate x </p>
-
-<p>Definition at line <a class="el" href="_class___octant__2_d_8tpp_source.html#l00052">52</a> of file <a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a81734c93ce3f63cdc08ee3da64096bee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t <a class="el" href="class_class___octant.html">Class_Octant</a>&lt; 2 &gt;::y</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Coordinate y </p>
-
-<p>Definition at line <a class="el" href="_class___octant__2_d_8tpp_source.html#l00053">53</a> of file <a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_class___octant__2_d_8tpp_source.html">Class_Octant_2D.tpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 12:28:12 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 12:44:28 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

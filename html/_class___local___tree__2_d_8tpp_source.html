@@ -116,22 +116,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// MEMBERS ----------------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a72a1e840600f0ee14ac5fe8e3af6c866">   52</a></span>&#160;    OctantsType                 <a class="code" href="class_class___local___tree_3_012_01_4.html#a72a1e840600f0ee14ac5fe8e3af6c866">octants</a>;            </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a75205e47146b695fea93333bdc1b1c39">   53</a></span>&#160;    OctantsType                 <a class="code" href="class_class___local___tree_3_012_01_4.html#a75205e47146b695fea93333bdc1b1c39">ghosts</a>;             </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    OctantsType                 octants;            </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    OctantsType                 ghosts;             </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//  IntersectionsType           intersections_int;  /**&lt; Local vector of internal intersections ordered with Morton Number of first owner octant */</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//  IntersectionsType           intersections_ghost;/**&lt; Local vector of intersections internal/ghost ordered with Morton Number of internal owner octant */</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//  IntersectionsType           intersections_bord; /**&lt; Local vector of border intersections (twice the same octant is stored in an intersection) */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a55bfa07aad1dc56c2385ea37d61f8ba5">   57</a></span>&#160;    IntersectionsType           <a class="code" href="class_class___local___tree_3_012_01_4.html#a55bfa07aad1dc56c2385ea37d61f8ba5">intersections</a>;      </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#aabea56b69755c2b6c7da0cd44ab79262">   58</a></span>&#160;    u64vector                   <a class="code" href="class_class___local___tree_3_012_01_4.html#aabea56b69755c2b6c7da0cd44ab79262">globalidx_ghosts</a>;   </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a70f9a662a7694cc5ec540ebfe569c7d5">   59</a></span>&#160;    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>             <a class="code" href="class_class___local___tree_3_012_01_4.html#a70f9a662a7694cc5ec540ebfe569c7d5">first_desc</a>;         </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a69adf8cb0b8bc5c67f4b123b3175ee5f">   60</a></span>&#160;    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>             <a class="code" href="class_class___local___tree_3_012_01_4.html#a69adf8cb0b8bc5c67f4b123b3175ee5f">last_desc</a>;          </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#ac73765ecc7b443cf2c18090a41b8ae3d">   61</a></span>&#160;    uint32_t                    <a class="code" href="class_class___local___tree_3_012_01_4.html#ac73765ecc7b443cf2c18090a41b8ae3d">size_ghosts</a>;        </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a1f9398feea9574e0bf38fef85a06810e">   62</a></span>&#160;    uint8_t                     <a class="code" href="class_class___local___tree_3_012_01_4.html#a1f9398feea9574e0bf38fef85a06810e">local_max_depth</a>;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    IntersectionsType           intersections;      </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    u64vector                   globalidx_ghosts;   </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>             first_desc;         </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>             last_desc;          </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint32_t                    size_ghosts;        </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    uint8_t                     local_max_depth;    </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// connectivity</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a7abf901157e358f7f68a116f28705e4c">   65</a></span>&#160;    u32vector2D                 <a class="code" href="class_class___local___tree_3_012_01_4.html#a7abf901157e358f7f68a116f28705e4c">nodes</a>;              </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a377f3433b5061562ea9e895bd9103928">   66</a></span>&#160;    u32vector2D                 <a class="code" href="class_class___local___tree_3_012_01_4.html#a377f3433b5061562ea9e895bd9103928">connectivity</a>;       </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a627b0608cdddf1d126b4d0d22970de04">   68</a></span>&#160;    u32vector2D                 <a class="code" href="class_class___local___tree_3_012_01_4.html#a627b0608cdddf1d126b4d0d22970de04">ghostsnodes</a>;        </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#acc481f1605b322e9428d0619096ba4a6">   69</a></span>&#160;    u32vector2D                 <a class="code" href="class_class___local___tree_3_012_01_4.html#acc481f1605b322e9428d0619096ba4a6">ghostsconnectivity</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    u32vector2D                 nodes;              </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    u32vector2D                 connectivity;       </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    u32vector2D                 ghostsnodes;        </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    u32vector2D                 ghostsconnectivity; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// ------------------------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// CONSTRUCTORS ------------------------------------------------------------------ //</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        OctantsType::const_iterator lastOctant = octants.end() - 1;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        uint32_t x,y,delta;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        delta = (uint32_t)pow(2.0,(<span class="keywordtype">double</span>)((uint8_t)MAX_LEVEL_2D - lastOctant-&gt;level)) - 1;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        x = lastOctant-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a> + delta;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        x = lastOctant-&gt;x + delta;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        y = lastOctant-&gt;y + delta;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        last_desc = <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>(MAX_LEVEL_2D,x,y);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
@@ -363,17 +363,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    markerfather = -MAX_LEVEL_2D;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                    father = octants[idx+offset].buildFather();</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        father.info[iii] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    }</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    <span class="keywordflow">for</span>(idx2=0; idx2&lt;global2D.<a class="code" href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">nchildren</a>; idx2++){</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                        <span class="keywordflow">if</span> (markerfather &lt; octants[idx+offset+idx2].getMarker()+1){</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                            markerfather = octants[idx+offset+idx2].getMarker()+1;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        }</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                            father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] || octants[idx+offset+idx2].info[iii];</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                            father.info[iii] = father.info[iii] || octants[idx+offset+idx2].info[iii];</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                        }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[9] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    father.info[9] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    <span class="keywordflow">if</span> (markerfather &lt; 0){</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                        docoarse = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    }</div>
@@ -440,14 +440,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="keywordflow">if</span> (nend != 0){</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                    father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                    father.info[iii] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                }</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">for</span> (idx=0; idx &lt; nend; idx++){</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                        father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] || octants[nocts-idx-1].info[iii];</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                        father.info[iii] = father.info[iii] || octants[nocts-idx-1].info[iii];</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                    }</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[9] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                father.info[9] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">if</span> (markerfather &lt; 0){</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    docoarse = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                }</div>
@@ -625,17 +625,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                    markerfather = -MAX_LEVEL_2D;</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                    father = octants[idx+offset].buildFather();</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                        father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;                        father.info[iii] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                    }</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                    <span class="keywordflow">for</span>(idx2=0; idx2&lt;global2D.<a class="code" href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">nchildren</a>; idx2++){</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                        <span class="keywordflow">if</span> (markerfather &lt; octants[idx+offset+idx2].getMarker()+1){</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                            markerfather = octants[idx+offset+idx2].getMarker()+1;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                        }</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                            father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] || octants[idx+offset+idx2].info[iii];</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                            father.info[iii] = father.info[iii] || octants[idx+offset+idx2].info[iii];</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                        }</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                    }</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                    father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[9] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                    father.info[9] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                    <span class="keywordflow">if</span> (markerfather &lt; 0){</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                        docoarse = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                    }</div>
@@ -708,14 +708,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            <span class="keywordflow">if</span> (nend != 0){</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                    father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                    father.info[iii] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                }</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                <span class="keywordflow">for</span> (idx=0; idx &lt; nend; idx++){</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iii=0; iii&lt;12; iii++){</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                        father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] = father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iii] || octants[nocts-idx-1].info[iii];</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                        father.info[iii] = father.info[iii] || octants[nocts-idx-1].info[iii];</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                    }</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                }</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                father.<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[9] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                father.info[9] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                <span class="keywordflow">if</span> (markerfather &lt; 0){</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    docoarse = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                }</div>
@@ -868,14 +868,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        }</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="comment">// Check if octants face is a process boundary</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;info[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>)+int32_t(cx*size), int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)+int32_t(cy*size));</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, int32_t(oct-&gt;x)+int32_t(cx*size), int32_t(oct-&gt;y)+int32_t(cy*size));</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -897,7 +897,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                        }</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                    }</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                }</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;                    isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -921,7 +921,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                            }</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                        }</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                    }</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                        isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;                        neighbours.push_back(idxtry);</div>
@@ -936,8 +936,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                    int32_t Dh;</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                    int32_t eqcoord;</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;                    <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; noctants){</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;                        <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*octants[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;                            neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                            isghost.push_back(<span class="keyword">false</span>);</div>
@@ -960,7 +960,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="comment">//--------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;            <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                <span class="comment">// IF OCTANT FACE IS A PROCESS BOUNDARY SEARCH ALSO IN GHOSTS</span></div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                <span class="keywordflow">if</span> (ghosts.size()&gt;0){</div>
@@ -970,8 +970,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>* octghost = &amp;ghosts[idxghost];</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
 <div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                    <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>+cx*size, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>+cy*size);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                    Morton = samesizeoct.computeMorton(); <span class="comment">//mortonEncode_magicbits(oct-&gt;x-size,oct-&gt;y,oct-&gt;z);</span></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, oct-&gt;x+cx*size, oct-&gt;y+cy*size);</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                    Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>(); <span class="comment">//mortonEncode_magicbits(oct-&gt;x-size,oct-&gt;y,oct-&gt;z);</span></div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                    <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                    <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                    <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -992,7 +992,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;                            }</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;                        }</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;                    }</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                    <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;                    <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;                        isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;                        neighbours.push_back(idxtry);</div>
@@ -1017,7 +1017,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                            }</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                        }</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                        <span class="keywordflow">if</span>(idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                            <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                            <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                                <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                                isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                                neighbours.push_back(idxtry);</div>
@@ -1032,8 +1032,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                            int32_t Dh;</div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                            int32_t eqcoord;</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                            <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp; idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                                Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(ghosts[idxtry].x));</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                                Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(ghosts[idxtry].y));</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                                Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(ghosts[idxtry].x));</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                                Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(ghosts[idxtry].y));</div>
 <div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                                <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*ghosts[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                                    neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;                                    isghost.push_back(<span class="keyword">true</span>);</div>
@@ -1056,11 +1056,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                        <span class="comment">// Search in octants</span></div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                        <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;                        <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;</div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                            <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>+cx*size, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>+cy*size);</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;                            Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, oct-&gt;x+cx*size, oct-&gt;y+cy*size);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;                            Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;                            <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;                            <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;                            <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -1081,7 +1081,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;                                    }</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;                                }</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                            }</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                            <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                            <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;                                <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;                                isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;                                neighbours.push_back(idxtry);</div>
@@ -1107,7 +1107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;                                    }</div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;                                }</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;                                <span class="keywordflow">if</span> (idxtry &lt; noctants){</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;                                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;                                        isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;                                        neighbours.push_back(idxtry);</div>
@@ -1123,8 +1123,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;                                    int32_t Dh;</div>
 <div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;                                    int32_t eqcoord;</div>
 <div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;                                    <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; noctants-1){</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;                                        Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;                                        Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;                                        Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;                                        Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;                                        <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*octants[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                                            neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;                                            isghost.push_back(<span class="keyword">false</span>);</div>
@@ -1180,14 +1180,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        }</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="comment">// Check if octants face is a process boundary</span></div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;info[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;</div>
 <div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;            <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;</div>
 <div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;                <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>)+int32_t(cx*size), int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)+int32_t(cy*size));</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;                Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, int32_t(oct-&gt;x)+int32_t(cx*size), int32_t(oct-&gt;y)+int32_t(cy*size));</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;                Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;                <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;                <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;                <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -1209,7 +1209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;                        }</div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                    }</div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                }</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;                    isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -1233,7 +1233,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;                            }</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;                        }</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;                    }</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;                        isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                        neighbours.push_back(idxtry);</div>
@@ -1248,8 +1248,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;                    int32_t Dh;</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;                    int32_t eqcoord;</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;                    <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; noctants){</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;                        <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*octants[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                            neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                            isghost.push_back(<span class="keyword">false</span>);</div>
@@ -1272,7 +1272,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        <span class="comment">//--------------------------------------------------------------- //</span></div>
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;            <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                <span class="comment">// IF OCTANT FACE IS A PROCESS BOUNDARY SEARCH ALSO IN GHOSTS</span></div>
 <div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;</div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;                <span class="keywordflow">if</span> (ghosts.size()&gt;0){</div>
@@ -1282,8 +1282,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a>* octghost = &amp;ghosts[idxghost];</div>
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                    <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>+cx*size, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>+cy*size);</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                    Morton = samesizeoct.computeMorton(); <span class="comment">//mortonEncode_magicbits(oct-&gt;x-size,oct-&gt;y,oct-&gt;z);</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                    <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, oct-&gt;x+cx*size, oct-&gt;y+cy*size);</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                    Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>(); <span class="comment">//mortonEncode_magicbits(oct-&gt;x-size,oct-&gt;y,oct-&gt;z);</span></div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;                    <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                    <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;                    <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -1304,7 +1304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;                            }</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                        }</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                    }</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                    <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                    <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;                        isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                        neighbours.push_back(idxtry);</div>
@@ -1329,7 +1329,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;                            }</div>
 <div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;                        }</div>
 <div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;                        <span class="keywordflow">if</span>(idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;                            <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;                            <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;                                <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                                isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                                neighbours.push_back(idxtry);</div>
@@ -1344,8 +1344,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;                            int32_t Dh;</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;                            int32_t eqcoord;</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;                            <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp; idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;                                Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(ghosts[idxtry].x));</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;                                Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(ghosts[idxtry].y));</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;                                Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(ghosts[idxtry].x));</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;                                Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(ghosts[idxtry].y));</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;                                <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*ghosts[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;                                    neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;                                    isghost.push_back(<span class="keyword">true</span>);</div>
@@ -1368,11 +1368,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                        <span class="comment">// Search in octants</span></div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;</div>
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                        <span class="comment">// Check if octants face is a boundary</span></div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                        <span class="keywordflow">if</span> (oct-&gt;info[iface] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                            <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;                            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>+cx*size, oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>+cy*size);</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                            Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;                            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, oct-&gt;x+cx*size, oct-&gt;y+cy*size);</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                            Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                            <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                            <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;                            <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -1393,7 +1393,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;                                    }</div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;                                }</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;                            }</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;                            <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;                            <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;                                <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;                                isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                                neighbours.push_back(idxtry);</div>
@@ -1419,7 +1419,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                                    }</div>
 <div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                                }</div>
 <div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                                <span class="keywordflow">if</span> (idxtry &lt; noctants){</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                                        isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;                                        neighbours.push_back(idxtry);</div>
@@ -1435,8 +1435,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                                    int32_t Dh;</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                                    int32_t eqcoord;</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                                    <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp; idxtry &lt; noctants-1){</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                                        Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                                        Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                                        Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                                        Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                                        <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*octants[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                                            neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                                            isghost.push_back(<span class="keyword">false</span>);</div>
@@ -1483,11 +1483,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        }</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        <span class="comment">// Check if octants face is a process boundary</span></div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">true</span>){</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;info[global2D.<a class="code" href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">nfaces</a>+iface] == <span class="keyword">true</span>){</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>)+int32_t(cx*size), int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)+int32_t(cy*size));</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, int32_t(oct-&gt;x)+int32_t(cx*size), int32_t(oct-&gt;y)+int32_t(cy*size));</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                <span class="comment">// Search morton in octants</span></div>
 <div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                <span class="comment">// If a even face morton is lower than morton of oct, if odd higher</span></div>
 <div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                <span class="comment">// ---&gt; can i search only before or after idx in octants</span></div>
@@ -1510,7 +1510,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;                        }</div>
 <div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;                    }</div>
 <div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;                }</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                    neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                    <span class="keywordflow">return</span>;</div>
@@ -1533,7 +1533,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;                            }</div>
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                        }</div>
 <div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                    }</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                    <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                        <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;                        neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;                        <span class="keywordflow">return</span>;</div>
@@ -1547,8 +1547,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;                    int32_t Dh;</div>
 <div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;                    int32_t eqcoord;</div>
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;                    <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp; idxtry &lt; noctants){</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) - int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) - int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;                        Dh = int32_t(cx)*(int32_t(oct-&gt;x) - int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;                        Dh += int32_t(cy)*(int32_t(oct-&gt;y) - int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;                        <span class="keywordflow">if</span> ((abs(Dh) == ((1-(iface%2))*octants[idxtry].getSize() + (iface%2)*size))){</div>
 <div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;                            neighbours.push_back(idxtry);</div>
 <div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;                        }</div>
@@ -2088,11 +2088,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;        iface2 = global2D.<a class="code" href="class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b">nodeface</a>[inode][1];</div>
 <div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;</div>
 <div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;        <span class="comment">// Check if octants node is a boundary</span></div>
-<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface1] == <span class="keyword">false</span> &amp;&amp; oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface2] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;info[iface1] == <span class="keyword">false</span> &amp;&amp; oct-&gt;info[iface2] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;</div>
 <div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;            <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>)+int32_t(cx)*int32_t(size), int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)+int32_t(cy)*int32_t(size));</div>
-<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;            Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, int32_t(oct-&gt;x)+int32_t(cx)*int32_t(size), int32_t(oct-&gt;y)+int32_t(cy)*int32_t(size));</div>
+<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;            Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;</div>
 <div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;            <span class="comment">//SEARCH IN GHOSTS</span></div>
 <div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;</div>
@@ -2124,7 +2124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;                        }</div>
 <div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;                    }</div>
 <div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;                }</div>
-<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;                <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;                <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;                    isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -2149,7 +2149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;                        }</div>
 <div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;                    }</div>
 <div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;                    <span class="keywordflow">if</span>(idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;                        <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;                        <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;                            <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;                            isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;                            neighbours.push_back(idxtry);</div>
@@ -2164,8 +2164,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;                        <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; size_ghosts){</div>
 <div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;                            <span class="comment">//Dhx = int32_t(cx)*(-int32_t(oct-&gt;x) + int32_t(ghosts[idxtry].x));</span></div>
 <div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;                            <span class="comment">//Dhy = int32_t(cy)*(-int32_t(oct-&gt;y) + int32_t(ghosts[idxtry].y));</span></div>
-<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;                            Dhx = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) + int32_t(ghosts[idxtry].x));</div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;                            Dhy = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) + int32_t(ghosts[idxtry].y));</div>
+<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;                            Dhx = (-int32_t(oct-&gt;x) + int32_t(ghosts[idxtry].x));</div>
+<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;                            Dhy = (-int32_t(oct-&gt;y) + int32_t(ghosts[idxtry].y));</div>
 <div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;                            Dhxref = int32_t(cx&lt;0)*(-ghosts[idxtry].getSize()) + int32_t(cx&gt;0)*size;</div>
 <div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;                            Dhyref = int32_t(cy&lt;0)*(-ghosts[idxtry].getSize()) + int32_t(cy&gt;0)*size;</div>
 <div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;                            <span class="keywordflow">if</span> ((Dhx == Dhxref) &amp;&amp; (Dhy == Dhyref)){</div>
@@ -2216,7 +2216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02154"></a><span class="lineno"> 2154</span>&#160;                        }</div>
 <div class="line"><a name="l02155"></a><span class="lineno"> 2155</span>&#160;                    }</div>
 <div class="line"><a name="l02156"></a><span class="lineno"> 2156</span>&#160;                }</div>
-<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02157"></a><span class="lineno"> 2157</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02158"></a><span class="lineno"> 2158</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02159"></a><span class="lineno"> 2159</span>&#160;                    isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l02160"></a><span class="lineno"> 2160</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -2241,7 +2241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;                        }</div>
 <div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;                    }</div>
 <div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;                    <span class="keywordflow">if</span> (idxtry &lt; noctants){</div>
-<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                        <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;                        <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;                            <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;                            isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;                            neighbours.push_back(idxtry);</div>
@@ -2256,8 +2256,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;                        <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; noctants-1){</div>
 <div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;                            <span class="comment">//Dhx = int32_t(cx)*(-int32_t(oct-&gt;x) + int32_t(octants[idxtry].x));</span></div>
 <div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;                            <span class="comment">//Dhy = int32_t(cy)*(-int32_t(oct-&gt;y) + int32_t(octants[idxtry].y));</span></div>
-<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;                            Dhx = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) + int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;                            Dhy = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) + int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;                            Dhx = (-int32_t(oct-&gt;x) + int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;                            Dhy = (-int32_t(oct-&gt;y) + int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;                            Dhxref = int32_t(cx&lt;0)*(-octants[idxtry].getSize()) + int32_t(cx&gt;0)*size;</div>
 <div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;                            Dhyref = int32_t(cy&lt;0)*(-octants[idxtry].getSize()) + int32_t(cy&gt;0)*size;</div>
 <div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;                            <span class="keywordflow">if</span> ((Dhx == Dhxref) &amp;&amp; (Dhy == Dhyref)){</div>
@@ -2326,11 +2326,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;        iface2 = global2D.<a class="code" href="class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b">nodeface</a>[inode][1];</div>
 <div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;</div>
 <div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;        <span class="comment">// Check if octants node is a boundary</span></div>
-<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface1] == <span class="keyword">false</span> &amp;&amp; oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">info</a>[iface2] == <span class="keyword">false</span>){</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;        <span class="keywordflow">if</span> (oct-&gt;info[iface1] == <span class="keyword">false</span> &amp;&amp; oct-&gt;info[iface2] == <span class="keyword">false</span>){</div>
 <div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;</div>
 <div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;            <span class="comment">//Build Morton number of virtual neigh of same size</span></div>
-<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>, int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>)+int32_t(cx)*int32_t(size), int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>)+int32_t(cy)*int32_t(size));</div>
-<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;            Morton = samesizeoct.computeMorton();</div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;            <a class="code" href="class_class___octant_3_012_01_4.html">Class_Octant&lt;2&gt;</a> samesizeoct(oct-&gt;level, int32_t(oct-&gt;x)+int32_t(cx)*int32_t(size), int32_t(oct-&gt;y)+int32_t(cy)*int32_t(size));</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;            Morton = samesizeoct.<a class="code" href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">computeMorton</a>();</div>
 <div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;</div>
 <div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;            <span class="comment">//SEARCH IN GHOSTS</span></div>
 <div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;</div>
@@ -2362,7 +2362,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;                        }</div>
 <div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;                    }</div>
 <div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;                }</div>
-<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                    isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -2387,7 +2387,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02325"></a><span class="lineno"> 2325</span>&#160;                        }</div>
 <div class="line"><a name="l02326"></a><span class="lineno"> 2326</span>&#160;                    }</div>
 <div class="line"><a name="l02327"></a><span class="lineno"> 2327</span>&#160;                    <span class="keywordflow">if</span>(idxtry &lt; size_ghosts){</div>
-<div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;                        <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;                        <span class="keywordflow">if</span>(ghosts[idxtry].computeMorton() == Morton &amp;&amp; ghosts[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;                            <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;                            isghost.push_back(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;                            neighbours.push_back(idxtry);</div>
@@ -2402,8 +2402,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;                        <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; size_ghosts){</div>
 <div class="line"><a name="l02341"></a><span class="lineno"> 2341</span>&#160;                            <span class="comment">//Dhx = int32_t(cx)*(-int32_t(oct-&gt;x) + int32_t(ghosts[idxtry].x));</span></div>
 <div class="line"><a name="l02342"></a><span class="lineno"> 2342</span>&#160;                            <span class="comment">//Dhy = int32_t(cy)*(-int32_t(oct-&gt;y) + int32_t(ghosts[idxtry].y));</span></div>
-<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;                            Dhx = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) + int32_t(ghosts[idxtry].x));</div>
-<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;                            Dhy = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) + int32_t(ghosts[idxtry].y));</div>
+<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;                            Dhx = (-int32_t(oct-&gt;x) + int32_t(ghosts[idxtry].x));</div>
+<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;                            Dhy = (-int32_t(oct-&gt;y) + int32_t(ghosts[idxtry].y));</div>
 <div class="line"><a name="l02345"></a><span class="lineno"> 2345</span>&#160;                            Dhxref = int32_t(cx&lt;0)*(-ghosts[idxtry].getSize()) + int32_t(cx&gt;0)*size;</div>
 <div class="line"><a name="l02346"></a><span class="lineno"> 2346</span>&#160;                            Dhyref = int32_t(cy&lt;0)*(-ghosts[idxtry].getSize()) + int32_t(cy&gt;0)*size;</div>
 <div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;                            <span class="keywordflow">if</span> ((Dhx == Dhxref) &amp;&amp; (Dhy == Dhyref)){</div>
@@ -2444,7 +2444,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02382"></a><span class="lineno"> 2382</span>&#160;                    jump = ((Mortontry&lt;Morton)-(Mortontry&gt;Morton))*abs(jump)/2;</div>
 <div class="line"><a name="l02383"></a><span class="lineno"> 2383</span>&#160;                    idxtry += jump;</div>
 <div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;                }</div>
-<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02386"></a><span class="lineno"> 2386</span>&#160;                    <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160;                    isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l02388"></a><span class="lineno"> 2388</span>&#160;                    neighbours.push_back(idxtry);</div>
@@ -2469,7 +2469,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;                        }</div>
 <div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;                    }</div>
 <div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160;                    <span class="keywordflow">if</span> (idxtry &lt; noctants){</div>
-<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;                        <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">level</a>){</div>
+<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;                        <span class="keywordflow">if</span>(octants[idxtry].computeMorton() == Morton &amp;&amp; octants[idxtry].level == oct-&gt;level){</div>
 <div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;                            <span class="comment">//Found neighbour of same size</span></div>
 <div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;                            isghost.push_back(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;                            neighbours.push_back(idxtry);</div>
@@ -2484,8 +2484,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02422"></a><span class="lineno"> 2422</span>&#160;                        <span class="keywordflow">while</span>(Mortontry &lt; Mortonlast &amp;&amp; idxtry &lt; noctants-1){</div>
 <div class="line"><a name="l02423"></a><span class="lineno"> 2423</span>&#160;                            <span class="comment">//Dhx = int32_t(cx)*(-int32_t(oct-&gt;x) + int32_t(octants[idxtry].x));</span></div>
 <div class="line"><a name="l02424"></a><span class="lineno"> 2424</span>&#160;                            <span class="comment">//Dhy = int32_t(cy)*(-int32_t(oct-&gt;y) + int32_t(octants[idxtry].y));</span></div>
-<div class="line"><a name="l02425"></a><span class="lineno"> 2425</span>&#160;                            Dhx = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">x</a>) + int32_t(octants[idxtry].x));</div>
-<div class="line"><a name="l02426"></a><span class="lineno"> 2426</span>&#160;                            Dhy = (-int32_t(oct-&gt;<a class="code" href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">y</a>) + int32_t(octants[idxtry].y));</div>
+<div class="line"><a name="l02425"></a><span class="lineno"> 2425</span>&#160;                            Dhx = (-int32_t(oct-&gt;x) + int32_t(octants[idxtry].x));</div>
+<div class="line"><a name="l02426"></a><span class="lineno"> 2426</span>&#160;                            Dhy = (-int32_t(oct-&gt;y) + int32_t(octants[idxtry].y));</div>
 <div class="line"><a name="l02427"></a><span class="lineno"> 2427</span>&#160;                            Dhxref = int32_t(cx&lt;0)*(-octants[idxtry].getSize()) + int32_t(cx&gt;0)*size;</div>
 <div class="line"><a name="l02428"></a><span class="lineno"> 2428</span>&#160;                            Dhyref = int32_t(cy&lt;0)*(-octants[idxtry].getSize()) + int32_t(cy&gt;0)*size;</div>
 <div class="line"><a name="l02429"></a><span class="lineno"> 2429</span>&#160;                            <span class="keywordflow">if</span> ((Dhx == Dhxref) &amp;&amp; (Dhy == Dhyref)){</div>
@@ -2541,16 +2541,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02479"></a><span class="lineno"> 2479</span>&#160;                findGhostNeighbours(idx, iface2, neighbours);</div>
 <div class="line"><a name="l02480"></a><span class="lineno"> 2480</span>&#160;                nsize = neighbours.size();</div>
 <div class="line"><a name="l02481"></a><span class="lineno"> 2481</span>&#160;                <span class="keywordflow">for</span> (i = 0; i &lt; nsize; i++){</div>
-<div class="line"><a name="l02482"></a><span class="lineno"> 2482</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a> = (nsize==1);</div>
-<div class="line"><a name="l02483"></a><span class="lineno"> 2483</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[0]  = neighbours[i];</div>
-<div class="line"><a name="l02484"></a><span class="lineno"> 2484</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[1] = idx;</div>
-<div class="line"><a name="l02485"></a><span class="lineno"> 2485</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a> = global2D.<a class="code" href="class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c">oppface</a>[iface2] - (nsize==1);</div>
-<div class="line"><a name="l02486"></a><span class="lineno"> 2486</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">isnew</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02487"></a><span class="lineno"> 2487</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">isghost</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02482"></a><span class="lineno"> 2482</span>&#160;                    intersection.finer = (nsize==1);</div>
+<div class="line"><a name="l02483"></a><span class="lineno"> 2483</span>&#160;                    intersection.owners[0]  = neighbours[i];</div>
+<div class="line"><a name="l02484"></a><span class="lineno"> 2484</span>&#160;                    intersection.owners[1] = idx;</div>
+<div class="line"><a name="l02485"></a><span class="lineno"> 2485</span>&#160;                    intersection.iface = global2D.<a class="code" href="class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c">oppface</a>[iface2] - (nsize==1);</div>
+<div class="line"><a name="l02486"></a><span class="lineno"> 2486</span>&#160;                    intersection.isnew = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02487"></a><span class="lineno"> 2487</span>&#160;                    intersection.isghost = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l02488"></a><span class="lineno"> 2488</span>&#160;<span class="comment">//                  intersections_ghost.push_back(intersection);</span></div>
 <div class="line"><a name="l02489"></a><span class="lineno"> 2489</span>&#160;<span class="comment">//                  counter_g++;</span></div>
-<div class="line"><a name="l02490"></a><span class="lineno"> 2490</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02491"></a><span class="lineno"> 2491</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02490"></a><span class="lineno"> 2490</span>&#160;                    intersection.bound = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02491"></a><span class="lineno"> 2491</span>&#160;                    intersection.pbound = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l02492"></a><span class="lineno"> 2492</span>&#160;                    intersections.push_back(intersection);</div>
 <div class="line"><a name="l02493"></a><span class="lineno"> 2493</span>&#160;                    counter++;</div>
 <div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;                }</div>
@@ -2569,60 +2569,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;                <span class="keywordflow">if</span> (nsize) {</div>
 <div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;                    <span class="keywordflow">for</span> (i = 0; i &lt; nsize; i++){</div>
 <div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;                        <span class="keywordflow">if</span> (isghost[i]){</div>
-<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[0] = idx;</div>
-<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[1] = neighbours[i];</div>
-<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a> = (nsize&gt;1);</div>
-<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a> = iface2 + (nsize&gt;1);</div>
-<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">isnew</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">isghost</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;                            intersection.owners[0] = idx;</div>
+<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;                            intersection.owners[1] = neighbours[i];</div>
+<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;                            intersection.finer = (nsize&gt;1);</div>
+<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;                            intersection.iface = iface2 + (nsize&gt;1);</div>
+<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;                            intersection.isnew = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;                            intersection.isghost = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160;<span class="comment">//                          intersections_ghost.push_back(intersection);</span></div>
 <div class="line"><a name="l02517"></a><span class="lineno"> 2517</span>&#160;<span class="comment">//                          counter_g++;</span></div>
-<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;                            intersection.bound = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;                            intersection.pbound = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l02520"></a><span class="lineno"> 2520</span>&#160;                            intersections.push_back(intersection);</div>
 <div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;                            counter++;</div>
 <div class="line"><a name="l02522"></a><span class="lineno"> 2522</span>&#160;                        }</div>
 <div class="line"><a name="l02523"></a><span class="lineno"> 2523</span>&#160;                        <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[0] = idx;</div>
-<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[1] = neighbours[i];</div>
-<div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a> = (nsize&gt;1);</div>
-<div class="line"><a name="l02527"></a><span class="lineno"> 2527</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a> = iface2 + (nsize&gt;1);</div>
-<div class="line"><a name="l02528"></a><span class="lineno"> 2528</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">isnew</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02529"></a><span class="lineno"> 2529</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">isghost</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;                            intersection.owners[0] = idx;</div>
+<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                            intersection.owners[1] = neighbours[i];</div>
+<div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;                            intersection.finer = (nsize&gt;1);</div>
+<div class="line"><a name="l02527"></a><span class="lineno"> 2527</span>&#160;                            intersection.iface = iface2 + (nsize&gt;1);</div>
+<div class="line"><a name="l02528"></a><span class="lineno"> 2528</span>&#160;                            intersection.isnew = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02529"></a><span class="lineno"> 2529</span>&#160;                            intersection.isghost = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02530"></a><span class="lineno"> 2530</span>&#160;<span class="comment">//                          intersections_int.push_back(intersection);</span></div>
 <div class="line"><a name="l02531"></a><span class="lineno"> 2531</span>&#160;<span class="comment">//                          counter_i++;</span></div>
-<div class="line"><a name="l02532"></a><span class="lineno"> 2532</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02533"></a><span class="lineno"> 2533</span>&#160;                            intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02532"></a><span class="lineno"> 2532</span>&#160;                            intersection.bound = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02533"></a><span class="lineno"> 2533</span>&#160;                            intersection.pbound = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02534"></a><span class="lineno"> 2534</span>&#160;                            intersections.push_back(intersection);</div>
 <div class="line"><a name="l02535"></a><span class="lineno"> 2535</span>&#160;                            counter++;</div>
 <div class="line"><a name="l02536"></a><span class="lineno"> 2536</span>&#160;                        }</div>
 <div class="line"><a name="l02537"></a><span class="lineno"> 2537</span>&#160;                    }</div>
 <div class="line"><a name="l02538"></a><span class="lineno"> 2538</span>&#160;                }</div>
 <div class="line"><a name="l02539"></a><span class="lineno"> 2539</span>&#160;                <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l02540"></a><span class="lineno"> 2540</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[0] = idx;</div>
-<div class="line"><a name="l02541"></a><span class="lineno"> 2541</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[1] = idx;</div>
-<div class="line"><a name="l02542"></a><span class="lineno"> 2542</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a> = 0;</div>
-<div class="line"><a name="l02543"></a><span class="lineno"> 2543</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a> = iface2;</div>
-<div class="line"><a name="l02544"></a><span class="lineno"> 2544</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">isnew</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02545"></a><span class="lineno"> 2545</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">isghost</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02540"></a><span class="lineno"> 2540</span>&#160;                    intersection.owners[0] = idx;</div>
+<div class="line"><a name="l02541"></a><span class="lineno"> 2541</span>&#160;                    intersection.owners[1] = idx;</div>
+<div class="line"><a name="l02542"></a><span class="lineno"> 2542</span>&#160;                    intersection.finer = 0;</div>
+<div class="line"><a name="l02543"></a><span class="lineno"> 2543</span>&#160;                    intersection.iface = iface2;</div>
+<div class="line"><a name="l02544"></a><span class="lineno"> 2544</span>&#160;                    intersection.isnew = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02545"></a><span class="lineno"> 2545</span>&#160;                    intersection.isghost = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02546"></a><span class="lineno"> 2546</span>&#160;<span class="comment">//                  intersections_bord.push_back(intersection);</span></div>
 <div class="line"><a name="l02547"></a><span class="lineno"> 2547</span>&#160;<span class="comment">//                  counter_b++;</span></div>
-<div class="line"><a name="l02548"></a><span class="lineno"> 2548</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02549"></a><span class="lineno"> 2549</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02548"></a><span class="lineno"> 2548</span>&#160;                    intersection.bound = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02549"></a><span class="lineno"> 2549</span>&#160;                    intersection.pbound = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02550"></a><span class="lineno"> 2550</span>&#160;                    intersections.push_back(intersection);</div>
 <div class="line"><a name="l02551"></a><span class="lineno"> 2551</span>&#160;                    counter++;</div>
 <div class="line"><a name="l02552"></a><span class="lineno"> 2552</span>&#160;                }</div>
 <div class="line"><a name="l02553"></a><span class="lineno"> 2553</span>&#160;                <span class="keywordflow">if</span> (it-&gt;info[iface2+1]){</div>
-<div class="line"><a name="l02554"></a><span class="lineno"> 2554</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[0] = idx;</div>
-<div class="line"><a name="l02555"></a><span class="lineno"> 2555</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">owners</a>[1] = idx;</div>
-<div class="line"><a name="l02556"></a><span class="lineno"> 2556</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">finer</a> = 0;</div>
-<div class="line"><a name="l02557"></a><span class="lineno"> 2557</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">iface</a> = iface2+1;</div>
-<div class="line"><a name="l02558"></a><span class="lineno"> 2558</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">isnew</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l02559"></a><span class="lineno"> 2559</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">isghost</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02554"></a><span class="lineno"> 2554</span>&#160;                    intersection.owners[0] = idx;</div>
+<div class="line"><a name="l02555"></a><span class="lineno"> 2555</span>&#160;                    intersection.owners[1] = idx;</div>
+<div class="line"><a name="l02556"></a><span class="lineno"> 2556</span>&#160;                    intersection.finer = 0;</div>
+<div class="line"><a name="l02557"></a><span class="lineno"> 2557</span>&#160;                    intersection.iface = iface2+1;</div>
+<div class="line"><a name="l02558"></a><span class="lineno"> 2558</span>&#160;                    intersection.isnew = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02559"></a><span class="lineno"> 2559</span>&#160;                    intersection.isghost = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02560"></a><span class="lineno"> 2560</span>&#160;<span class="comment">//                  intersections_bord.push_back(intersection);</span></div>
 <div class="line"><a name="l02561"></a><span class="lineno"> 2561</span>&#160;<span class="comment">//                  counter_b++;</span></div>
-<div class="line"><a name="l02562"></a><span class="lineno"> 2562</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">bound</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l02563"></a><span class="lineno"> 2563</span>&#160;                    intersection.<a class="code" href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">pbound</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l02562"></a><span class="lineno"> 2562</span>&#160;                    intersection.bound = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l02563"></a><span class="lineno"> 2563</span>&#160;                    intersection.pbound = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l02564"></a><span class="lineno"> 2564</span>&#160;                    intersections.push_back(intersection);</div>
 <div class="line"><a name="l02565"></a><span class="lineno"> 2565</span>&#160;                    counter++;</div>
 <div class="line"><a name="l02566"></a><span class="lineno"> 2566</span>&#160;                }</div>
@@ -2875,7 +2875,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02813"></a><span class="lineno"> 2813</span>&#160;</div>
 <div class="line"><a name="l02814"></a><span class="lineno"> 2814</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02815"></a><span class="lineno"> 2815</span>&#160;</div>
-<div class="line"><a name="l02818"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#aedafca68ec38aff39a465771ef1c225d"> 2818</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#aedafca68ec38aff39a465771ef1c225d">computeConnectivity</a>() {</div>
+<div class="line"><a name="l02818"></a><span class="lineno"> 2818</span>&#160;    <span class="keywordtype">void</span> computeConnectivity() {</div>
 <div class="line"><a name="l02819"></a><span class="lineno"> 2819</span>&#160;        map&lt;uint64_t, vector&lt;uint32_t&gt; &gt; mapnodes;</div>
 <div class="line"><a name="l02820"></a><span class="lineno"> 2820</span>&#160;        map&lt;uint64_t, vector&lt;uint32_t&gt; &gt;::iterator iter, iterend;</div>
 <div class="line"><a name="l02821"></a><span class="lineno"> 2821</span>&#160;        uint32_t i, k, counter;</div>
@@ -2934,21 +2934,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02874"></a><span class="lineno"> 2874</span>&#160;</div>
 <div class="line"><a name="l02875"></a><span class="lineno"> 2875</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02876"></a><span class="lineno"> 2876</span>&#160;</div>
-<div class="line"><a name="l02879"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#a55bfbc4ca2ce0dd7aa1a8a0746311d89"> 2879</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#a55bfbc4ca2ce0dd7aa1a8a0746311d89">clearConnectivity</a>() {</div>
+<div class="line"><a name="l02879"></a><span class="lineno"> 2879</span>&#160;    <span class="keywordtype">void</span> clearConnectivity() {</div>
 <div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;        u32vector2D().swap(nodes);</div>
 <div class="line"><a name="l02881"></a><span class="lineno"> 2881</span>&#160;        u32vector2D().swap(connectivity);</div>
 <div class="line"><a name="l02882"></a><span class="lineno"> 2882</span>&#160;    }</div>
 <div class="line"><a name="l02883"></a><span class="lineno"> 2883</span>&#160;</div>
 <div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02885"></a><span class="lineno"> 2885</span>&#160;</div>
-<div class="line"><a name="l02888"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#abb69dee0ed4d035b6ccc5696ce810cec"> 2888</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#abb69dee0ed4d035b6ccc5696ce810cec">updateConnectivity</a>() {</div>
+<div class="line"><a name="l02888"></a><span class="lineno"> 2888</span>&#160;    <span class="keywordtype">void</span> updateConnectivity() {</div>
 <div class="line"><a name="l02889"></a><span class="lineno"> 2889</span>&#160;        clearConnectivity();</div>
 <div class="line"><a name="l02890"></a><span class="lineno"> 2890</span>&#160;        computeConnectivity();</div>
 <div class="line"><a name="l02891"></a><span class="lineno"> 2891</span>&#160;    }</div>
 <div class="line"><a name="l02892"></a><span class="lineno"> 2892</span>&#160;</div>
 <div class="line"><a name="l02893"></a><span class="lineno"> 2893</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02894"></a><span class="lineno"> 2894</span>&#160;</div>
-<div class="line"><a name="l02897"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#add10fdecad264f93c7e08d6ec90c310c"> 2897</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#add10fdecad264f93c7e08d6ec90c310c">computeghostsConnectivity</a>() {</div>
+<div class="line"><a name="l02897"></a><span class="lineno"> 2897</span>&#160;    <span class="keywordtype">void</span> computeghostsConnectivity() {</div>
 <div class="line"><a name="l02898"></a><span class="lineno"> 2898</span>&#160;        map&lt;uint64_t, vector&lt;uint32_t&gt; &gt; mapnodes;</div>
 <div class="line"><a name="l02899"></a><span class="lineno"> 2899</span>&#160;        map&lt;uint64_t, vector&lt;uint32_t&gt; &gt;::iterator iter, iterend;</div>
 <div class="line"><a name="l02900"></a><span class="lineno"> 2900</span>&#160;        uint32_t i, k, counter;</div>
@@ -3004,14 +3004,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02950"></a><span class="lineno"> 2950</span>&#160;</div>
 <div class="line"><a name="l02951"></a><span class="lineno"> 2951</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02952"></a><span class="lineno"> 2952</span>&#160;</div>
-<div class="line"><a name="l02955"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#af14f073fd5b52e6436def236cb215f1b"> 2955</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#af14f073fd5b52e6436def236cb215f1b">clearghostsConnectivity</a>() {</div>
+<div class="line"><a name="l02955"></a><span class="lineno"> 2955</span>&#160;    <span class="keywordtype">void</span> clearghostsConnectivity() {</div>
 <div class="line"><a name="l02956"></a><span class="lineno"> 2956</span>&#160;        u32vector2D().swap(ghostsnodes);</div>
 <div class="line"><a name="l02957"></a><span class="lineno"> 2957</span>&#160;        u32vector2D().swap(ghostsconnectivity);</div>
 <div class="line"><a name="l02958"></a><span class="lineno"> 2958</span>&#160;    }</div>
 <div class="line"><a name="l02959"></a><span class="lineno"> 2959</span>&#160;</div>
 <div class="line"><a name="l02960"></a><span class="lineno"> 2960</span>&#160;    <span class="comment">// =================================================================================== //</span></div>
 <div class="line"><a name="l02961"></a><span class="lineno"> 2961</span>&#160;</div>
-<div class="line"><a name="l02964"></a><span class="lineno"><a class="line" href="class_class___local___tree_3_012_01_4.html#ad40d28e818a3d90d0ff3467315a5d10f"> 2964</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_class___local___tree_3_012_01_4.html#ad40d28e818a3d90d0ff3467315a5d10f">updateghostsConnectivity</a>() {</div>
+<div class="line"><a name="l02964"></a><span class="lineno"> 2964</span>&#160;    <span class="keywordtype">void</span> updateghostsConnectivity() {</div>
 <div class="line"><a name="l02965"></a><span class="lineno"> 2965</span>&#160;        clearghostsConnectivity();</div>
 <div class="line"><a name="l02966"></a><span class="lineno"> 2966</span>&#160;        computeghostsConnectivity();</div>
 <div class="line"><a name="l02967"></a><span class="lineno"> 2967</span>&#160;    }</div>
@@ -3021,54 +3021,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02971"></a><span class="lineno"> 2971</span>&#160;</div>
 <div class="line"><a name="l02972"></a><span class="lineno"> 2972</span>&#160;};<span class="comment">//end Class_Local_Tree&lt;2&gt; specialization;</span></div>
 <div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;</div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_aedafca68ec38aff39a465771ef1c225d"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#aedafca68ec38aff39a465771ef1c225d">Class_Local_Tree&lt; 2 &gt;::computeConnectivity</a></div><div class="ttdeci">void computeConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02818">Class_Local_Tree_2D.tpp:2818</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a69adf8cb0b8bc5c67f4b123b3175ee5f"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a69adf8cb0b8bc5c67f4b123b3175ee5f">Class_Local_Tree&lt; 2 &gt;::last_desc</a></div><div class="ttdeci">Class_Octant&lt; 2 &gt; last_desc</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00060">Class_Local_Tree_2D.tpp:60</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_add10fdecad264f93c7e08d6ec90c310c"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#add10fdecad264f93c7e08d6ec90c310c">Class_Local_Tree&lt; 2 &gt;::computeghostsConnectivity</a></div><div class="ttdeci">void computeghostsConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02897">Class_Local_Tree_2D.tpp:2897</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html_a35a7becef6f8842201748d841d90d482"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a35a7becef6f8842201748d841d90d482">Class_Octant&lt; 2 &gt;::getMarker</a></div><div class="ttdeci">int8_t getMarker() const </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00136">Class_Octant_2D.tpp:136</a></div></div>
 <div class="ttc" id="class_class___para___tree_html"><div class="ttname"><a href="class_class___para___tree.html">Class_Para_Tree</a></div><div class="ttdoc">Parallel Octree Manager Class. </div><div class="ttdef"><b>Definition:</b> <a href="_class___para___tree_8hpp_source.html#l00061">Class_Para_Tree.hpp:61</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a70f9a662a7694cc5ec540ebfe569c7d5"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a70f9a662a7694cc5ec540ebfe569c7d5">Class_Local_Tree&lt; 2 &gt;::first_desc</a></div><div class="ttdeci">Class_Octant&lt; 2 &gt; first_desc</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00059">Class_Local_Tree_2D.tpp:59</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html"><div class="ttname"><a href="class_class___octant_3_012_01_4.html">Class_Octant&lt; 2 &gt;</a></div><div class="ttdoc">Octant class definition - 2D specialization. </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00034">Class_Octant_2D.tpp:34</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_aabea56b69755c2b6c7da0cd44ab79262"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#aabea56b69755c2b6c7da0cd44ab79262">Class_Local_Tree&lt; 2 &gt;::globalidx_ghosts</a></div><div class="ttdeci">u64vector globalidx_ghosts</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00058">Class_Local_Tree_2D.tpp:58</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_abaf71738aa043869d436a92e7a79ff83"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#abaf71738aa043869d436a92e7a79ff83">Class_Intersection&lt; 2 &gt;::bound</a></div><div class="ttdeci">bool bound</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00050">Class_Intersection_2D.tpp:50</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html_a87aa6af1eceb91ed1f85e21826c0cb53"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a87aa6af1eceb91ed1f85e21826c0cb53">Class_Octant&lt; 2 &gt;::computeMorton</a></div><div class="ttdeci">uint64_t computeMorton() const </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00332">Class_Octant_2D.tpp:332</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a75205e47146b695fea93333bdc1b1c39"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a75205e47146b695fea93333bdc1b1c39">Class_Local_Tree&lt; 2 &gt;::ghosts</a></div><div class="ttdeci">OctantsType ghosts</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00053">Class_Local_Tree_2D.tpp:53</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html_a47c7597ac4cdf86c6a06c10fa8387d17"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a47c7597ac4cdf86c6a06c10fa8387d17">Class_Octant&lt; 2 &gt;::getSize</a></div><div class="ttdeci">uint32_t getSize() const </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00210">Class_Octant_2D.tpp:210</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html_a9ea86292330c3039c5a36dd449ff5228"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a9ea86292330c3039c5a36dd449ff5228">Class_Octant&lt; 2 &gt;::setMarker</a></div><div class="ttdeci">void setMarker(int8_t marker)</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00183">Class_Octant_2D.tpp:183</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a2b2c87b5af89cb22c03be91c6c01b64b"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b">Class_Global&lt; 2 &gt;::nodeface</a></div><div class="ttdeci">const uint8_t nodeface[4][2]</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00056">Class_Global_2D.tpp:56</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_a94a20334e26859024fa35f16ef5972df"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#a94a20334e26859024fa35f16ef5972df">Class_Intersection&lt; 2 &gt;::pbound</a></div><div class="ttdeci">bool pbound</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00051">Class_Intersection_2D.tpp:51</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_a2fe45ec4cebc701a431c460f11b7b9e1"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1">Class_Intersection&lt; 2 &gt;::isnew</a></div><div class="ttdeci">bool isnew</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00049">Class_Intersection_2D.tpp:49</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a1703ce1a89f727dd0bb73fe265c29dcf"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf">Class_Global&lt; 2 &gt;::nnodes</a></div><div class="ttdeci">const uint8_t nnodes</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00048">Class_Global_2D.tpp:48</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_ae266f238ed41ac82cfcf5b4f6367cfce"><div class="ttname"><a href="class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce">Class_Global&lt; 2 &gt;::nfaces</a></div><div class="ttdeci">const uint8_t nfaces</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00047">Class_Global_2D.tpp:47</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_abb69dee0ed4d035b6ccc5696ce810cec"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#abb69dee0ed4d035b6ccc5696ce810cec">Class_Local_Tree&lt; 2 &gt;::updateConnectivity</a></div><div class="ttdeci">void updateConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02888">Class_Local_Tree_2D.tpp:2888</a></div></div>
-<div class="ttc" id="class_class___octant_3_012_01_4_html_a17d99d5918d8e3cf55f44c7406ce3c6d"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a17d99d5918d8e3cf55f44c7406ce3c6d">Class_Octant&lt; 2 &gt;::level</a></div><div class="ttdeci">uint8_t level</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00054">Class_Octant_2D.tpp:54</a></div></div>
 <div class="ttc" id="class_class___octant_3_012_01_4_html_af47e0a5d32785de97da87bfcca230be9"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#af47e0a5d32785de97da87bfcca230be9">Class_Octant&lt; 2 &gt;::getLevel</a></div><div class="ttdeci">uint8_t getLevel() const </div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00131">Class_Octant_2D.tpp:131</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_acecffe23ee77b662bd288ceeb237524c"><div class="ttname"><a href="class_class___global_3_012_01_4.html#acecffe23ee77b662bd288ceeb237524c">Class_Global&lt; 2 &gt;::oppface</a></div><div class="ttdeci">const uint8_t oppface[4]</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00055">Class_Global_2D.tpp:55</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_ad40d28e818a3d90d0ff3467315a5d10f"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#ad40d28e818a3d90d0ff3467315a5d10f">Class_Local_Tree&lt; 2 &gt;::updateghostsConnectivity</a></div><div class="ttdeci">void updateghostsConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02964">Class_Local_Tree_2D.tpp:2964</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a72a1e840600f0ee14ac5fe8e3af6c866"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a72a1e840600f0ee14ac5fe8e3af6c866">Class_Local_Tree&lt; 2 &gt;::octants</a></div><div class="ttdeci">OctantsType octants</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00052">Class_Local_Tree_2D.tpp:52</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_ae2d7c706876cc798b4e945b30d862551"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551">Class_Intersection&lt; 2 &gt;::isghost</a></div><div class="ttdeci">bool isghost</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00048">Class_Intersection_2D.tpp:48</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_acc481f1605b322e9428d0619096ba4a6"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#acc481f1605b322e9428d0619096ba4a6">Class_Local_Tree&lt; 2 &gt;::ghostsconnectivity</a></div><div class="ttdeci">u32vector2D ghostsconnectivity</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00069">Class_Local_Tree_2D.tpp:69</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a55bfbc4ca2ce0dd7aa1a8a0746311d89"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a55bfbc4ca2ce0dd7aa1a8a0746311d89">Class_Local_Tree&lt; 2 &gt;::clearConnectivity</a></div><div class="ttdeci">void clearConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02879">Class_Local_Tree_2D.tpp:2879</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a627b0608cdddf1d126b4d0d22970de04"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a627b0608cdddf1d126b4d0d22970de04">Class_Local_Tree&lt; 2 &gt;::ghostsnodes</a></div><div class="ttdeci">u32vector2D ghostsnodes</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00068">Class_Local_Tree_2D.tpp:68</a></div></div>
 <div class="ttc" id="class_class___intersection_3_012_01_4_html"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html">Class_Intersection&lt; 2 &gt;</a></div><div class="ttdoc">Intersection class definition - 2D specialization. </div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00028">Class_Intersection_2D.tpp:28</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a377f3433b5061562ea9e895bd9103928"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a377f3433b5061562ea9e895bd9103928">Class_Local_Tree&lt; 2 &gt;::connectivity</a></div><div class="ttdeci">u32vector2D connectivity</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00066">Class_Local_Tree_2D.tpp:66</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_a1dda2d8c20a6869c5c3134c006050b17"><div class="ttname"><a href="class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17">Class_Global&lt; 2 &gt;::nchildren</a></div><div class="ttdeci">const uint8_t nchildren</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00046">Class_Global_2D.tpp:46</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_af14f073fd5b52e6436def236cb215f1b"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#af14f073fd5b52e6436def236cb215f1b">Class_Local_Tree&lt; 2 &gt;::clearghostsConnectivity</a></div><div class="ttdeci">void clearghostsConnectivity()</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l02955">Class_Local_Tree_2D.tpp:2955</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a7abf901157e358f7f68a116f28705e4c"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a7abf901157e358f7f68a116f28705e4c">Class_Local_Tree&lt; 2 &gt;::nodes</a></div><div class="ttdeci">u32vector2D nodes</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00065">Class_Local_Tree_2D.tpp:65</a></div></div>
 <div class="ttc" id="class_class___local___tree_html"><div class="ttname"><a href="class_class___local___tree.html">Class_Local_Tree</a></div><div class="ttdoc">Local octree portion for each process. </div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree_8hpp_source.html#l00055">Class_Local_Tree.hpp:55</a></div></div>
-<div class="ttc" id="class_class___octant_3_012_01_4_html_ac4f708393f60d127950c2df7ce47950b"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#ac4f708393f60d127950c2df7ce47950b">Class_Octant&lt; 2 &gt;::x</a></div><div class="ttdeci">uint32_t x</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00052">Class_Octant_2D.tpp:52</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_ac73765ecc7b443cf2c18090a41b8ae3d"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#ac73765ecc7b443cf2c18090a41b8ae3d">Class_Local_Tree&lt; 2 &gt;::size_ghosts</a></div><div class="ttdeci">uint32_t size_ghosts</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00061">Class_Local_Tree_2D.tpp:61</a></div></div>
-<div class="ttc" id="class_class___octant_3_012_01_4_html_a81734c93ce3f63cdc08ee3da64096bee"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#a81734c93ce3f63cdc08ee3da64096bee">Class_Octant&lt; 2 &gt;::y</a></div><div class="ttdeci">uint32_t y</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00053">Class_Octant_2D.tpp:53</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a55bfa07aad1dc56c2385ea37d61f8ba5"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a55bfa07aad1dc56c2385ea37d61f8ba5">Class_Local_Tree&lt; 2 &gt;::intersections</a></div><div class="ttdeci">IntersectionsType intersections</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00057">Class_Local_Tree_2D.tpp:57</a></div></div>
 <div class="ttc" id="class_class___global_3_012_01_4_html_ae9473c8a69ad8a9ad94d5dd6ec8e86d2"><div class="ttname"><a href="class_class___global_3_012_01_4.html#ae9473c8a69ad8a9ad94d5dd6ec8e86d2">Class_Global&lt; 2 &gt;::max_length</a></div><div class="ttdeci">const uint32_t max_length</div><div class="ttdef"><b>Definition:</b> <a href="_class___global__2_d_8tpp_source.html#l00040">Class_Global_2D.tpp:40</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_ac6b5f35739aeb46a8d1879026c872f73"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#ac6b5f35739aeb46a8d1879026c872f73">Class_Intersection&lt; 2 &gt;::finer</a></div><div class="ttdeci">bool finer</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00046">Class_Intersection_2D.tpp:46</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_addbeb3b80905b14d9b947208fdb5ff0c"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c">Class_Intersection&lt; 2 &gt;::iface</a></div><div class="ttdeci">uint8_t iface</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00045">Class_Intersection_2D.tpp:45</a></div></div>
-<div class="ttc" id="class_class___intersection_3_012_01_4_html_a14f8c9cd02b21e967a93a516b0d125b3"><div class="ttname"><a href="class_class___intersection_3_012_01_4.html#a14f8c9cd02b21e967a93a516b0d125b3">Class_Intersection&lt; 2 &gt;::owners</a></div><div class="ttdeci">uint32_t owners[2]</div><div class="ttdef"><b>Definition:</b> <a href="_class___intersection__2_d_8tpp_source.html#l00044">Class_Intersection_2D.tpp:44</a></div></div>
-<div class="ttc" id="class_class___local___tree_3_012_01_4_html_a1f9398feea9574e0bf38fef85a06810e"><div class="ttname"><a href="class_class___local___tree_3_012_01_4.html#a1f9398feea9574e0bf38fef85a06810e">Class_Local_Tree&lt; 2 &gt;::local_max_depth</a></div><div class="ttdeci">uint8_t local_max_depth</div><div class="ttdef"><b>Definition:</b> <a href="_class___local___tree__2_d_8tpp_source.html#l00062">Class_Local_Tree_2D.tpp:62</a></div></div>
-<div class="ttc" id="class_class___octant_3_012_01_4_html_aa6c157a02cf2c77753bc96d0583b48f9"><div class="ttname"><a href="class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9">Class_Octant&lt; 2 &gt;::info</a></div><div class="ttdeci">bool info[12]</div><div class="ttdef"><b>Definition:</b> <a href="_class___octant__2_d_8tpp_source.html#l00056">Class_Octant_2D.tpp:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 12:28:08 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 12:44:26 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
