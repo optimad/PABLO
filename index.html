@@ -43,31 +43,75 @@
 	<h2>Introduction</h2> 
 	<p><h11>PABLO is a C++ library for octree mesh generation and management. PABLO allows parallel execution of two-dimensional and three-dimensional cases. PABLO performs a rapid parallel load balancing over the processes. The mesh can be built by imposing a 2:1 balancing only for the desired elements.</h11></p>
 	<h2>Tutorials</h2>
-	<p><h11>On this page some</h11></p>
+	<p><h11>Some tutorials on the use of PABLO library are described here below. All the reults here illustrated are obtained by the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files.</h11></p>
 	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 0</FONT></h5>
+	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two object of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds an octree with one octant with size 1 and coordinates of node 0 in the origin. The second octree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the octant equal to 250. Note that PABLO works in a logical domain, the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two octrees are saved in logical coordinates and in physical ones. The figure below shows both the octrees in logical domain. </h11></p>
+	<img src="./TestFiles/test0_logical.png">
+	<p><h11>Note that the two octants are exactly overlapped, in effect they have the same coordinates and size in the logical domain.
+	In the next figure the same octrees are displayed in the physical domain.</h11></p>
+	<img src="./TestFiles/test0_physical.png">
+	<p><h11>Here the two octants are highly different in side (1/250) and for the coordinates of their node 0.</h11></p>	
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 1</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/Fi8ckFfBlQM?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 2</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/S-mwu-Bc3Pk?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 3</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/m16Lb9WjtKw?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 4</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/X0m5rkoZZWE?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 5</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/wvIehBfXGEA?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 12</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/ktphfrMup3A?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 13</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/kBr60Io8y2M?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 14</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/pn9AwgYi99E?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 15</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/Uq-2YFCa2K0?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 16</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/5tCcpHoaFRA?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 104</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/YftCYuTcDeg?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+       <hr> 
+
 	<h5><FONT COLOR="#aaa">Tutorial Test 116</FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/3tkahH4PyQ0?rel=0" frameborder="0" allowfullscreen></iframe>
 	</header>
