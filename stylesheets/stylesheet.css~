@@ -64,8 +64,8 @@ a:hover {
 }
 
 header {
-  padding-top: 15px;
-  padding-bottom: 35px;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
 header h1 {
@@ -82,15 +82,17 @@ header h2 {
   color: #aaa;
   font-weight: normal;
   line-height: 1.3;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
-header hedo {
+header h11 {
   letter-spacing: -1px;
   font-size: 16px;
   color: #303030;
   font-weight: normal;
   line-height: 1.3;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #container {
@@ -212,7 +214,7 @@ hr {
   height: 1px;
   line-height: 1px;
   margin-top: 1em;
-  padding-bottom: 1px;
+  padding-bottom: 5px;
   border: none;
   background: transparent url('../images/hr.png') 50% 0 no-repeat;
 }
