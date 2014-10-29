@@ -46,43 +46,45 @@
         <hr> 
 
 	<h2>Tutorials</h2>
-	<p><h11>Some tutorials on the use of PABLO library are described here below. This web page is not an user guide or a programmer manual, but only a brief description of the results obtained by running some examples. All the reults here illustrated are obtained from the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files.</h11></p>
+	<p><h11>Some tutorials on the use of PABLO library are described here below. This web page is not an user guide or a programmer manual, but only a brief description of the results obtained by running some examples. All the reults here illustrated are obtained from the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files. The first six tests (0/5) are two-dimensional serial example about the use of basic methods of PABLO to generating and managing quadtree meshes. Analogous tests are explained for parallel applications in the following five examples (12/16). Finally the results of two tests (104/116) for three-dimensional cases are described. </h11></p>
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 0</strong></FONT></h5>
-	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two 2-dimensional objects of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds an octree with one octant with size 1 and coordinates of node 0 in the origin. The second octree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the octant equal to 250. Note that PABLO works in a logical domain (maximum size of the first ancestor octant in logical domain equal to 2<span class=sup><i>m</i></span>, with m=maximum refinement level allowed; while minimum size of finest octant equal to 1), the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two octrees are saved in logical coordinates and in physical ones. The figure below shows both the octrees in logical domain. </h11></p>
+	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two 2-dimensional objects of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds a quadtree with one quadrant with size 1 and coordinates of node 0 in the origin. The second quadtree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the quadrant equal to 250. Note that PABLO works in a logical domain (maximum size of the first ancestor quadrant in logical domain equal to 2<span class=sup><i>m</i></span>, with m=maximum refinement level allowed; while minimum size of finest quadrant equal to 1), the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two quadtrees are saved in logical coordinates and in physical ones. The figure below shows both the quadtrees in logical domain. </h11></p>
 	<img src="./TestFiles/test0_logical.png">
-	<p><h11>Note that the two octants are exactly overlapped, in effect they have the same coordinates and size in the logical domain.
-	In the next figure the same octrees are displayed in the physical domain.</h11></p>
+	<p><h11>Note that the two quadrants are exactly overlapped, in effect they have the same coordinates and size in the logical domain.
+	In the next figure the same quadtrees are displayed in the physical domain.</h11></p>
 	<img src="./TestFiles/test0_physical.png">
-	<p><h11>Here the two octants are highly different in size (1/250), octant with size 1 in blue and octant with size 250 in red, and for the coordinates of their node 0.</h11></p>	
+	<p><h11>Here the two quadrants are highly different in size (1/250), quadrant with size 1 in blue and quadrant with size 250 in red, and for the coordinates of their node 0.</h11></p>	
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 1</strong></FONT></h5>
-	<p><h11>In this test (<em>test1.cpp</em>) one octree is first refined globally one time, then is refined iteratively marking <em>to be refined</em> (<em>i.e.</em> marker=1) all the octants with the center inside a circle. At the end of the test one global refinement is performed again. The results is shown in the video below, starting from the ancestor octant up to the last global refinement. </h11></p>
+	<p><h11>In this test (<em>test1.cpp</em>) one quadtree is first refined globally one time, then is refined iteratively marking <em>to be refined</em> (<em>i.e.</em> marker=1) all the quadrants with the center inside a circle. At the end of the test one global refinement is performed again. The results is shown in the video below, starting from the ancestor quadrant up to the last global refinement. </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/Fi8ckFfBlQM?rel=0" frameborder="0" allowfullscreen></iframe>
-	<p><h11>Note that in the right half-side of the domain the 2:1 balance is deactivated. Moreover in the lower part of the domain simple consequential refinements are achieved, while in the upper part a <em>while</em> loop is performed in order to refine geometrically even new octant obtained by 2:1 balancing potentially inside the area of the circle. </h11></p>
+	<p><h11>Note that in the right half-side of the domain the 2:1 balance is deactivated. Moreover in the lower part of the domain simple consequential refinements are achieved, while in the upper part a <em>while</em> loop is performed in order to refine geometrically even new quadrant obtained by 2:1 balancing potentially inside the area of the circle. </h11></p>
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 2</strong></FONT></h5>
-	<p><h11>The video below displays the result obtained by <em>test2.cpp</em>. This Test is analogous to the Test 1 with the 2:1 balance active for the whole domain and only simple adapting performed. The main difference is that the geometrically condition to set marker=1 is not imposed if the center of an octant lies in the circle but if at least one of its nodes is inthe area of the circle.  </h11></p>
+	<p><h11>The video below displays the result obtained by <em>test2.cpp</em>. This Test is analogous to the Test 1 with the 2:1 balance active for the whole domain and only simple adapting performed. The main difference is that the geometrically condition to set marker=1 is not imposed if the center of an quadrant lies in the circle but if at least one of its nodes is inthe area of the circle.  </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/S-mwu-Bc3Pk?rel=0" frameborder="0" allowfullscreen></iframe>
-	<p><h11>In the video can be noted as the refinements are smoother and the geomtry is better captured. This because no-one octant is not refined after its born in 2:1 balancing procedure, but these octants are already refined by using the condtion on nodes rather than on centers.  </h11></p>
+	<p><h11>In the video can be noted as the refinements are smoother and the geomtry is better captured. This because no-one quadrant is not refined after its born in 2:1 balancing procedure, but these quadrants are already refined by using the condtion on nodes rather than on centers.  </h11></p>
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 3</strong></FONT></h5>
-	<p><h11>The <em>test3</em> starts from the end point of the previous test. This tutorial involves the use of the adapting method to caorse the mes in an area of the domain. In particular a smaller circle is defined and the marker of every octant that lies inside is set equal to -1 (<em>i.e.</em> to be coarsened) and the 2:1 balance deactivated. This procedure is repeated 5 times as it can be seen in the video below. </h11></p>
+	<p><h11>The <em>test3</em> starts from the end point of the previous test. This tutorial involves the use of the adapting method to caorse the mes in an area of the domain. In particular a smaller circle is defined and the marker of every quadrant that lies inside is set equal to -1 (<em>i.e.</em> to be coarsened) and the 2:1 balance deactivated. This procedure is repeated 5 times as it can be seen in the video below. </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/m16Lb9WjtKw?rel=0" frameborder="0" allowfullscreen></iframe>
 	<p><h11>Note that a global coarsening of one level is performed before the adaptive procedure in the smaller circle.</h11></p>
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 4</strong></FONT></h5>
+	<p><h11>This test (see <em>test4.cpp</em>) involves the use of the methods to find the neighbour quadrants of an element. In PABLO one can search the neighbour elements through faces, edges and nodes (in 2D case only edges and nodes). In this example an quadtree is refined four levels and then a set of data is defined over the obtained mesh. In particular the data are intialized equal to 1 inside a circle and 0 outside. The method to find neighbours is used to perform a simple moving average smoothing procedure of the data. The video below shows the evolution of the data during 25 iterations of smoothing. </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/X0m5rkoZZWE?rel=0" frameborder="0" allowfullscreen></iframe>
+	<p><h11>Note that the neighbours are evaluated both through edges both through nodes, using all the 8 quadrants of the 1-ring stencil. In the file <em>test4.cpp</em> vectors related to ghost elements and ghost data are used, this is necessary because of the implementation of the methods of the library, but in serial application like this one they are never involved in computations (they are empty). </h11></p>
 	
        <hr> 
 
