@@ -212,6 +212,7 @@ hr {
   height: 1px;
   line-height: 1px;
   margin-top: 1em;
+  margin-bottom: 1em;
   padding-bottom: 5px;
   border: none;
   background: transparent url('../images/hr.png') 50% 0 no-repeat;
