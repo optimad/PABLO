@@ -40,20 +40,20 @@
  <!--          <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Pablo Pages.</h3> -->
         <header>
-	<h2>Introduction</h2> 
+	<h2>Who is PABLO</h2> 
 	<p><h11>PABLO is a C++ library for octree mesh generation and management. PABLO allows parallel execution of two-dimensional and three-dimensional cases. PABLO performs a rapid parallel load balancing over the processes. The mesh can be built by imposing a 2:1 balancing only for the desired elements.</h11></p>
 	<h2>Tutorials</h2>
-	<p><h11>Some tutorials on the use of PABLO library are described here below. All the reults here illustrated are obtained by the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files.</h11></p>
+	<p><h11>Some tutorials on the use of PABLO library are described here below. This web page is not an user guide or a programmer manual, but only a brief description of the results obtained by run some examples. All the reults here illustrated are obtained by the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files.</h11></p>
 	
        <hr> 
 
 	<h5><FONT COLOR="#aaa">Tutorial Test 0</FONT></h5>
-	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two object of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds an octree with one octant with size 1 and coordinates of node 0 in the origin. The second octree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the octant equal to 250. Note that PABLO works in a logical domain, the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two octrees are saved in logical coordinates and in physical ones. The figure below shows both the octrees in logical domain. </h11></p>
+	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two object of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds an octree with one octant with size 1 and coordinates of node 0 in the origin. The second octree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the octant equal to 250. Note that PABLO works in a logical domain (maximum size of the first ancestor octant in logical domain equal to 2<span class=sup><i>m</i></span>, with m=maximum refinement level allowed; while minimum size of finest octant equal to 1), the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two octrees are saved in logical coordinates and in physical ones. The figure below shows both the octrees in logical domain. </h11></p>
 	<img src="./TestFiles/test0_logical.png">
 	<p><h11>Note that the two octants are exactly overlapped, in effect they have the same coordinates and size in the logical domain.
 	In the next figure the same octrees are displayed in the physical domain.</h11></p>
 	<img src="./TestFiles/test0_physical.png">
-	<p><h11>Here the two octants are highly different in side (1/250) and for the coordinates of their node 0.</h11></p>	
+	<p><h11>Here the two octants are highly different in size (1/250), octant with size 1 in blue and octant with size 250 in red, and for the coordinates of their node 0.</h11></p>	
 	
        <hr> 
 

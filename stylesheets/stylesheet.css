@@ -348,6 +348,13 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+.sup {
+  position: relative;
+  bottom: 1ex; 
+  font-size: 80%;
+}
+
+
 /* #Media Queries
 ================================================== */
 
