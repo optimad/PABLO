@@ -41,13 +41,14 @@
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Pablo Pages.</h3> -->
         <header>
 	<h2>Who is PABLO</h2> 
-	<p><h11>PABLO is a C++ library for octree mesh generation and management. PABLO allows parallel execution of two-dimensional and three-dimensional cases. PABLO performs a rapid parallel load balancing over the processes. The mesh can be built by imposing a 2:1 balancing only for the desired elements.</h11></p>
+	<p><h11>PABLO is C++/MPI library for managing parallel linear octree/quadtree. It has been developed at Optimad Engineering srl and it will be released under the GNU Lesser General Public License. The aim of the project is to provide users with a tool to manage parallel adaptive grid of quadrilaterals or hexahedra without the burden of implementing MPI instructions in their applications code. Indeed, in PABLO they are implemented transparent MPI communications for both grid and user data; even the dynamical load-balancing for both grid and user data is possible and easy to perform with simple calls of methods of the library. PABLO allows adaptive mesh refinement by generating non-conforming grid with hanging nodes. One of main feature of the library is the low memory consuming in the basic configuration: ~30B per octant in 3D. Useful additional features are: the possibility to impose 2:1 balancing between octants and the option of storing the element intersections. </h11></p>
+	
 	<h2>Tutorials</h2>
 	<p><h11>Some tutorials on the use of PABLO library are described here below. This web page is not an user guide or a programmer manual, but only a brief description of the results obtained by running some examples. All the reults here illustrated are obtained from the test files in the repository. Here no code is shown, but one can follow the description of the tutorials by reading comments and code in the test files.</h11></p>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 0</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 0</strong></FONT></h5>
 	<p><h11>The first file <em>test0.cpp</em> is a simple tutorial about the instantation of octree objects. In this example two 2-dimensional objects of class <em>Para_Tree</em> are declared. The first one by using the default constructor, that builds an octree with one octant with size 1 and coordinates of node 0 in the origin. The second octree is instantiated by custom constructor, passing as input parameter the coordinates of node 0 equal to (10,20,0) and the size of the octant equal to 250. Note that PABLO works in a logical domain (maximum size of the first ancestor octant in logical domain equal to 2<span class=sup><i>m</i></span>, with m=maximum refinement level allowed; while minimum size of finest octant equal to 1), the transformation from the logical domain to the physical one has to be implemented by the user in a particular class (Class_Map); by default a simple translation/scaling is supplied with the repository. The two octrees are saved in logical coordinates and in physical ones. The figure below shows both the octrees in logical domain. </h11></p>
 	<img src="./TestFiles/test0_logical.png">
 	<p><h11>Note that the two octants are exactly overlapped, in effect they have the same coordinates and size in the logical domain.
@@ -57,63 +58,68 @@
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 1</FONT></h5>
-	In this test (<em>test1.cpp</em>) one octree is refined first globally one time, then 
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 1</strong></FONT></h5>
+	<p><h11>In this test (<em>test1.cpp</em>) one octree is first refined globally one time, then is refined iteratively marking <em>to be refined</em> (<em>i.e.</em> marker=1) all the octants with the center inside a circle. At the end of the test one global refinement is performed again. The results is shown in the video below, starting from the ancestor octant up to the last global refinement. </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/Fi8ckFfBlQM?rel=0" frameborder="0" allowfullscreen></iframe>
+	<p><h11>Note that in the right half-side of the domain the 2:1 balance is deactivated. Moreover in the lower part of the domain simple consequential refinements are achieved, while in the upper part a <em>while</em> loop is performed in order to refine geometrically even new octant obtained by 2:1 balancing potentially inside the area of the circle. </h11></p>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 2</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 2</strong></FONT></h5>
+	<p><h11>The video below displays the result obtained by <em>test2.cpp</em>. This Test is analogous to the Test 1 with the 2:1 balance active for the whole domain and only simple adapting performed. The main difference is that the geometrically condition to set marker=1 is not imposed if the center of an octant lies in the circle but if at least one of its nodes is inthe area of the circle.  </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/S-mwu-Bc3Pk?rel=0" frameborder="0" allowfullscreen></iframe>
+	<p><h11>In the video can be noted as the refinements are smoother and the geomtry is better captured. This because no-one octant is not refined after its born in 2:1 balancing procedure, but these octants are already refined by using the condtion on nodes rather than on centers.  </h11></p>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 3</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 3</strong></FONT></h5>
+	<p><h11>The <em>test3</em> starts from the end point of the previous test. This tutorial involves the use of the adapting method to caorse the mes in an area of the domain. In particular a smaller circle is defined and the marker of every octant that lies inside is set equal to -1 (<em>i.e.</em> to be coarsened) and the 2:1 balance deactivated. This procedure is repeated 5 times as it can be seen in the video below. </h11></p>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/m16Lb9WjtKw?rel=0" frameborder="0" allowfullscreen></iframe>
+	<p><h11>Note that a global coarsening of one level is performed before the adaptive procedure in the smaller circle.</h11></p>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 4</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 4</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/X0m5rkoZZWE?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 5</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 5</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/wvIehBfXGEA?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 12</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 12</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/ktphfrMup3A?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 13</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 13</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/kBr60Io8y2M?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 14</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 14</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/pn9AwgYi99E?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 15</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 15</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/Uq-2YFCa2K0?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 16</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 16</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/5tCcpHoaFRA?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 104</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 104</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/YftCYuTcDeg?rel=0" frameborder="0" allowfullscreen></iframe>
 	
        <hr> 
 
-	<h5><FONT COLOR="#aaa">Tutorial Test 116</FONT></h5>
+	<h5><FONT COLOR="#aaa"><strong>Tutorial Test 116</strong></FONT></h5>
 	<iframe width="560" height="315" src="//www.youtube.com/embed/3tkahH4PyQ0?rel=0" frameborder="0" allowfullscreen></iframe>
 	</header>
 
