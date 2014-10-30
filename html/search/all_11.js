@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x0',['X0',['../class_class___map.html#aa5c08b212bcce64de746831272daf3d0',1,'Class_Map']]]
+  ['y0',['Y0',['../class_class___map.html#a8597d52c6b75fe0325ffb7a68a5c1cc5',1,'Class_Map']]]
 ];

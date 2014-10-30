@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['iface',['iface',['../class_class___intersection_3_012_01_4.html#addbeb3b80905b14d9b947208fdb5ff0c',1,'Class_Intersection&lt; 2 &gt;']]],
-  ['info',['info',['../class_class___octant_3_012_01_4.html#aa6c157a02cf2c77753bc96d0583b48f9',1,'Class_Octant&lt; 2 &gt;']]],
-  ['intersections_5fbord',['intersections_bord',['../class_class___local___tree_3_012_01_4.html#a35989755556f113f4725f346a68ed72a',1,'Class_Local_Tree&lt; 2 &gt;']]],
-  ['intersections_5fghost',['intersections_ghost',['../class_class___local___tree_3_012_01_4.html#abb6e0e9c217f45b987bb54d42b96e1db',1,'Class_Local_Tree&lt; 2 &gt;']]],
-  ['intersections_5fint',['intersections_int',['../class_class___local___tree_3_012_01_4.html#a688f5a7fe09ba6ac0221db8d552e72c5',1,'Class_Local_Tree&lt; 2 &gt;']]],
-  ['isghost',['isghost',['../class_class___intersection_3_012_01_4.html#ae2d7c706876cc798b4e945b30d862551',1,'Class_Intersection&lt; 2 &gt;']]],
-  ['isnew',['isnew',['../class_class___intersection_3_012_01_4.html#a2fe45ec4cebc701a431c460f11b7b9e1',1,'Class_Intersection&lt; 2 &gt;']]]
+  ['nchildren',['nchildren',['../class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17',1,'Class_Global&lt; 2 &gt;::nchildren()'],['../class_class___global_3_013_01_4.html#a19699c229205525a032dcb643d8a0111',1,'Class_Global&lt; 3 &gt;::nchildren()']]],
+  ['nedges',['nedges',['../class_class___global_3_013_01_4.html#a9bfc24be1cbfc951bfc6227e6bd14322',1,'Class_Global&lt; 3 &gt;']]],
+  ['nfaces',['nfaces',['../class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce',1,'Class_Global&lt; 2 &gt;::nfaces()'],['../class_class___global_3_013_01_4.html#a758f0d994eb7ad5c010cce3fe762b223',1,'Class_Global&lt; 3 &gt;::nfaces()']]],
+  ['nnodes',['nnodes',['../class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf',1,'Class_Global&lt; 2 &gt;::nnodes()'],['../class_class___global_3_013_01_4.html#aacda57b8291741261c15dbb03b776cac',1,'Class_Global&lt; 3 &gt;::nnodes()']]],
+  ['nnodesperface',['nnodesperface',['../class_class___global_3_012_01_4.html#a5f846782517e19d3575f9de4becbbb3f',1,'Class_Global&lt; 2 &gt;::nnodesperface()'],['../class_class___global_3_013_01_4.html#ac5851b63952d12db7d340efa85c84dc0',1,'Class_Global&lt; 3 &gt;::nnodesperface()']]],
+  ['nodeface',['nodeface',['../class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b',1,'Class_Global&lt; 2 &gt;::nodeface()'],['../class_class___global_3_013_01_4.html#a26c8e99ed40674ab33acde1456cb7ba9',1,'Class_Global&lt; 3 &gt;::nodeface()']]],
+  ['normals',['normals',['../class_class___global_3_012_01_4.html#a1e651afcb67eab12b92d504a0baca30c',1,'Class_Global&lt; 2 &gt;::normals()'],['../class_class___global_3_013_01_4.html#a0e738feb415cc0cbc9712ba537667864',1,'Class_Global&lt; 3 &gt;::normals()']]],
+  ['nproc',['nproc',['../class_class___para___tree_3_012_01_4.html#a464c8fcae5efcf5d8129539fea84404f',1,'Class_Para_Tree&lt; 2 &gt;::nproc()'],['../class_class___para___tree_3_013_01_4.html#a8df6077c6dcedff73e8d30d42c001247',1,'Class_Para_Tree&lt; 3 &gt;::nproc()']]]
 ];
