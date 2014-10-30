@@ -117,27 +117,28 @@
        <hr> 
 
 	<h5><FONT COLOR="#aaa">Tutorial Test 15</FONT></h5>
-	<p><h11>In this example a parallel load-balance is performed. Again the main application is the same of test 5: the inheritage of data after an adapting step. However here a next challenge is added. The load-balance of the mesh is performed, passing from serial to parallel computation, with linking and distributing data between the processes. </h11></p>
-	<iframe width="620" height="340" src="//www.youtube.com/embed/Uq-2YFCa2K0?rel=0" frameborder="0" allowfullscreen></iframe>
-	<p><h11>In the video above the partitioning with data is displayed in the last frame. </h11></p>
+	<p><h11>This test is the parallel version of <em>test5.cpp</em>. Here the main focus is on the load-balance of both grid (as in <em>test13.cpp</em>) and data. The grid is refined several times together with the data and their inheritance follows the same rules like in test 5. Until the last refinement no parallel paradigm is in action: every process owns the entire grid. After this refinement, the load-balance with data is introduced, giving as result a parallel distribution of grid (as in <em>test13.cpp</em>) and data. </h11></p>
+	<iframe width="620" height="340" src="//www.youtube.com/embed/Uq-2YFCa2K0?rel=0" frameborder="0" allowfullscreen></iframe>	
+	<p><h11>In the video above data are represented with colors in cell, while the process partition is highlighted coloring the cell edges. </h11></p>
 	
 	<hr> 
 
 	<h5><FONT COLOR="#aaa">Tutorial Test 16</FONT></h5>
-	<p><h11>The same example of Test 15 is here enriched by an additional feature. Indeed, now the load-balance is performed by maintaining compact over the same process a family of desired level. In particular in the example of <em>test16.cpp</em> families of four levels upper the maximum deep reached in the quadtree are keeped in the same partition. The video below show the obtained result. </h11></p>
+       <p><h11> Test 15 is here enriched by an additional feature. The load-balance is performed by keep a family of desired level together on the same process. In particular in this example (see test16.cpp) the families, containing elements from the maximum level reached in the quadtree to that level minus 3, are kept on the same partition. The video below show the obtained result. </h11></p>
 	<iframe width="620" height="340" src="//www.youtube.com/embed/5tCcpHoaFRA?rel=0" frameborder="0" allowfullscreen></iframe>
 	<p><h11>Compare the last frame of this video with the last frame of video of Test 15 to understand the difference between the achieved partitions with and without the <em>"compact families"</em> feature. </h11></p>
-       <hr> 
+	
+	<hr> 
 
 	<h5><FONT COLOR="#aaa">Tutorial Test 104</FONT></h5>
-	<p><h11>In this example the same smoothing procedure of Test 4 are repeated for a three-dimensional octree, by substituting simply the specialization parameter in the declaration of the object octree. Moreover, because we are now in three dimensions, a loop over the faces during the neighbour search is performed. </h11></p>
+	<p><h11>In this example the same smoothing procedure of test 4 are repeated for a three-dimensional octree, by simply substituting the specialization parameter in the declaration of the octree object. Moreover, because we are now in three dimensions, a loop over the faces during the neighbour search is performed. </h11></p>
 	<iframe width="620" height="340" src="//www.youtube.com/embed/YftCYuTcDeg?rel=0" frameborder="0" allowfullscreen></iframe>
 	<p><h11>&nbsp; </h11></p>
 
        <hr> 
 
 	<h5><FONT COLOR="#aaa">Tutorial Test 116</FONT></h5>
-	<p><h11>The load-balance example with data and compact families over the processes of Test 6 is here rerun for a three-dimensional octree mesh. In the video below the evolution during mesh generation and partitioning. </h11></p>
+	<p><h11>The load-balance example with data and "compact families" in test 6 is here rerun for a three-dimensional octree mesh. In the following video the evolution during mesh generation and partitioning is shown. </h11></p>
 	<iframe width="620" height="340" src="//www.youtube.com/embed/3tkahH4PyQ0?rel=0" frameborder="0" allowfullscreen></iframe>
 	<p><h11>&nbsp; </h11></p>
 
