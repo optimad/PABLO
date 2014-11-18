@@ -109,10 +109,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a128a13dd2bc2b70736321a9e67416510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d0188a68a86828dd4fa6ec371bb4f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a14d0188a68a86828dd4fa6ec371bb4f7">mapCenter</a> (double *&amp;center, vector&lt; double &gt; &amp;mapcenter)</td></tr>
 <tr class="separator:a14d0188a68a86828dd4fa6ec371bb4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd5e0ea81e36f36a40fcb6d13bf3354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#adbd5e0ea81e36f36a40fcb6d13bf3354">mapCenter</a> (vector&lt; double &gt; &amp;center, vector&lt; double &gt; &amp;mapcenter)</td></tr>
+<tr class="separator:adbd5e0ea81e36f36a40fcb6d13bf3354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0277d327502344637f5a0366aacd4c9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a0277d327502344637f5a0366aacd4c9a">mapNodes</a> (uint32_t(*nodes)[3], vector&lt; vector&lt; double &gt; &gt; &amp;mapnodes)</td></tr>
 <tr class="separator:a0277d327502344637f5a0366aacd4c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c621536ea3f4bb9bf68ebfab411c3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a9c621536ea3f4bb9bf68ebfab411c3d8">mapNodes</a> (vector&lt; vector&lt; uint32_t &gt; &gt; nodes, vector&lt; vector&lt; double &gt; &gt; &amp;mapnodes)</td></tr>
+<tr class="separator:a9c621536ea3f4bb9bf68ebfab411c3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0771fb2e0b4ca3b178c309ebc703706d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a0771fb2e0b4ca3b178c309ebc703706d">mapNodesIntersection</a> (uint32_t(*nodes)[3], vector&lt; vector&lt; double &gt; &gt; &amp;mapnodes)</td></tr>
 <tr class="separator:a0771fb2e0b4ca3b178c309ebc703706d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6c2a0b9321e2eeae406618a9ce9b32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a9f6c2a0b9321e2eeae406618a9ce9b32">mapNodesIntersection</a> (vector&lt; vector&lt; uint32_t &gt; &gt; nodes, vector&lt; vector&lt; double &gt; &gt; &amp;mapnodes)</td></tr>
+<tr class="separator:a9f6c2a0b9321e2eeae406618a9ce9b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5425b4d49c203851528c472f2a8267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a0c5425b4d49c203851528c472f2a8267">mapNormals</a> (vector&lt; int8_t &gt; normal, vector&lt; double &gt; &amp;mapnormal)</td></tr>
 <tr class="separator:a0c5425b4d49c203851528c472f2a8267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464635266e4124d143de34a37f0047f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class___map.html#a464635266e4124d143de34a37f0047f8">mapSize</a> (uint32_t const &amp;size)</td></tr>
@@ -297,6 +303,43 @@ template&lt;int dim&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="adbd5e0ea81e36f36a40fcb6d13bf3354"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___map.html">Class_Map</a>&lt; dim &gt;::mapCenter </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mapcenter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transformation of coordinates of center of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>Vector of coordinates of center from logical domain. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mapcenter</td><td>Coordinates of center in physical domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00093">93</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0277d327502344637f5a0366aacd4c9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +373,44 @@ template&lt;int dim&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00093">93</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00108">108</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c621536ea3f4bb9bf68ebfab411c3d8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___map.html">Class_Map</a>&lt; dim &gt;::mapNodes </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; vector&lt; uint32_t &gt; &gt;&#160;</td>
+          <td class="paramname"><em>nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mapnodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transformation of coordinates of nodes of an octant. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nodes</td><td>Vector of coordinates of nodes from logical domain. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mapnodes</td><td>Coordinates of nodes in physical domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00128">128</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +447,44 @@ template&lt;int dim&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00113">113</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00148">148</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f6c2a0b9321e2eeae406618a9ce9b32"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_class___map.html">Class_Map</a>&lt; dim &gt;::mapNodesIntersection </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; vector&lt; uint32_t &gt; &gt;&#160;</td>
+          <td class="paramname"><em>nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mapnodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transformation of coordinates of nodes of an intersection. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nodes</td><td>Pointer to coordinates of nodes from logical domain. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mapnodes</td><td>Coordinates of nodes in physical domain. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00168">168</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +521,7 @@ template&lt;int dim&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00133">133</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
+<p>Definition at line <a class="el" href="_class___map_8tpp_source.html#l00188">188</a> of file <a class="el" href="_class___map_8tpp_source.html">Class_Map.tpp</a>.</p>
 
 </div>
 </div>
@@ -717,7 +834,7 @@ template&lt;int dim&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 30 2014 12:09:06 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 18 2014 16:02:53 for PABLO by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
