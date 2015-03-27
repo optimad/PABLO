@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['nchildren',['nchildren',['../class_class___global_3_012_01_4.html#a1dda2d8c20a6869c5c3134c006050b17',1,'Class_Global&lt; 2 &gt;::nchildren()'],['../class_class___global_3_013_01_4.html#a19699c229205525a032dcb643d8a0111',1,'Class_Global&lt; 3 &gt;::nchildren()']]],
-  ['nedges',['nedges',['../class_class___global_3_013_01_4.html#a9bfc24be1cbfc951bfc6227e6bd14322',1,'Class_Global&lt; 3 &gt;']]],
-  ['nfaces',['nfaces',['../class_class___global_3_012_01_4.html#ae266f238ed41ac82cfcf5b4f6367cfce',1,'Class_Global&lt; 2 &gt;::nfaces()'],['../class_class___global_3_013_01_4.html#a758f0d994eb7ad5c010cce3fe762b223',1,'Class_Global&lt; 3 &gt;::nfaces()']]],
-  ['nnodes',['nnodes',['../class_class___global_3_012_01_4.html#a1703ce1a89f727dd0bb73fe265c29dcf',1,'Class_Global&lt; 2 &gt;::nnodes()'],['../class_class___global_3_013_01_4.html#aacda57b8291741261c15dbb03b776cac',1,'Class_Global&lt; 3 &gt;::nnodes()']]],
-  ['nnodesperface',['nnodesperface',['../class_class___global_3_012_01_4.html#a5f846782517e19d3575f9de4becbbb3f',1,'Class_Global&lt; 2 &gt;::nnodesperface()'],['../class_class___global_3_013_01_4.html#ac5851b63952d12db7d340efa85c84dc0',1,'Class_Global&lt; 3 &gt;::nnodesperface()']]],
-  ['nodeface',['nodeface',['../class_class___global_3_012_01_4.html#a2b2c87b5af89cb22c03be91c6c01b64b',1,'Class_Global&lt; 2 &gt;::nodeface()'],['../class_class___global_3_013_01_4.html#a26c8e99ed40674ab33acde1456cb7ba9',1,'Class_Global&lt; 3 &gt;::nodeface()']]],
-  ['normals',['normals',['../class_class___global_3_012_01_4.html#a1e651afcb67eab12b92d504a0baca30c',1,'Class_Global&lt; 2 &gt;::normals()'],['../class_class___global_3_013_01_4.html#a0e738feb415cc0cbc9712ba537667864',1,'Class_Global&lt; 3 &gt;::normals()']]],
-  ['nproc',['nproc',['../class_class___para___tree_3_012_01_4.html#a464c8fcae5efcf5d8129539fea84404f',1,'Class_Para_Tree&lt; 2 &gt;::nproc()'],['../class_class___para___tree_3_013_01_4.html#a8df6077c6dcedff73e8d30d42c001247',1,'Class_Para_Tree&lt; 3 &gt;::nproc()']]]
+  ['markerbytes',['markerBytes',['../class_class___global_3_012_01_4.html#a5e6bcfe3b5e93f820fd31ea95ad911c3',1,'Class_Global&lt; 2 &gt;::markerBytes()'],['../class_class___global_3_013_01_4.html#a109fdadac6a1833e202675d0d549dff6',1,'Class_Global&lt; 3 &gt;::markerBytes()']]],
+  ['max_5fdepth',['max_depth',['../class_class___para___tree_3_012_01_4.html#a18e355e4c00aefbc125bcdc8d7f623a4',1,'Class_Para_Tree&lt; 2 &gt;::max_depth()'],['../class_class___para___tree_3_013_01_4.html#a2f7cfce5ba20cd9cc452ffd86965d6cc',1,'Class_Para_Tree&lt; 3 &gt;::max_depth()']]],
+  ['max_5flength',['max_length',['../class_class___global_3_012_01_4.html#a0717b521edd371e1ef78305c36221b3d',1,'Class_Global&lt; 2 &gt;::max_length()'],['../class_class___global_3_013_01_4.html#ace6c7162c928c98a49286a406a731a47',1,'Class_Global&lt; 3 &gt;::max_length()']]]
 ];
