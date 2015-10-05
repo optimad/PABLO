@@ -6,7 +6,7 @@ var searchData=
   ['class_5fdata_5fcomm_5finterface_3c_20user_5fdata_5fcomm_3c_20d_20_3e_20_3e',['Class_Data_Comm_Interface&lt; User_Data_Comm&lt; D &gt; &gt;',['../class_class___data___comm___interface.html',1,'']]],
   ['class_5fdata_5flb_5finterface',['Class_Data_LB_Interface',['../class_class___data___l_b___interface.html',1,'']]],
   ['class_5fdata_5flb_5finterface_3c_20user_5fdata_5flb_3c_20d_20_3e_20_3e',['Class_Data_LB_Interface&lt; User_Data_LB&lt; D &gt; &gt;',['../class_class___data___l_b___interface.html',1,'']]],
-  ['class_5fglobal',['Class_Global',['../class_class___global.html',1,'']]],
+  ['class_5fglobal',['Class_Global',['../singleton_class___global.html',1,'']]],
   ['class_5fglobal_3c_202_20_3e',['Class_Global&lt; 2 &gt;',['../class_class___global_3_012_01_4.html',1,'']]],
   ['class_5fglobal_3c_203_20_3e',['Class_Global&lt; 3 &gt;',['../class_class___global_3_013_01_4.html',1,'']]],
   ['class_5fintersection',['Class_Intersection',['../class_class___intersection.html',1,'']]],
