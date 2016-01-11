@@ -706,13 +706,13 @@ private:
 						markerfather = octants[idx].getMarker()+1;
 					}
 					idx--;
-					marker = octants[idx].getMarker();
 					if (wstop){
 						break;
 					}
 					if (idx==0){
 						wstop = true;
 					}
+					marker = octants[idx].getMarker();
 				}
 				if (nbro == global3D.nchildren){
 					offset = nend;
@@ -4649,12 +4649,12 @@ private:
 						Mortontry = ghosts[idxtry].computeMorton();
 						while(Mortontry < Mortonlast && idxtry < size_ghosts){
 
-							Dhx = int32_t(abs(cx))*(-int32_t(oct->x) + int32_t(octants[idxtry].x));
-							Dhy = int32_t(abs(cy))*(-int32_t(oct->y) + int32_t(octants[idxtry].y));
-							Dhz = int32_t(abs(cz))*(-int32_t(oct->z) + int32_t(octants[idxtry].z));
-							Dhxref = int32_t((cx-1)/2)*(octants[idxtry].getSize()) + int32_t((cx+1)/2)*size;
-							Dhyref = int32_t((cy-1)/2)*(octants[idxtry].getSize()) + int32_t((cy+1)/2)*size;
-							Dhzref = int32_t((cz-1)/2)*(octants[idxtry].getSize()) + int32_t((cz+1)/2)*size;
+							Dhx = int32_t(abs(cx))*(-int32_t(oct->x) + int32_t(ghosts[idxtry].x));
+							Dhy = int32_t(abs(cy))*(-int32_t(oct->y) + int32_t(ghosts[idxtry].y));
+							Dhz = int32_t(abs(cz))*(-int32_t(oct->z) + int32_t(ghosts[idxtry].z));
+							Dhxref = int32_t((cx-1)/2)*(ghosts[idxtry].getSize()) + int32_t((cx+1)/2)*size;
+							Dhyref = int32_t((cy-1)/2)*(ghosts[idxtry].getSize()) + int32_t((cy+1)/2)*size;
+							Dhzref = int32_t((cz-1)/2)*(ghosts[idxtry].getSize()) + int32_t((cz+1)/2)*size;
 
 
 
