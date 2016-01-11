@@ -405,13 +405,13 @@ private:
 						markerfather = octants[idx].getMarker()+1;
 					}
 					idx--;
-					marker = octants[idx].getMarker();
 					if (wstop){
 						break;
 					}
 					if (idx==0){
 						wstop = true;
 					}
+					marker = octants[idx].getMarker();
 				}
 				if (nbro == global2D.nchildren){
 					offset = nend;
