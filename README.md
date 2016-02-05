@@ -5,6 +5,10 @@ PArallel Balanced Linear Octree
 
 =====
 
+## WARNING : PABLO is now part of bitpit library !
+##          Please visit [bitpit](https://github.com/optimad/bitpit) project for the updated version.
+
+
 PABLO is C++/MPI library for parallel linear octree/quadtree developed by Optimad Engineering srl under the GNU Lesser General Public License. 
 
 The aim of the project is to provide users with a ready-to-use tool for parallel adaptive grid of quadrilaterals/hexahedra. 
